@@ -3,12 +3,12 @@
 
 from __future__ import annotations
 
-from hashlib import sha1, sha256
-from io import BytesIO
 import json
-from pathlib import Path
 import subprocess
 import tarfile
+from hashlib import sha1, sha256
+from io import BytesIO
+from pathlib import Path
 
 from .build import ROOT, SOURCE_COMMIT
 

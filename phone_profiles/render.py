@@ -3,11 +3,11 @@
 
 from __future__ import annotations
 
-from copy import deepcopy
 import re
+import xml.etree.ElementTree as ET
+from copy import deepcopy
 from pathlib import PurePosixPath
 from typing import Any
-import xml.etree.ElementTree as ET
 
 from jinja2 import DictLoader, StrictUndefined
 from jinja2.sandbox import SandboxedEnvironment

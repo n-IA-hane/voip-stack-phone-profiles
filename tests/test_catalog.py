@@ -1,12 +1,12 @@
 # SPDX-License-Identifier: MIT
+import json
+import re
+import xml.etree.ElementTree as ET
+import zipfile
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
-import json
 from pathlib import Path
-import re
-import zipfile
-import xml.etree.ElementTree as ET
 
 import pytest
 from jinja2 import Environment, StrictUndefined
@@ -91,10 +91,12 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
             ("RegisterPswd", "password"),
             ("RegisterAddr", "server_address"),
         ]:
-            fragment = re.search(rf"<{name}>(.*?)</{name}>", source, re.S)[1]
+            fragment = re.search(rf"<{name}>(.*?)</{name}>", source, re.DOTALL)[1]
             assert parsed.find(f"./sip/line/{name}").text == original_fragment(fragment, legacy)
             assert parsed.find(f"./sip/line/{name}").text == str(legacy_line[field])
-        fragment = re.search(r'<Fkey index="\{\$row.device_key_id\}">(.*?)</Fkey>', source, re.S)[0]
+        fragment = re.search(
+            r'<Fkey index="\{\$row.device_key_id\}">(.*?)</Fkey>', source, re.DOTALL
+        )[0]
         row = {
             "device_key_id": 1,
             "device_key_line": 1,
@@ -122,7 +124,7 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
                 fragment = re.search(
                     r"\{if isset\(\$(?:row|account\.1)\.server\.1\.address\)\}.*?\{/if\}",
                     source,
-                    re.S,
+                    re.DOTALL,
                 )[0]
                 oracle = original_fragment(fragment, legacy).split("=", 1)[1].strip()
             else:
@@ -139,7 +141,7 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
     elif vendor == "snom":
         parsed = ET.fromstring(rendered)
         for tag, field in [("user_name", "user_id"), ("user_pass", "password")]:
-            fragment = re.search(rf'<{tag} idx="1"[^>]*>(.*?)</{tag}>', source, re.S)[1]
+            fragment = re.search(rf'<{tag} idx="1"[^>]*>(.*?)</{tag}>', source, re.DOTALL)[1]
             assert parsed.find(f"./phone-settings/{tag}").text == original_fragment(
                 fragment, legacy
             )
@@ -158,7 +160,7 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
             fragment = re.search(
                 rf'<item name="account\.\{{\$row.line_number\}}\.{re.escape(suffix)}">(.*?)</item>',
                 source,
-                re.S,
+                re.DOTALL,
             )[1]
             assert items[f"account.1.{suffix}"] == original_fragment(fragment, legacy)
             assert items[f"account.1.{suffix}"] == str(legacy_line[field])

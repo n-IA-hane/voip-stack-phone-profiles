@@ -3,13 +3,13 @@
 
 from __future__ import annotations
 
+import json
+import re
+import zipfile
 from collections import Counter
 from hashlib import sha256
 from io import BytesIO
-import json
 from pathlib import Path
-import re
-import zipfile
 
 from jinja2 import Environment, StrictUndefined, TemplateSyntaxError
 
@@ -88,7 +88,9 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         text = (ROOT / "templates" / name).read_text()
         # Modern Yealink splits account and DSS settings between MAC and
         # model-common CFG files. Only already-converted related sources count.
-        keys = bool(re.search(r"^linekey\..+\.(?:type|value)\s*=", source + "\n" + related, re.M))
+        keys = bool(
+            re.search(r"^linekey\..+\.(?:type|value)\s*=", source + "\n" + related, re.MULTILINE)
+        )
         if keys:
             functions.extend(FUNCTIONS)
     elif vendor == "snom":

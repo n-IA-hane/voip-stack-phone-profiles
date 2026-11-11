@@ -8,9 +8,9 @@ Smarty runtime: unsupported syntax is an explicit import error, never a blank.
 from __future__ import annotations
 
 import ast
-from dataclasses import dataclass
 import json
 import re
+from dataclasses import dataclass
 
 
 class UnsupportedSmarty(ValueError):
@@ -45,7 +45,7 @@ TOKEN = re.compile(
     r"\s*(?:(\$[A-Za-z_]\w*)|([A-Za-z_]\w*)|([0-9]+(?:\.[0-9]+)?)|"
     r"('(?:\\.|[^'\\])*'|\"(?:\\.|[^\"\\])*\")|"
     r"(===|!==|==|!=|>=|<=|&&|\|\||=>|[.\[\](),:+*/%<>!|=-]))",
-    re.S,
+    re.DOTALL,
 )
 
 
@@ -244,14 +244,14 @@ class ExpressionParser:
 
 def compile_template(source: str) -> str:
     """Compile a template, rejecting every unrecognised Smarty directive."""
-    source = re.sub(r"\{\*.*?\*\}", "", source, flags=re.S)
+    source = re.sub(r"\{\*.*?\*\}", "", source, flags=re.DOTALL)
     # Smarty strips source-line boundaries before substitutions, not whitespace
     # inside variable values. A runtime Jinja trim filter is not equivalent.
     source = re.sub(
         r"\{strip\}(.*?)\{/strip\}",
         lambda m: "".join(line.strip() for line in m[1].splitlines()),
         source,
-        flags=re.S,
+        flags=re.DOTALL,
     )
     literals: dict[str, str] = {}
 
@@ -260,7 +260,7 @@ def compile_template(source: str) -> str:
         literals[key] = m.group(1)
         return key
 
-    source = re.sub(r"\{literal\}(.*?)\{/literal\}", save_literal, source, flags=re.S)
+    source = re.sub(r"\{literal\}(.*?)\{/literal\}", save_literal, source, flags=re.DOTALL)
     if "{literal}" in source or "{/literal}" in source:
         raise UnsupportedSmarty("unbalanced literal block")
     assigned = set(re.findall(r"\{\s*\$([A-Za-z_]\w*)\s*=(?!=)", source))
@@ -269,14 +269,14 @@ def compile_template(source: str) -> str:
     stack: list[str] = []
     cursor = 0
     # Braces in dialplans are literal. A Smarty-looking directive must be recognised.
-    pattern = re.compile(r"\{(/?[A-Za-z_][^{}]*|\$[^{}]+)\}", re.S)
+    pattern = re.compile(r"\{(/?[A-Za-z_][^{}]*|\$[^{}]+)\}", re.DOTALL)
     for m in pattern.finditer(source):
         out.append(source[cursor : m.start()])
         cursor = m.end()
         tag = m.group(1).strip()
         name, _, body = tag.partition(" ")
         if tag.startswith("$"):
-            assign = re.fullmatch(r"\$([A-Za-z_]\w*)\s*=(?!=)\s*(.*)", tag, re.S)
+            assign = re.fullmatch(r"\$([A-Za-z_]\w*)\s*=(?!=)\s*(.*)", tag, re.DOTALL)
             if assign:
                 value = ExpressionParser(assign[2], assigned).parse().code
                 out.append(f"{{% set __smarty.{assign[1]} = {value} %}}")
@@ -295,7 +295,7 @@ def compile_template(source: str) -> str:
             out.append("{% else %}")
         elif name == "foreach":
             loop = re.fullmatch(
-                r"(.+?)\s+as\s+(?:\$([A-Za-z_]\w*)\s*=>\s*)?\$([A-Za-z_]\w*)", body, re.S
+                r"(.+?)\s+as\s+(?:\$([A-Za-z_]\w*)\s*=>\s*)?\$([A-Za-z_]\w*)", body, re.DOTALL
             )
             if not loop:
                 raise UnsupportedSmarty("legacy foreach syntax")
@@ -315,7 +315,9 @@ def compile_template(source: str) -> str:
             out.append("{% else %}")
         elif name == "for":
             loop = re.fullmatch(
-                r"\$([A-Za-z_]\w*)\s*=\s*(.+?)\s+to\s+(.+?)(?:\s+step\s*=\s*(\d+))?", body, re.S
+                r"\$([A-Za-z_]\w*)\s*=\s*(.+?)\s+to\s+(.+?)(?:\s+step\s*=\s*(\d+))?",
+                body,
+                re.DOTALL,
             )
             if not loop:
                 raise UnsupportedSmarty("for syntax")
@@ -325,7 +327,7 @@ def compile_template(source: str) -> str:
             stack.append("for")
         elif name == "assign":
             assign = re.fullmatch(
-                r"var\s*=\s*['\"]?([A-Za-z_]\w*)['\"]?\s+value\s*=\s*(.*)", body, re.S
+                r"var\s*=\s*['\"]?([A-Za-z_]\w*)['\"]?\s+value\s*=\s*(.*)", body, re.DOTALL
             )
             if not assign:
                 raise UnsupportedSmarty("assign syntax")
