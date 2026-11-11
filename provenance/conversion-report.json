@@ -1,0 +1,2624 @@
+{
+  "source_files": 612,
+  "conversion": {
+    "converted": 449,
+    "imported": 163
+  },
+  "profiles": {
+    "software_validated": 98,
+    "imported": 104
+  },
+  "files": [
+    {
+      "path": "fanvil/h2u-v2/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/h5/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/i30/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v62/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v62-pro/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v63/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v64/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v65/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/v67/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/w611w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "fanvil/w611w/{$mac}.xml",
+      "status": "imported",
+      "reason": "directive append"
+    },
+    {
+      "path": "fanvil/x1s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x1sg/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x1sp/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x210/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x2p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3sg/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3sp/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3sw/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x3u-pro/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x4/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "fanvil/x4g/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "fanvil/x4sg/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x4u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x5s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x5u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x6/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x6u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x7/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x7a/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "fanvil/x7c/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unsupported expression suffix '='"
+    },
+    {
+      "path": "grandstream/README.md",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/dp715/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/dp715.sm/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/dp750/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/dp750/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gac2500/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gac2500/{$mac}.xml",
+      "status": "imported",
+      "reason": "modifier in_array"
+    },
+    {
+      "path": "grandstream/gds3705/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ghp6xx/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/ghp6xx/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "grandstream/grp2612/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2612/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp2612w/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2612w/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp2613/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2613/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp2614/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2614/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp2615/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2615/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp2616/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp2616/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/grp261x/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp261x/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "grandstream/grp26xx/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/grp26xx/{$mac}.xml",
+      "status": "imported",
+      "reason": "modifier in_array"
+    },
+    {
+      "path": "grandstream/gsc3516/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gsc3518hs/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gswave/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp110x/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp116x/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp116x/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp140x/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp140x/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp140xbk/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp140xbk/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp1450/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp1450/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp1450bk/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp1450bk/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp16xx/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp16xx/phonebook.xml",
+      "status": "imported",
+      "reason": "modifier truncate"
+    },
+    {
+      "path": "grandstream/gxp16xx/{$mac}.xml",
+      "status": "imported",
+      "reason": "modifier in_array"
+    },
+    {
+      "path": "grandstream/gxp17xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp20xx/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp20xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2100/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2100/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2124/phonebook.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2124/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2130/README.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2130/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2130/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gxp2130/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2135/README.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2135/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2135/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gxp2135/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2140/README.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2140/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2140/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gxp2140/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2160/README.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2160/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2160/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gxp2160/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2170/README.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2170/label.txt",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2170/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/gxp2170/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp21xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp21xxbk/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp2200/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxp3240/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxv300x/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxv3140/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxv3175/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxv3175v2/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxv3240/phonebook.xml",
+      "status": "imported",
+      "reason": "function ucfirst"
+    },
+    {
+      "path": "grandstream/gxv3240/{$mac}.xml",
+      "status": "imported",
+      "reason": "modifier in_array"
+    },
+    {
+      "path": "grandstream/gxv3275/{$mac}.xml",
+      "status": "imported",
+      "reason": "modifier in_array"
+    },
+    {
+      "path": "grandstream/gxv3370/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "grandstream/gxv3380",
+      "status": "imported",
+      "reason": "directive i"
+    },
+    {
+      "path": "grandstream/gxv3480/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "grandstream/gxv3504/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxw4004/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxw4008/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxw40xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxw410x/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/gxw42xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht502/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht503/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht701/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht702/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht704/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht801/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht802/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht813/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht814/{$mac}.xml",
+      "status": "imported",
+      "reason": "orphan elseif"
+    },
+    {
+      "path": "grandstream/ht818/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/ht8x1/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/htx86/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/wave/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/wp810/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/wp810/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/wp820/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/wp820/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "grandstream/wp826/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/wp826/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "grandstream/wp8x6/phonebook.xml",
+      "status": "imported",
+      "reason": "incomplete expression"
+    },
+    {
+      "path": "grandstream/wp8x6/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression atom 'FILTER_VALIDATE_BOOLEAN'"
+    },
+    {
+      "path": "snom/300/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/320/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/360/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/3xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/720/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/7xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/820/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/8xx/desktop.ini",
+      "status": "converted"
+    },
+    {
+      "path": "snom/8xx/{$mac}.xml",
+      "status": "converted"
+    },
+    {
+      "path": "snom/C520/directory.xml",
+      "status": "imported",
+      "reason": "expression token: '@index'"
+    },
+    {
+      "path": "snom/C520/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 48'"
+    },
+    {
+      "path": "snom/C620/directory.xml",
+      "status": "imported",
+      "reason": "expression token: '@index'"
+    },
+    {
+      "path": "snom/C620/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 48'"
+    },
+    {
+      "path": "snom/D120/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 1'"
+    },
+    {
+      "path": "snom/D315/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 3'"
+    },
+    {
+      "path": "snom/D345/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D375/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D385/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D712/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 3'"
+    },
+    {
+      "path": "snom/D715/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 3'"
+    },
+    {
+      "path": "snom/D717/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 5'"
+    },
+    {
+      "path": "snom/D725/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D735/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D745/{$mac}.xml",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "snom/D765/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D785/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D812/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D815/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D862/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/D865/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 11'"
+    },
+    {
+      "path": "snom/M100KLE/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 8'"
+    },
+    {
+      "path": "snom/M500KLE/{$mac}.xml",
+      "status": "imported",
+      "reason": "expression token: '@index eq 48'"
+    },
+    {
+      "path": "snom/PA1/{$mac}.cfg",
+      "status": "imported",
+      "reason": "expression token: '@index eq 3'"
+    },
+    {
+      "path": "snom/PA1plus/{$mac}.cfg",
+      "status": "imported",
+      "reason": "expression token: '@index eq 3'"
+    },
+    {
+      "path": "snom/m3/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax83h/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/ax83h/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax83h/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax83h/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax83h/y000000000180.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax83h/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/ax86r/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/ax86r/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax86r/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax86r/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax86r/y000000000182.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/ax86r/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/cp860/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/cp860/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp860/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp860/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp860/y000000000037.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp860/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp920/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/cp920/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp920/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp920/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp920/y000000000078.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp920/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/cp925/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/cp925/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp925/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp925/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp925/y000000000148.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp925/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/cp960/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/cp960/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp960/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp960/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp960/y000000000073.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp960/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/cp965/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp965/y000000000143.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/cp965/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t19p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t19p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t19p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t19p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t19p/y000000000053.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t19p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t20p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t20p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t20p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t20p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t20p/y000000000007.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t20p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t21p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t21p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t21p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t21p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t21p/y000000000052.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t21p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t22p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t22p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t22p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t22p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t22p/y000000000005.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t22p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t23g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23g/y000000000044.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t23p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23p/y000000000044.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t23p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t26p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t26p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t26p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t26p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t26p/y000000000004.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t26p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t27g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27g/y000000000069.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t27p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27p/y000000000045.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t27p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t28p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t28p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t28p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t28p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t28p/y000000000000.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t28p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t29g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t29g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t29g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t29g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t29g/y000000000046.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t29g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t2x/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/y000000000044.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/y000000000052.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/y000000000053.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/y000000000069.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/{$mac}.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t2x/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/t31g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t31g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31g/y000000000123.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t31w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31w/y000000000172.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t31w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t32g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t32g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t32g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t32g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t32g/y000000000032.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t32g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t33g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t33g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t33g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t33g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t33g/y000000000124.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t33g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t34w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t34w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t34w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t34w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t34w/y000000000171.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t34w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/t38g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t38g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t38g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t38g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t38g/y000000000038.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t38g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t40g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40g/y000000000076.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t40p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40p/y000000000054.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t40p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t41p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41p/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41p/y000000000036.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t41s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41s/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41s/y000000000068.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t41s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t42g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42g/y000000000029.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t42s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42s/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42s/y000000000067.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t42u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42u/y000000000116.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t42u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t43u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t43u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t43u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t43u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t43u/y000000000107.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t43u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t44w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t44w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t44w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t44w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t44w/y000000000174.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t44w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/t46g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t46g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46g/y000000000028.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t46s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46s/y000000000066.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46s/{$mac}.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t46u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46u/y000000000108.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t46u/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t48g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48g/y000000000035.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t48s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48s/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48s/y000000000065.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t48u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48u/y000000000109.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t48u/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t49g/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t49g/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t49g/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t49g/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t49g/y000000000051.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t49g/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t4x/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000028.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000029.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000035.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000036.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000054.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000065.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000066.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000067.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000068.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000076.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000107.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000108.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000109.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/y000000000116.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/{$mac}.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t4x/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/t4x/{mac}.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t52s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t52s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t52s/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t52s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t52s/y000000000074.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t52s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t53/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53/y000000000095.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t53w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53w/y000000000095.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t53w/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54s/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t54s/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54s/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54s/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54s/y000000000070.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54s/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t54w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54w/y000000000096.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t54w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t56a/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t56a/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t56a/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t56a/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t56a/y000000000056.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t56a/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t57w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t57w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t57w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t57w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t57w/y000000000097.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t57w/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58a/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t58a/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58a/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58a/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58a/y000000000058.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58a/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58v/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t58v/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58v/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58v/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58v/y000000000058.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58v/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t58w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t58w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58w/y000000000150.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t58w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t5x/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t5x/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/y000000000070.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/y000000000095.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/y000000000096.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/y000000000097.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/{$mac}.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t5x/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t73u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t73u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73u/y000000000186.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73u/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t73w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t73w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73w/y000000000183.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t73w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t74u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t74u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74u/y000000000187.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74u/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t74w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t74w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74w/y000000000184.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t74w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t77u/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t77u/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t77u/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t77u/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t77u/y000000000188.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t77u/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t85w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t85w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t85w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t85w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t85w/y000000000196.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t85w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t87w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t87w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t87w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t87w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t87w/y000000000197.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t87w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t88v/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t88v/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88v/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88v/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88v/y000000000192.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88v/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/t88w/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/t88w/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88w/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88w/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88w/y000000000192.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/t88w/{$mac}.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/vp530/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/vp530/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp530/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp530/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp530/y000000000023.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp530/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp59/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/vp59/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp59/super_search.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp59/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp59/y000000000091.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/vp59/{$mac}.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/w52p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w52p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w52p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w52p/y000000000025.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w52p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w56p/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w56p/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w56p/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w56p/y000000000025.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w56p/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w60b/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w60b/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w60b/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w60b/y000000000077.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/w60b/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w70b/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w70b/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w70b/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w70b/y000000000146.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/w70b/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w7xp/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w7xp/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w7xp/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w7xp/y000000000146.cfg",
+      "status": "imported",
+      "reason": "orphan else"
+    },
+    {
+      "path": "yealink/w7xp/{$mac}.cfg",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w80/directory.xml",
+      "status": "imported",
+      "reason": "Smarty special variable"
+    },
+    {
+      "path": "yealink/w80/favorite_setting.xml",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w80/y000000000000.boot",
+      "status": "converted"
+    },
+    {
+      "path": "yealink/w80/y000000000175.cfg",
+      "status": "imported",
+      "reason": "unbalanced /if"
+    },
+    {
+      "path": "yealink/w80/{$mac}.cfg",
+      "status": "converted"
+    }
+  ]
+}

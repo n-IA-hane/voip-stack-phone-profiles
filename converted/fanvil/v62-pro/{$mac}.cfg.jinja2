@@ -1,0 +1,2014 @@
+{# SPDX-License-Identifier: MPL-1.1; see NOTICE and provenance.json #}
+<?xml version="1.0" encoding="UTF-8"?>
+<sysConf>
+    <Version>2.0000000000</Version>
+    <net>
+        <WANTYPE>0</WANTYPE>
+        <WANIP></WANIP>
+        <WANSubnetMask>255.255.255.0</WANSubnetMask>
+        <WANGateway></WANGateway>
+        <DomainName></DomainName>
+        <PrimaryDNS>{% if ((((((dns_server_primary) is defined and (dns_server_primary) is not none))) is defined and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) is not none) and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != false and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != 0 and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != '' and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != '0' and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != [] and ((((dns_server_primary) is defined and (dns_server_primary) is not none))) != {}) %}{{ (1 if (dns_server_primary) is sameas true else '' if (dns_server_primary) is sameas false or (dns_server_primary) is none else (dns_server_primary)) }}{% else %}9.9.9.9{% endif %}</PrimaryDNS>
+        <SecondaryDNS>{% if ((((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) is defined and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) is not none) and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != false and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != 0 and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != '' and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != '0' and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != [] and ((((dns_server_secondary) is defined and (dns_server_secondary) is not none))) != {}) %}{{ (1 if (dns_server_secondary) is sameas true else '' if (dns_server_secondary) is sameas false or (dns_server_secondary) is none else (dns_server_secondary)) }}{% else %}1.1.1.1{% endif %}</SecondaryDNS>
+        <EnableDHCP>1</EnableDHCP>
+        <DHCPAutoDNS>1</DHCPAutoDNS>
+        <DHCPAutoTime>1</DHCPAutoTime>
+        <DHCPOption100-101>1</DHCPOption100-101>
+        <UseVendorClassID>0</UseVendorClassID>
+        <VendorClassID>Fanvil</VendorClassID>
+        <EnablePPPoE>0</EnablePPPoE>
+        <PPPoEUser>user123</PPPoEUser>
+        <PPPoEPassword>password</PPPoEPassword>
+        <ARPCacheLife>2</ARPCacheLife>
+        <MTU>1500</MTU>
+        <PPPoEAutoConnect>0</PPPoEAutoConnect>
+        <PPPoEAutoRecnct>0</PPPoEAutoRecnct>
+        <WAN6IP></WAN6IP>
+        <WAN6IPPREFIX></WAN6IPPREFIX>
+        <WAN6Gateway></WAN6Gateway>
+        <Domain6Name></Domain6Name>
+        <PrimaryDNS6></PrimaryDNS6>
+        <SecondaryDNS6></SecondaryDNS6>
+        <EnableDHCP6>1</EnableDHCP6>
+        <DHCP6AutoDNS>1</DHCP6AutoDNS>
+        <DHCP6AutoTime>0</DHCP6AutoTime>
+        <UseVendor6ClassID>0</UseVendor6ClassID>
+        <Vendor6ClassID></Vendor6ClassID>
+    </net>
+    <mm>
+        <G723BitRate>1</G723BitRate>
+        <ILBCPayloadType>97</ILBCPayloadType>
+        <ILBCPayloadLen>20</ILBCPayloadLen>
+        <AMRPayloadType>108</AMRPayloadType>
+        <AMRWBPayloadType>109</AMRWBPayloadType>
+        <G726-16PayloadType>103</G726-16PayloadType>
+        <G726-24PayloadType>104</G726-24PayloadType>
+        <G726-32PayloadType>102</G726-32PayloadType>
+        <G726-40PayloadType>105</G726-40PayloadType>
+        <DtmfPayloadType>101</DtmfPayloadType>
+        <OpusPayloadType>107</OpusPayloadType>
+        <OpusSampleRate>0</OpusSampleRate>
+        <VAD>0</VAD>
+        <H264PayloadType>117</H264PayloadType>
+        <H264PacketMode>0</H264PacketMode>
+        <H264Profile>0</H264Profile>
+        <ResvAudioBand>0</ResvAudioBand>
+        <H265PayloadType>98</H265PayloadType>
+        <RTPInitialPort>16384</RTPInitialPort>
+        <RTPPortQuantity>16384</RTPPortQuantity>
+        <RTPKeepAlive>0</RTPKeepAlive>
+        <RTPRelay>0</RTPRelay>
+        <RTCPCNAMEUser></RTCPCNAMEUser>
+        <RTCPCNAMEHost></RTCPCNAMEHost>
+        <SelectYourTone>{% if ((((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) is defined and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) is not none) and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != false and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != 0 and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != '' and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != '0' and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != [] and ((((fanvil_country_toneset) is defined and (fanvil_country_toneset) is not none))) != {}) %}{{ (1 if (fanvil_country_toneset) is sameas true else '' if (fanvil_country_toneset) is sameas false or (fanvil_country_toneset) is none else (fanvil_country_toneset)) }}{% else %}11{% endif %}</SelectYourTone>
+        <SidetoneGAIN>1</SidetoneGAIN>
+        <PlayEgressDTMF>0</PlayEgressDTMF>
+        <DialTone>350+440/0</DialTone>
+        <RingbackTone>440+480/2000,0/4000</RingbackTone>
+        <BusyTone>480+620/500,0/500</BusyTone>
+        <CongestionTone></CongestionTone>
+        <CallwaitingTone>440/300,0/10000,440/300,0/10000,0/0</CallwaitingTone>
+        <HoldingTone></HoldingTone>
+        <ErrorTone></ErrorTone>
+        <StutterTone></StutterTone>
+        <InformationTone></InformationTone>
+        <DialRecallTone>350+440/100,0/100,350+440/100,0/100,350+440/100,0/100,350+440/0</DialRecallTone>
+        <MessageTone></MessageTone>
+        <HowlerTone></HowlerTone>
+        <NumberUnobtainable>400/500,0/6000</NumberUnobtainable>
+        <WarningTone>1400/500,0/0</WarningTone>
+        <RecordTone>440/500,0/5000</RecordTone>
+        <AutoAnswerTone></AutoAnswerTone>
+        <capability>
+            <AudioCodecSets>G722,PCMU,PCMA,OPUS</AudioCodecSets>
+            <VideoCodecSets>{% if ((((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) is defined and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) is not none) and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != false and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != 0 and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != '' and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != '0' and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != [] and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != {}) %}{{ (1 if (fanvil_video_codec) is sameas true else '' if (fanvil_video_codec) is sameas false or (fanvil_video_codec) is none else (fanvil_video_codec)) }}{% else %}H264{% endif %}</VideoCodecSets>
+            <VideoFrameRate>30</VideoFrameRate>
+            <VideoBitRate>2000000</VideoBitRate>
+            <VideoResolution>7</VideoResolution>
+            <VideoNegotiateDir>0</VideoNegotiateDir>
+        </capability>
+    </mm>
+    <sip>
+        <SIPPort>{{ (1 if (sip_port) is sameas true else '' if (sip_port) is sameas false or (sip_port) is none else (sip_port)) }}</SIPPort>
+        <STUNServer>{{ (1 if (fanvil_stun_server) is sameas true else '' if (fanvil_stun_server) is sameas false or (fanvil_stun_server) is none else (fanvil_stun_server)) }}</STUNServer>
+        <STUNPort>{{ (1 if (fanvil_stun_port) is sameas true else '' if (fanvil_stun_port) is sameas false or (fanvil_stun_port) is none else (fanvil_stun_port)) }}</STUNPort>
+        <STUNRefreshTime>50</STUNRefreshTime>
+        <SIPWaitStunTime>800</SIPWaitStunTime>
+        <ExternNATAddrs></ExternNATAddrs>
+        <RegFailInterval>32</RegFailInterval>
+        <StrictBranchPrefix>0</StrictBranchPrefix>
+        <VideoMuteAttr>0</VideoMuteAttr>
+        <EnableGroupBackup>0</EnableGroupBackup>
+        <EnableRFC4475>1</EnableRFC4475>
+        <StrictUAMatch>1</StrictUAMatch>
+        <CSTAEnable>0</CSTAEnable>
+        <NotifyReboot>1</NotifyReboot>
+	{% for row in (lines.values() if lines is mapping else lines) %}
+        <line index="{{ (1 if (row["device_key_id"]) is sameas true else '' if (row["device_key_id"]) is sameas false or (row["device_key_id"]) is none else (row["device_key_id"])) }}">
+            <PhoneNumber>{{ (1 if (row["user_id"]) is sameas true else '' if (row["user_id"]) is sameas false or (row["user_id"]) is none else (row["user_id"])) }}</PhoneNumber>
+            <DisplayName>{{ (1 if (row["display_name"]) is sameas true else '' if (row["display_name"]) is sameas false or (row["display_name"]) is none else (row["display_name"])) }}</DisplayName>
+            <SipName></SipName>
+            <RegisterAddr>{{ (1 if (row["server_address"]) is sameas true else '' if (row["server_address"]) is sameas false or (row["server_address"]) is none else (row["server_address"])) }}</RegisterAddr>
+            <RegisterPort>{{ (1 if (row["sip_port"]) is sameas true else '' if (row["sip_port"]) is sameas false or (row["sip_port"]) is none else (row["sip_port"])) }}</RegisterPort>
+            <RegisterUser>{{ (1 if (row["auth_id"]) is sameas true else '' if (row["auth_id"]) is sameas false or (row["auth_id"]) is none else (row["auth_id"])) }}</RegisterUser>
+            <RegisterPswd>{{ (1 if (row["password"]) is sameas true else '' if (row["password"]) is sameas false or (row["password"]) is none else (row["password"])) }}</RegisterPswd>
+            <RegisterTTL>{{ (1 if (row["register_expires"]) is sameas true else '' if (row["register_expires"]) is sameas false or (row["register_expires"]) is none else (row["register_expires"])) }}</RegisterTTL>
+            <BackupAddr></BackupAddr>
+            <BackupPort>5060</BackupPort>
+            <BackupTransport>0</BackupTransport>
+            <BackupTTL>3600</BackupTTL>
+            <EnableReg>0</EnableReg>
+            <EnableReg>{% if ((((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) is defined and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) is not none) and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != false and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != 0 and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != '' and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != '0' and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != [] and ((((row) is defined and (row["password"]) is defined and (row["password"]) is not none))) != {}) %}1{% else %}0{% endif %}</EnableReg>
+            <ProxyAddr>{{ (1 if (row["outbound_proxy_primary"]) is sameas true else '' if (row["outbound_proxy_primary"]) is sameas false or (row["outbound_proxy_primary"]) is none else (row["outbound_proxy_primary"])) }}</ProxyAddr>
+            <ProxyPort>{{ (1 if (row["sip_port"]) is sameas true else '' if (row["sip_port"]) is sameas false or (row["sip_port"]) is none else (row["sip_port"])) }}</ProxyPort>
+            <ProxyUser>{{ (1 if (row["auth_id"]) is sameas true else '' if (row["auth_id"]) is sameas false or (row["auth_id"]) is none else (row["auth_id"])) }}</ProxyUser>
+            <ProxyPswd>{{ (1 if (row["password"]) is sameas true else '' if (row["password"]) is sameas false or (row["password"]) is none else (row["password"])) }}</ProxyPswd>
+            <ProxyNeedRegOn>0</ProxyNeedRegOn>
+            <BakProxyAddr>{{ (1 if (row["outbound_proxy_secondary"]) is sameas true else '' if (row["outbound_proxy_secondary"]) is sameas false or (row["outbound_proxy_secondary"]) is none else (row["outbound_proxy_secondary"])) }}</BakProxyAddr>
+            <BakProxyPort>{{ (1 if (row["sip_port"]) is sameas true else '' if (row["sip_port"]) is sameas false or (row["sip_port"]) is none else (row["sip_port"])) }}</BakProxyPort>
+            <BakProxyNeedRegOn>0</BakProxyNeedRegOn>
+            <EnableFailback>{% if ((((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) is defined and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) is not none) and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != false and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != 0 and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != '' and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != '0' and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != [] and ((((row) is defined and (row["outbound_proxy_secondary"]) is defined and (row["outbound_proxy_secondary"]) is not none))) != {}) %}1{% else %}0{% endif %}</EnableFailback>
+            <FailbackInterval>1800</FailbackInterval>
+            <SignalFailback>0</SignalFailback>
+            <SignalRetryCounts>3</SignalRetryCounts>
+            <SigCryptoKey></SigCryptoKey>
+            <EnableOSRTP>0</EnableOSRTP>
+            <MediaCrypto>0</MediaCrypto>
+            <MedCryptoKey></MedCryptoKey>
+            <SRTPAuth-Tag>0</SRTPAuth-Tag>
+            <EnableRFC5939>0</EnableRFC5939>
+            <LocalDomain></LocalDomain>
+            <AlwaysFWD>0</AlwaysFWD>
+            <BusyFWD>0</BusyFWD>
+            <NoAnswerFWD>0</NoAnswerFWD>
+            <AlwaysFWDNum></AlwaysFWDNum>
+            <BusyFWDNum></BusyFWDNum>
+            <NoAnswerFWDNum></NoAnswerFWDNum>
+            <FWDTimer>5</FWDTimer>
+            <HotlineNum></HotlineNum>
+            <EnableHotline>0</EnableHotline>
+            <WarmLineTime>0</WarmLineTime>
+            <PickupNum></PickupNum>
+            <JoinNum></JoinNum>
+            <IntercomNum></IntercomNum>
+            <RingType>{% if ((((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) is defined and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) is not none) and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != false and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != 0 and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != '' and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != '0' and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != [] and ((((fanvil_ringtone_line1) is defined and (fanvil_ringtone_line1) is not none))) != {}) %}{{ (1 if (fanvil_ringtone_line1) is sameas true else '' if (fanvil_ringtone_line1) is sameas false or (fanvil_ringtone_line1) is none else (fanvil_ringtone_line1)) }}{% else %}default{% endif %}</RingType>
+            <NATUDPUpdate>2</NATUDPUpdate>
+            <UDPUpdateTTL>30</UDPUpdateTTL>
+            <ServerType>0</ServerType>
+            <UserAgent></UserAgent>
+            <PRACK>0</PRACK>
+            <KeepAUTH>0</KeepAUTH>
+            <SessionTimer>0</SessionTimer>
+            <STimerExpires>0</STimerExpires>
+            <EnableGRUU>0</EnableGRUU>
+            <DTMFMode>3</DTMFMode>
+            <DTMFInfoMode>0</DTMFInfoMode>
+            <NATType>0</NATType>
+            <EnableRport>1</EnableRport>
+            <Subscribe>{% if ((((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) is defined and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) is not none) and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != false and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != 0 and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != '' and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != '0' and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != [] and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != {}) %}1{% else %}{% endif %}</Subscribe>
+            <SubExpire>{{ (1 if (row["register_expires"]) is sameas true else '' if (row["register_expires"]) is sameas false or (row["register_expires"]) is none else (row["register_expires"])) }}</SubExpire>
+            <SingleCodec>0</SingleCodec>
+            <CLIR>0</CLIR>
+            <StrictProxy>1</StrictProxy>
+            <DirectContact>0</DirectContact>
+            <HistoryInfo>0</HistoryInfo>
+            {% if ((((row["sip_transport"] == "dns srv")) is defined and ((row["sip_transport"] == "dns srv")) is not none) and ((row["sip_transport"] == "dns srv")) != false and ((row["sip_transport"] == "dns srv")) != 0 and ((row["sip_transport"] == "dns srv")) != '' and ((row["sip_transport"] == "dns srv")) != '0' and ((row["sip_transport"] == "dns srv")) != [] and ((row["sip_transport"] == "dns srv")) != {}) %}<DNSSRV>1</DNSSRV>{% endif %}
+            {% if ((((row["sip_transport"] == "dns srv")) is defined and ((row["sip_transport"] == "dns srv")) is not none) and ((row["sip_transport"] == "dns srv")) != false and ((row["sip_transport"] == "dns srv")) != 0 and ((row["sip_transport"] == "dns srv")) != '' and ((row["sip_transport"] == "dns srv")) != '0' and ((row["sip_transport"] == "dns srv")) != [] and ((row["sip_transport"] == "dns srv")) != {}) %}<DNSMode>1</DNSMode>{% endif %}
+            <XFERExpire>0</XFERExpire>
+            <BanAnonymous>0</BanAnonymous>
+            <DialOffLine>0</DialOffLine>
+            <QuotaName>0</QuotaName>
+            <PresenceMode>0</PresenceMode>
+            <RFCVer>1</RFCVer>
+            <PhonePort>0</PhonePort>
+            <SignalPort>5060</SignalPort>
+            {% if ((((row["sip_transport"] == "udp")) is defined and ((row["sip_transport"] == "udp")) is not none) and ((row["sip_transport"] == "udp")) != false and ((row["sip_transport"] == "udp")) != 0 and ((row["sip_transport"] == "udp")) != '' and ((row["sip_transport"] == "udp")) != '0' and ((row["sip_transport"] == "udp")) != [] and ((row["sip_transport"] == "udp")) != {}) %}<Transport>0</Transport>{% endif %}
+            {% if ((((row["sip_transport"] == "tcp")) is defined and ((row["sip_transport"] == "tcp")) is not none) and ((row["sip_transport"] == "tcp")) != false and ((row["sip_transport"] == "tcp")) != 0 and ((row["sip_transport"] == "tcp")) != '' and ((row["sip_transport"] == "tcp")) != '0' and ((row["sip_transport"] == "tcp")) != [] and ((row["sip_transport"] == "tcp")) != {}) %}<Transport>1</Transport>{% endif %}
+            {% if ((((row["sip_transport"] == "tls")) is defined and ((row["sip_transport"] == "tls")) is not none) and ((row["sip_transport"] == "tls")) != false and ((row["sip_transport"] == "tls")) != 0 and ((row["sip_transport"] == "tls")) != '' and ((row["sip_transport"] == "tls")) != '0' and ((row["sip_transport"] == "tls")) != [] and ((row["sip_transport"] == "tls")) != {}) %}<Transport>3</Transport>{% endif %}
+            <UseSRVMixer>0</UseSRVMixer>
+            <SRVMixerUri></SRVMixerUri>
+            <LongContact>0</LongContact>
+            <AutoTCP>1</AutoTCP>
+            <UriEscaped>1</UriEscaped>
+            <ClicktoTalk>0</ClicktoTalk>
+            <MwiNo></MwiNo>
+            <MWINum>{% if ((((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) is defined and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) is not none) and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != false and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != 0 and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != '' and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != '0' and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != [] and ((((row) is defined and (row["user_id"]) is defined and (row["user_id"]) is not none))) != {}) %}{{ (1 if (voicemail_number) is sameas true else '' if (voicemail_number) is sameas false or (voicemail_number) is none else (voicemail_number)) }}{% else %}{% endif %}</MWINum>
+            <ParkNo></ParkNo>
+            <CallParkNum></CallParkNum>
+            <RetrieveNum></RetrieveNum>
+            <HelpNo></HelpNo>
+            <MSRPHelpNum></MSRPHelpNum>
+            <UserIsPhone>0</UserIsPhone>
+            <AutoAnswer>0</AutoAnswer>
+            <NoAnswerTime>5</NoAnswerTime>
+            <MissedCallLog>1</MissedCallLog>
+            <ParkMode></ParkMode>
+            <SvcCodeMode>0</SvcCodeMode>
+            <DNDOnSvcCode></DNDOnSvcCode>
+            <DNDOffSvcCode></DNDOffSvcCode>
+            <CFUOnSvcCode></CFUOnSvcCode>
+            <CFUOffSvcCode></CFUOffSvcCode>
+            <CFBOnSvcCode></CFBOnSvcCode>
+            <CFBOffSvcCode></CFBOffSvcCode>
+            <CFNOnSvcCode></CFNOnSvcCode>
+            <CFNOffSvcCode></CFNOffSvcCode>
+            <ANCOnSvcCode></ANCOnSvcCode>
+            <ANCOffSvcCode></ANCOffSvcCode>
+            <SendANOnCode></SendANOnCode>
+            <SendANOffCode></SendANOffCode>
+            <CWOnCode></CWOnCode>
+            <CWOffCode></CWOffCode>
+            <VoiceCodecMap>OPUS,G722,PCMU,PCMA</VoiceCodecMap>
+            <VideoCodecMap>{% if ((((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) is defined and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) is not none) and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != false and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != 0 and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != '' and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != '0' and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != [] and ((((fanvil_video_codec) is defined and (fanvil_video_codec) is not none))) != {}) %}{{ (1 if (fanvil_video_codec) is sameas true else '' if (fanvil_video_codec) is sameas false or (fanvil_video_codec) is none else (fanvil_video_codec)) }}{% else %}{% endif %}</VideoCodecMap>
+            <BLFListUri></BLFListUri>
+            <BLFServer></BLFServer>
+            <Respond182>0</Respond182>
+            <EnableBLFList>0</EnableBLFList>
+            <CallerIdType>4</CallerIdType>
+            <SynClockTime>0</SynClockTime>
+            <MohServer></MohServer>
+            <UseVPN>1</UseVPN>
+            <EnableDND>0</EnableDND>
+            <InactiveHold>0</InactiveHold>
+            <ReqWithPort>1</ReqWithPort>
+            <UpdateRegExpire>1</UpdateRegExpire>
+            <EnableSCA>0</EnableSCA>
+            <SubCallPark>0</SubCallPark>
+            <SubCCStatus>0</SubCCStatus>
+            <FeatureSync>0</FeatureSync>
+            <EnableXferBack>1</EnableXferBack>
+            <XferBackTime>35</XferBackTime>
+            <UseTelCall>0</UseTelCall>
+            <EnablePreview>0</EnablePreview>
+            <PreviewMode>1</PreviewMode>
+            <TLSVersion>2</TLSVersion>
+            <CSTANumber></CSTANumber>
+            <EnableChgPort>0</EnableChgPort>
+            <VQName></VQName>
+            <VQServer></VQServer>
+            <VQServerPort>5060</VQServerPort>
+            <VQHTTPServer></VQHTTPServer>
+            <FlashMode>0</FlashMode>
+            <ContentType></ContentType>
+            <ContentBody></ContentBody>
+            <UnregisterOnBoot>0</UnregisterOnBoot>
+            <EnableMACHeader>0</EnableMACHeader>
+            <EnableRegisterMAC>0</EnableRegisterMAC>
+            <RecordStart>Record:on</RecordStart>
+            <RecordStop>Record:off</RecordStop>
+            <BLFDialogMatch>1</BLFDialogMatch>
+            <Ptime>0</Ptime>
+            <EnableDeal180>1</EnableDeal180>
+            <KeepSingleContact>0</KeepSingleContact>
+            <SessionTimerT1>500</SessionTimerT1>
+            <SessionTimerT2>4000</SessionTimerT2>
+            <SessionTimerT4>5000</SessionTimerT4>
+            <UnavailableMode>0</UnavailableMode>
+            <TCPUseRetryTimer>0</TCPUseRetryTimer>
+        </line>
+	{% endfor %}
+        <p2p>
+            <SIPP2PEnableAutoAnswer>0</SIPP2PEnableAutoAnswer>
+            <SIPP2PAutoAnswerDelay>30</SIPP2PAutoAnswerDelay>
+            <SIPP2PDtmfMode>1</SIPP2PDtmfMode>
+            <SIPP2PSipInfoDtmfMode>0</SIPP2PSipInfoDtmfMode>
+            <SIPP2PEnablePreview>0</SIPP2PEnablePreview>
+            <SIPP2PPreviewMode>0</SIPP2PPreviewMode>
+            <SIPP2PUseVPN>1</SIPP2PUseVPN>
+        </p2p>
+    </sip>
+    <call>
+        <port index="1">
+            <EnableXferDPlan>1</EnableXferDPlan>
+            <EnableFwdDPlan>1</EnableFwdDPlan>
+            <EnablePreDPlan>0</EnablePreDPlan>
+            <IPDialPrefix>.</IPDialPrefix>
+            <EnableDND>1</EnableDND>
+            <DNDMode>0</DNDMode>
+            <EnableSpaceDND>0</EnableSpaceDND>
+            <DNDStartTime>1500</DNDStartTime>
+            <DNDEndTime>1730</DNDEndTime>
+            <EnableWhiteList>0</EnableWhiteList>
+            <EnableBlackList>0</EnableBlackList>
+            <EnableCallBar>0</EnableCallBar>
+            <MuteRinging>0</MuteRinging>
+            <BanDialOut>0</BanDialOut>
+            <BanEmptyCID>0</BanEmptyCID>
+            <EnableCLIP>1</EnableCLIP>
+            <CallWaiting>1</CallWaiting>
+            <CallTransfer>1</CallTransfer>
+            <CallSemiXfer>1</CallSemiXfer>
+            <CallConference>1</CallConference>
+            <AutoPickupNext>0</AutoPickupNext>
+            <BusyNoLine>1</BusyNoLine>
+            <AutoOnhook>1</AutoOnhook>
+            <AutoOnhookTime>3</AutoOnhookTime>
+            <EnableIntercom>1</EnableIntercom>
+            <IntercomMute>0</IntercomMute>
+            <IntercomTone>1</IntercomTone>
+            <IntercomBarge>0</IntercomBarge>
+            <UseAutoRedial>0</UseAutoRedial>
+            <RedialEnterCallLog>0</RedialEnterCallLog>
+            <AutoRedialDelay>30</AutoRedialDelay>
+            <AutoRedialTimes>5</AutoRedialTimes>
+            <CallComplete>0</CallComplete>
+            <CHoldingTone>1</CHoldingTone>
+            <CWaitingTone>1</CWaitingTone>
+            <HideDTMFType>0</HideDTMFType>
+            <TalkDTMFTone>1</TalkDTMFTone>
+            <DialDTMFTone>1</DialDTMFTone>
+            <PswDialMode>0</PswDialMode>
+            <PswDialLength>0</PswDialLength>
+            <PswDialPrefix></PswDialPrefix>
+            <EnableMultiLine>1</EnableMultiLine>
+            <AllowIPCall>1</AllowIPCall>
+            <CallerNameType>0</CallerNameType>
+            <MuteForRing>0</MuteForRing>
+            <AutoHandleVideo>0</AutoHandleVideo>
+            <DefaultAnsMode>{{ (1 if (fanvil_default_answer_mode) is sameas true else '' if (fanvil_default_answer_mode) is sameas false or (fanvil_default_answer_mode) is none else (fanvil_default_answer_mode)) }}</DefaultAnsMode>
+            <DefaultDialMode>{{ (1 if (fanvil_default_dial_mode) is sameas true else '' if (fanvil_default_dial_mode) is sameas false or (fanvil_default_dial_mode) is none else (fanvil_default_dial_mode)) }}</DefaultDialMode>
+            <HoldToTransfer>0</HoldToTransfer>
+            <EnablePreDial>1</EnablePreDial>
+            <DefaultExtLine>1</DefaultExtLine>
+            <EnableDefLine>1</EnableDefLine>
+            <EnableSelLine>1</EnableSelLine>
+            <RinginHeadset>0</RinginHeadset>
+            <AutoHeadset>0</AutoHeadset>
+            <DNDReturnCode>480</DNDReturnCode>
+            <BusyReturnCode>486</BusyReturnCode>
+            <RejectReturnCode>603</RejectReturnCode>
+            <ContactType>0</ContactType>
+            <EnableCountryCode>0</EnableCountryCode>
+            <CountryCode></CountryCode>
+            <CallAreaCode></CallAreaCode>
+            <NumberPrivacy>0</NumberPrivacy>
+            <PrivacyRule></PrivacyRule>
+            <TransfDTMFCode></TransfDTMFCode>
+            <HoldDTMFCode></HoldDTMFCode>
+            <ConfDTMFCode></ConfDTMFCode>
+            <DisableDialSearch>0</DisableDialSearch>
+            <CallNumberFilter></CallNumberFilter>
+            <AutoResumeCurrent>0</AutoResumeCurrent>
+            <CallTimeout>120</CallTimeout>
+            <RingTimeout>120</RingTimeout>
+            <RingPriority>1</RingPriority>
+        </port>
+        <basic>
+            <DialbyPound>1</DialbyPound>
+            <BTransferbyPound>0</BTransferbyPound>
+            <OnhooktoBXfer>0</OnhooktoBXfer>
+            <OnhooktoAXfer>0</OnhooktoAXfer>
+            <ConfOnhooktoXfer>0</ConfOnhooktoXfer>
+            <DialFixedLength>0</DialFixedLength>
+            <FixedLengthNums>11</FixedLengthNums>
+            <DialbyTimeout>1</DialbyTimeout>
+            <DialTimeoutvalue>10</DialTimeoutvalue>
+            <EnableEOneSixFour>0</EnableEOneSixFour>
+        </basic>
+        <alertInfo index="1">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="2">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="3">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="4">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="5">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="6">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="7">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="8">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="9">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+        <alertInfo index="10">
+            <Text></Text>
+            <Line>-1</Line>
+            <RingType>Type 1</RingType>
+        </alertInfo>
+    </call>
+    <phone>
+        <MenuPassword>admin</MenuPassword>
+        <KeyLockPassword>admin</KeyLockPassword>
+        <FastKeylockCode></FastKeylockCode>
+        <EnableKeyLock>0</EnableKeyLock>
+        <KeyLockTimeout>0</KeyLockTimeout>
+        <KeyLockStatus>0</KeyLockStatus>
+        <EmergencyCall>110</EmergencyCall>
+        <PushXMLIP></PushXMLIP>
+        <SIPNumberPlan>0</SIPNumberPlan>
+        <LDAPSearch>0</LDAPSearch>
+        <SearchPath>0</SearchPath>
+        <CallerDisplayT>5</CallerDisplayT>
+        <CallLogDisplayType>0</CallLogDisplayType>
+        <EnableRecvSMS>1</EnableRecvSMS>
+        <EnableCallHistory>1</EnableCallHistory>
+        <LineDisplayFormat>$name</LineDisplayFormat>
+        <EnableMWITone>0</EnableMWITone>
+        <SIPNotifyXML>1</SIPNotifyXML>
+        <BlockXMLWhenCall>1</BlockXMLWhenCall>
+        <XMLUpdateInterval>30</XMLUpdateInterval>
+        <VqmDisplayOrder></VqmDisplayOrder>
+        <EnablePushXMLAuth>0</EnablePushXMLAuth>
+        <PickupVisualAlert>0</PickupVisualAlert>
+        <PickupAudioAlert>0</PickupAudioAlert>
+        <PickupRingType></PickupRingType>
+        <display>
+            <LCDTitle>{{ (1 if (fanvil_greeting) is sameas true else '' if (fanvil_greeting) is sameas false or (fanvil_greeting) is none else (fanvil_greeting)) }}</LCDTitle>
+            <LCDConstrast>5</LCDConstrast>
+            <EnableEnergysaving>{% if ((((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) is defined and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) is not none) and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != false and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != 0 and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != '' and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != '0' and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != [] and ((((fanvil_display_brightness_inactive) is defined and (fanvil_display_brightness_inactive) is not none))) != {}) %}{{ (1 if (fanvil_display_brightness_inactive) is sameas true else '' if (fanvil_display_brightness_inactive) is sameas false or (fanvil_display_brightness_inactive) is none else (fanvil_display_brightness_inactive)) }}{% else %}4{% endif %}</EnableEnergysaving>
+            <LCDLuminanceLevel>{% if ((((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) is defined and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) is not none) and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != false and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != 0 and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != '' and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != '0' and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != [] and ((((fanvil_display_brightness_active) is defined and (fanvil_display_brightness_active) is not none))) != {}) %}{{ (1 if (fanvil_display_brightness_active) is sameas true else '' if (fanvil_display_brightness_active) is sameas false or (fanvil_display_brightness_active) is none else (fanvil_display_brightness_active)) }}{% else %}12{% endif %}</LCDLuminanceLevel>
+            <BacklightOffTime>{% if ((((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) is defined and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) is not none) and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != false and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != 0 and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != '' and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != '0' and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != [] and ((((fanvil_display_inactivity_time) is defined and (fanvil_display_inactivity_time) is not none))) != {}) %}{{ (1 if (fanvil_display_inactivity_time) is sameas true else '' if (fanvil_display_inactivity_time) is sameas false or (fanvil_display_inactivity_time) is none else (fanvil_display_inactivity_time)) }}{% else %}45{% endif %}</BacklightOffTime>
+            <DisableCHNIME>0</DisableCHNIME>
+            <PhoneModel></PhoneModel>
+            <HostName>localhost</HostName>
+            <DefaultLanguage>en</DefaultLanguage>
+            <EnableGreetings>0</EnableGreetings>
+        </display>
+        <powerLed>
+            <Power>0</Power>
+            <MWIOrSMS>3</MWIOrSMS>
+            <InUsing>0</InUsing>
+            <Ring>2</Ring>
+            <Hold>0</Hold>
+            <Mute>0</Mute>
+            <MissedCall>3</MissedCall>
+            <StandbyLampEffect>0</StandbyLampEffect>
+            <LampEffectPlayTime>1</LampEffectPlayTime>
+            <CustomLampEffectTime>1200</CustomLampEffectTime>
+            <StandbyLampEffectType>0</StandbyLampEffectType>
+            <OffhookLampEffect>1</OffhookLampEffect>
+            <OffhookLampEffectColor>0</OffhookLampEffectColor>
+            <RingingLampEffect>0</RingingLampEffect>
+            <RingingLampEffectType>0</RingingLampEffectType>
+            <TalkingLampEffect>0</TalkingLampEffect>
+            <TalkingLampEffectType>0</TalkingLampEffectType>
+            <CallingLampEffect>0</CallingLampEffect>
+            <CallingLampEffectType>0</CallingLampEffectType>
+        </powerLed>
+        <lineLed>
+            <LineIdleColor>0</LineIdleColor>
+            <LineIdleCtl>1</LineIdleCtl>
+        </lineLed>
+        <blfLed>
+            <BLFIdleColor>0</BLFIdleColor>
+            <BLFIdleCtl>1</BLFIdleCtl>
+            <BLFIdleText>terminated</BLFIdleText>
+            <BLFRingColor>1</BLFRingColor>
+            <BLFRingCtl>2</BLFRingCtl>
+            <BLFRingText>early</BLFRingText>
+            <BLFDialingColor>1</BLFDialingColor>
+            <BLFDialingCtl>0</BLFDialingCtl>
+            <BLFDialingText></BLFDialingText>
+            <BLFTalkingColor>1</BLFTalkingColor>
+            <BLFTalkingCtl>1</BLFTalkingCtl>
+            <BLFTalkingText>confirmed</BLFTalkingText>
+            <BLFHoldColor>1</BLFHoldColor>
+            <BLFHoldCtl>0</BLFHoldCtl>
+            <BLFHoldText></BLFHoldText>
+            <BLFFailedColor>0</BLFFailedColor>
+            <BLFFailedCtl>0</BLFFailedCtl>
+            <BLFFailedText>failed</BLFFailedText>
+            <BLFParkedColor>1</BLFParkedColor>
+            <BLFParkedCtl>3</BLFParkedCtl>
+            <BLFParkedText>parked</BLFParkedText>
+        </blfLed>
+        <volume>
+            <HandsetVol>6</HandsetVol>
+            <HandsetMicVol>3</HandsetMicVol>
+            <HeadsetVol>6</HeadsetVol>
+            <HeadsetMicVol>3</HeadsetMicVol>
+            <HeadsetRingVol>3</HeadsetRingVol>
+            <HandFreeVol>6</HandFreeVol>
+            <HandFreeMicVol>3</HandFreeMicVol>
+            <HandFreeRingVol>6</HandFreeRingVol>
+            <RingType>{% if ((((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) is defined and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) is not none) and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != false and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != 0 and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != '' and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != '0' and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != [] and ((((fanvil_default_ringtone) is defined and (fanvil_default_ringtone) is not none))) != {}) %}{{ (1 if (fanvil_default_ringtone) is sameas true else '' if (fanvil_default_ringtone) is sameas false or (fanvil_default_ringtone) is none else (fanvil_default_ringtone)) }}{% else %}Happy_Technology_Logo.ogg{% endif %}</RingType>
+        </volume>
+        <date>
+            <EnableSNTP>{% if ((((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) is defined and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) is not none) and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != false and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != 0 and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != '' and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != '0' and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != [] and ((((fanvil_enable_sntp) is defined and (fanvil_enable_sntp) is not none))) != {}) %}{{ (1 if (fanvil_enable_sntp) is sameas true else '' if (fanvil_enable_sntp) is sameas false or (fanvil_enable_sntp) is none else (fanvil_enable_sntp)) }}{% else %}1{% endif %}</EnableSNTP>
+            <SNTPServer>{{ (1 if (ntp_server_primary) is sameas true else '' if (ntp_server_primary) is sameas false or (ntp_server_primary) is none else (ntp_server_primary)) }}</SNTPServer>
+            <SecondSNTPServer>{{ (1 if (ntp_server_secondary) is sameas true else '' if (ntp_server_secondary) is sameas false or (ntp_server_secondary) is none else (ntp_server_secondary)) }}</SecondSNTPServer>
+            <TimeZone>{{ (1 if (fanvil_time_zone) is sameas true else '' if (fanvil_time_zone) is sameas false or (fanvil_time_zone) is none else (fanvil_time_zone)) }}</TimeZone>
+            <TimeZoneName>{{ (1 if (fanvil_time_zone_name) is sameas true else '' if (fanvil_time_zone_name) is sameas false or (fanvil_time_zone_name) is none else (fanvil_time_zone_name)) }}</TimeZoneName>
+            <SNTPTimeout>60</SNTPTimeout>
+            <Enable_DST>{{ (1 if (fanvil_enable_dst) is sameas true else '' if (fanvil_enable_dst) is sameas false or (fanvil_enable_dst) is none else (fanvil_enable_dst)) }}</Enable_DST>
+            <DST_Fixed_Type>{% if ((((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) is defined and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) is not none) and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != false and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != 0 and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != '' and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != '0' and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != [] and ((((fanvil_dst_fixed_type) is defined and (fanvil_dst_fixed_type) is not none))) != {}) %}{{ (1 if (fanvil_dst_fixed_type) is sameas true else '' if (fanvil_dst_fixed_type) is sameas false or (fanvil_dst_fixed_type) is none else (fanvil_dst_fixed_type)) }}{% else %}0{% endif %}</DST_Fixed_Type>
+            <SNTPTimeout>60</SNTPTimeout>
+            <DSTType>1</DSTType>
+            <DSTLocation>{% if ((((((fanvil_location) is defined and (fanvil_location) is not none))) is defined and ((((fanvil_location) is defined and (fanvil_location) is not none))) is not none) and ((((fanvil_location) is defined and (fanvil_location) is not none))) != false and ((((fanvil_location) is defined and (fanvil_location) is not none))) != 0 and ((((fanvil_location) is defined and (fanvil_location) is not none))) != '' and ((((fanvil_location) is defined and (fanvil_location) is not none))) != '0' and ((((fanvil_location) is defined and (fanvil_location) is not none))) != [] and ((((fanvil_location) is defined and (fanvil_location) is not none))) != {}) %}{{ (1 if (fanvil_location) is sameas true else '' if (fanvil_location) is sameas false or (fanvil_location) is none else (fanvil_location)) }}{% else %}4{% endif %}</DSTLocation>
+            <DSTRuleMode>0</DSTRuleMode>
+            <DSTMinOffset>{% if ((((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) is defined and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) is not none) and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != false and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != 0 and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != '' and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != '0' and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != [] and ((((fanvil_dst_minute_offset) is defined and (fanvil_dst_minute_offset) is not none))) != {}) %}{{ (1 if (fanvil_dst_minute_offset) is sameas true else '' if (fanvil_dst_minute_offset) is sameas false or (fanvil_dst_minute_offset) is none else (fanvil_dst_minute_offset)) }}{% else %}60{% endif %}</DSTMinOffset>
+            <DSTStartMon>3</DSTStartMon>
+            <DSTStartWeek>5</DSTStartWeek>
+            <DSTStartWday>0</DSTStartWday>
+            <DSTStartHour>2</DSTStartHour>
+            <DSTEndMon>10</DSTEndMon>
+            <DSTEndWeek>5</DSTEndWeek>
+            <DSTEndWday>0</DSTEndWday>
+            <DSTEndHour>2</DSTEndHour>
+        </date>
+        <timeDisplay>
+            <EnableTimeDisplay>0</EnableTimeDisplay>
+            <TimeDisplayStyle>{% if ((((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) is defined and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) is not none) and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != false and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != 0 and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != '' and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != '0' and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != [] and ((((fanvil_time_display) is defined and (fanvil_time_display) is not none))) != {}) %}{{ (1 if (fanvil_time_display) is sameas true else '' if (fanvil_time_display) is sameas false or (fanvil_time_display) is none else (fanvil_time_display)) }}{% else %}0{% endif %}</TimeDisplayStyle>
+            <DateDisplayStyle>{% if ((((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) is defined and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) is not none) and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != false and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != 0 and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != '' and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != '0' and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != [] and ((((fanvil_date_display) is defined and (fanvil_date_display) is not none))) != {}) %}{{ (1 if (fanvil_date_display) is sameas true else '' if (fanvil_date_display) is sameas false or (fanvil_date_display) is none else (fanvil_date_display)) }}{% else %}6{% endif %}</DateDisplayStyle>
+            <DateSeparator>{% if ((((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) is defined and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) is not none) and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != false and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != 0 and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != '' and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != '0' and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != [] and ((((fanvil_date_separator) is defined and (fanvil_date_separator) is not none))) != {}) %}{{ (1 if (fanvil_date_separator) is sameas true else '' if (fanvil_date_separator) is sameas false or (fanvil_date_separator) is none else (fanvil_date_separator)) }}{% else %}0{% endif %}</DateSeparator>
+        </timeDisplay>
+        <softKeyConfig>
+            <SoftkeyMode>0</SoftkeyMode>
+            <SoftKeyExitStyle>{% if ((((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) is defined and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) is not none) and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != false and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != 0 and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != '' and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != '0' and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != [] and ((((fanvil_softkey_exit) is defined and (fanvil_softkey_exit) is not none))) != {}) %}{{ (1 if (fanvil_softkey_exit) is sameas true else '' if (fanvil_softkey_exit) is sameas false or (fanvil_softkey_exit) is none else (fanvil_softkey_exit)) }}{% else %}2{% endif %}</SoftKeyExitStyle>
+            <DesktopSoftkey>{% if ((((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) is defined and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) is not none) and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != false and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != 0 and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != '' and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != '0' and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != [] and ((((fanvil_softkey_desktopsoftkey) is defined and (fanvil_softkey_desktopsoftkey) is not none))) != {}) %}{{ (1 if (fanvil_softkey_desktopsoftkey) is sameas true else '' if (fanvil_softkey_desktopsoftkey) is sameas false or (fanvil_softkey_desktopsoftkey) is none else (fanvil_softkey_desktopsoftkey)) }}{% else %}history;contact;dnd;menu;{% endif %}</DesktopSoftkey>
+            <TalkingSoftkey>{% if ((((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) is defined and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) is not none) and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != false and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != 0 and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != '' and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != '0' and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != [] and ((((fanvil_softkey_talkingsoftkey) is defined and (fanvil_softkey_talkingsoftkey) is not none))) != {}) %}{{ (1 if (fanvil_softkey_talkingsoftkey) is sameas true else '' if (fanvil_softkey_talkingsoftkey) is sameas false or (fanvil_softkey_talkingsoftkey) is none else (fanvil_softkey_talkingsoftkey)) }}{% else %}video;xfer;end;conf;hold;new;mute;record;dialpad;{% endif %}</TalkingSoftkey>
+            <RingingSoftkey>{% if ((((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) is defined and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) is not none) and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != false and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != 0 and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != '' and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != '0' and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != [] and ((((fanvil_softkey_ringingsoftkey) is defined and (fanvil_softkey_ringingsoftkey) is not none))) != {}) %}{{ (1 if (fanvil_softkey_ringingsoftkey) is sameas true else '' if (fanvil_softkey_ringingsoftkey) is sameas false or (fanvil_softkey_ringingsoftkey) is none else (fanvil_softkey_ringingsoftkey)) }}{% else %}forward;audio;video;reject;{% endif %}</RingingSoftkey>
+            <AlertingSoftkey>dialpad;xfer;cancel;</AlertingSoftkey>
+            <XAlertingSoftkey>dialpad;xfer;cancel;</XAlertingSoftkey>
+            <ConferenceSoftkey>conf;dialpad;end;split;hold;mute;exit;</ConferenceSoftkey>
+            <WaitingSoftkey>hold;xfer;conf;end;</WaitingSoftkey>
+            <EndingSoftkey>complete;autoRedial;end;redial;</EndingSoftkey>
+            <DialerPreSoftkey>audio;video;redial;</DialerPreSoftkey>
+            <DialerCallSoftkey>audio;video;redial;</DialerCallSoftkey>
+            <DialerXferSoftkey>audio;video;xfer;contact;history;cancel;</DialerXferSoftkey>
+            <DialerCfwdSoftkey>contact;history;forward;cancel;</DialerCfwdSoftkey>
+            <DesktopClick>{% if ((((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) is defined and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) is not none) and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != false and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != 0 and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != '' and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != '0' and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != [] and ((((fanvil_softkey_desktopclick) is defined and (fanvil_softkey_desktopclick) is not none))) != {}) %}{{ (1 if (fanvil_softkey_desktopclick) is sameas true else '' if (fanvil_softkey_desktopclick) is sameas false or (fanvil_softkey_desktopclick) is none else (fanvil_softkey_desktopclick)) }}{% else %}history;status;none;none;none;{% endif %}</DesktopClick>
+            <DailerClick>pline;nline;none;none;none;</DailerClick>
+            <RingingClick>none;none;none;none;none;</RingingClick>
+            <CallClick>pcall;ncall;voldown;volup;none;</CallClick>
+            <DesktopLongPress>status;none;none;mwi;none;reset;</DesktopLongPress>
+            <DialerConfSoftkey>audio;video;cancel;contact;history;redial;</DialerConfSoftkey>
+        </softKeyConfig>
+        <agent>
+            <AgentUsername></AgentUsername>
+            <AgentPassword></AgentPassword>
+            <AgentNumber></AgentNumber>
+            <AgentSipline>0</AgentSipline>
+            <AgentStatus>0</AgentStatus>
+            <AgentStatusReason></AgentStatusReason>
+            <AgentClearCallLog>0</AgentClearCallLog>
+        </agent>
+        <bwDir index="1">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwDir index="2">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwDir index="3">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwDir index="4">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwDir index="5">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwDir index="6">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwDir>
+        <bwCallLog index="1">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwCallLog>
+        <bwCallLog index="2">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwCallLog>
+        <bwCallLog index="3">
+            <Title></Title>
+            <URL></URL>
+            <Username></Username>
+            <Password></Password>
+            <SipLine>0</SipLine>
+        </bwCallLog>
+        <ldap index="1">
+            <Title></Title>
+            <Server></Server>
+            <port>389</port>
+            <Base></Base>
+            <UseSSL>0</UseSSL>
+            <Version>3</Version>
+            <CallingLine>-1</CallingLine>
+            <BindLine>-1</BindLine>
+            <InCallSearch>0</InCallSearch>
+            <OutCallSearch>0</OutCallSearch>
+            <Authenticate>3</Authenticate>
+            <Username></Username>
+            <Password></Password>
+            <TelAttr>telephoneNumber</TelAttr>
+            <MobileAttr>mobile</MobileAttr>
+            <OtherAttr>other</OtherAttr>
+            <NameAttr>cn sn ou</NameAttr>
+            <SortAttr>cn</SortAttr>
+            <Displayname>cn</Displayname>
+            <NumberFilter>(|(telephoneNumber=%)(mobile=%)(other=%))</NumberFilter>
+            <NameFilter>(|(cn=%)(sn=%))</NameFilter>
+            <MaxHits>50</MaxHits>
+            <DisplayType>0</DisplayType>
+        </ldap>
+        <ldap index="2">
+            <Title></Title>
+            <Server></Server>
+            <port>389</port>
+            <Base></Base>
+            <UseSSL>0</UseSSL>
+            <Version>3</Version>
+            <CallingLine>-1</CallingLine>
+            <BindLine>-1</BindLine>
+            <InCallSearch>0</InCallSearch>
+            <OutCallSearch>0</OutCallSearch>
+            <Authenticate>3</Authenticate>
+            <Username></Username>
+            <Password></Password>
+            <TelAttr>telephoneNumber</TelAttr>
+            <MobileAttr>mobile</MobileAttr>
+            <OtherAttr>other</OtherAttr>
+            <NameAttr>cn sn ou</NameAttr>
+            <SortAttr>cn</SortAttr>
+            <Displayname>cn</Displayname>
+            <NumberFilter>(|(telephoneNumber=%)(mobile=%)(other=%))</NumberFilter>
+            <NameFilter>(|(cn=%)(sn=%))</NameFilter>
+            <MaxHits>50</MaxHits>
+            <DisplayType>0</DisplayType>
+        </ldap>
+        <ldap index="3">
+            <Title></Title>
+            <Server></Server>
+            <port>389</port>
+            <Base></Base>
+            <UseSSL>0</UseSSL>
+            <Version>3</Version>
+            <CallingLine>-1</CallingLine>
+            <BindLine>-1</BindLine>
+            <InCallSearch>0</InCallSearch>
+            <OutCallSearch>0</OutCallSearch>
+            <Authenticate>3</Authenticate>
+            <Username></Username>
+            <Password></Password>
+            <TelAttr>telephoneNumber</TelAttr>
+            <MobileAttr>mobile</MobileAttr>
+            <OtherAttr>other</OtherAttr>
+            <NameAttr>cn sn ou</NameAttr>
+            <SortAttr>cn</SortAttr>
+            <Displayname>cn</Displayname>
+            <NumberFilter>(|(telephoneNumber=%)(mobile=%)(other=%))</NumberFilter>
+            <NameFilter>(|(cn=%)(sn=%))</NameFilter>
+            <MaxHits>50</MaxHits>
+            <DisplayType>0</DisplayType>
+        </ldap>
+        <ldap index="4">
+            <Title></Title>
+            <Server></Server>
+            <port>389</port>
+            <Base></Base>
+            <UseSSL>0</UseSSL>
+            <Version>3</Version>
+            <CallingLine>-1</CallingLine>
+            <BindLine>-1</BindLine>
+            <InCallSearch>0</InCallSearch>
+            <OutCallSearch>0</OutCallSearch>
+            <Authenticate>3</Authenticate>
+            <Username></Username>
+            <Password></Password>
+            <TelAttr>telephoneNumber</TelAttr>
+            <MobileAttr>mobile</MobileAttr>
+            <OtherAttr>other</OtherAttr>
+            <NameAttr>cn sn ou</NameAttr>
+            <SortAttr>cn</SortAttr>
+            <Displayname>cn</Displayname>
+            <NumberFilter>(|(telephoneNumber=%)(mobile=%)(other=%))</NumberFilter>
+            <NameFilter>(|(cn=%)(sn=%))</NameFilter>
+            <MaxHits>50</MaxHits>
+            <DisplayType>0</DisplayType>
+        </ldap>
+        <ldap index="5">
+            <Title></Title>
+            <Server></Server>
+            <port>389</port>
+            <Base></Base>
+            <UseSSL>0</UseSSL>
+            <Version>3</Version>
+            <CallingLine>-1</CallingLine>
+            <BindLine>-1</BindLine>
+            <InCallSearch>0</InCallSearch>
+            <OutCallSearch>0</OutCallSearch>
+            <Authenticate>3</Authenticate>
+            <Username></Username>
+            <Password></Password>
+            <TelAttr>telephoneNumber</TelAttr>
+            <MobileAttr>mobile</MobileAttr>
+            <OtherAttr>other</OtherAttr>
+            <NameAttr>cn sn ou</NameAttr>
+            <SortAttr>cn</SortAttr>
+            <Displayname>cn</Displayname>
+            <NumberFilter>(|(telephoneNumber=%)(mobile=%)(other=%))</NumberFilter>
+            <NameFilter>(|(cn=%)(sn=%))</NameFilter>
+            <MaxHits>50</MaxHits>
+            <DisplayType>0</DisplayType>
+        </ldap>
+        <xmlContact index="1">
+            <Name></Name>
+            <Addr></Addr>
+            <UserName></UserName>
+            <PassWd></PassWd>
+            <Sipline>-1</Sipline>
+            <BindLine>-1</BindLine>
+        </xmlContact>
+        <xmlContact index="2">
+            <Name></Name>
+            <Addr></Addr>
+            <UserName></UserName>
+            <PassWd></PassWd>
+            <Sipline>-1</Sipline>
+            <BindLine>-1</BindLine>
+        </xmlContact>
+        <xmlContact index="3">
+            <Name></Name>
+            <Addr></Addr>
+            <UserName></UserName>
+            <PassWd></PassWd>
+            <Sipline>-1</Sipline>
+            <BindLine>-1</BindLine>
+        </xmlContact>
+        <xmlContact index="4">
+            <Name></Name>
+            <Addr></Addr>
+            <UserName></UserName>
+            <PassWd></PassWd>
+            <Sipline>-1</Sipline>
+            <BindLine>-1</BindLine>
+        </xmlContact>
+        <xmlContact index="5">
+            <Name></Name>
+            <Addr></Addr>
+            <UserName></UserName>
+            <PassWd></PassWd>
+            <Sipline>-1</Sipline>
+            <BindLine>-1</BindLine>
+        </xmlContact>
+    </phone>
+    <dm>
+        <OnhookTime>200</OnhookTime>
+        <EnableHookflash>0</EnableHookflash>
+        <KeyLongPressTime>2</KeyLongPressTime>
+        <KeyLongLongPressTime>6</KeyLongLongPressTime>
+    </dm>
+    <vqm>
+        <SessionReport>1</SessionReport>
+        <IntervalReport>1</IntervalReport>
+        <IntervalPeriod>60</IntervalPeriod>
+        <MOS-LQWarning>40</MOS-LQWarning>
+        <MOS-LQCritical>25</MOS-LQCritical>
+        <DelayWarning>150</DelayWarning>
+        <DelayCritical>200</DelayCritical>
+        <PhoneReport>1</PhoneReport>
+        <WEBReport>1</WEBReport>
+    </vqm>
+    <cti>
+        <EnabledActiveUri>1</EnabledActiveUri>
+        <EnabledActionUrl>1</EnabledActionUrl>
+        <ActiveUriIP></ActiveUriIP>
+        <StartRebootUrl></StartRebootUrl>
+        <BootCompletedUrl></BootCompletedUrl>
+        <IPChangeUrl></IPChangeUrl>
+        <RegOnUrl></RegOnUrl>
+        <RegOffUrl></RegOffUrl>
+        <RegFailedUrl></RegFailedUrl>
+        <PhoneStateIdleUrl></PhoneStateIdleUrl>
+        <PhoneStateTalking></PhoneStateTalking>
+        <PhoneStateRinging></PhoneStateRinging>
+        <DNDOnUrl></DNDOnUrl>
+        <DNDOffUrl></DNDOffUrl>
+        <AlwaysFWDOnUrl></AlwaysFWDOnUrl>
+        <AlwaysFWDOffUrl></AlwaysFWDOffUrl>
+        <BusyFWDOnUrl></BusyFWDOnUrl>
+        <BusyFWDOffUrl></BusyFWDOffUrl>
+        <NoAnsFWDOnUrl></NoAnsFWDOnUrl>
+        <NoAnsFWDOffUrl></NoAnsFWDOffUrl>
+        <MuteOnUrl></MuteOnUrl>
+        <MuteOffUrl></MuteOffUrl>
+        <IncomingCallUrl></IncomingCallUrl>
+        <OutgoingCallUrl></OutgoingCallUrl>
+        <CallActiveUrl></CallActiveUrl>
+        <CallStopUrl></CallStopUrl>
+        <TransferUrl></TransferUrl>
+        <HoldOnUrl></HoldOnUrl>
+        <HoldOffUrl></HoldOffUrl>
+        <HeldOnUrl></HeldOnUrl>
+        <HeldOffUrl></HeldOffUrl>
+        <MuteOnCallUrl></MuteOnCallUrl>
+        <MuteOffCallUrl></MuteOffCallUrl>
+        <NewMissedcallUrl></NewMissedcallUrl>
+        <NewMWIUrl></NewMWIUrl>
+        <NewSMSUrl></NewSMSUrl>
+        <WebAuthChangedUrl></WebAuthChangedUrl>
+        <at>
+            <AtEnabled>0</AtEnabled>
+            <AtServer></AtServer>
+        </at>
+    </cti>
+    <mcast>
+        <Priority>0</Priority>
+        <EnablePriority>0</EnablePriority>
+        <EnablePrioChan>0</EnablePrioChan>
+        <EnableEmerChan>0</EnableEmerChan>
+        <MulticastTone>1</MulticastTone>
+        <McastListeningRenewTime>0</McastListeningRenewTime>
+        <addr index="1">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="2">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="3">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="4">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="5">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="6">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="7">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="8">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="9">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <addr index="10">
+            <Name></Name>
+            <Host></Host>
+            <Port>0</Port>
+            <Channel>0</Channel>
+        </addr>
+        <dynamic>
+            <AutoExitExpires>60</AutoExitExpires>
+        </dynamic>
+    </mcast>
+    <dsskey>
+        <SelectDsskeyAction>0</SelectDsskeyAction>
+        <MemoryKeytoBXfer>0</MemoryKeytoBXfer>
+        <FuncKeyPageNum>4</FuncKeyPageNum>
+        <SideKeyPageNum>1</SideKeyPageNum>
+        <DSSHomePage>0</DSSHomePage>
+        <DisplayParkedInfo>0</DisplayParkedInfo>
+        <DSSDIALSwitchMode>0</DSSDIALSwitchMode>
+        <FirstCallWaitTime>16</FirstCallWaitTime>
+        <FirstNumStartTime>360</FirstNumStartTime>
+        <FirstNumEndTime>1080</FirstNumEndTime>
+        <DSSLongPressAction>1</DSSLongPressAction>
+        <Extern1PageBelong>0</Extern1PageBelong>
+        <Extern2PageBelong>0</Extern2PageBelong>
+        <Extern3PageBelong>0</Extern3PageBelong>
+        <Extern4PageBelong>0</Extern4PageBelong>
+        <Extern5PageBelong>0</Extern5PageBelong>
+        <DSSExtend1MAC></DSSExtend1MAC>
+        <DSSExtend1IP></DSSExtend1IP>
+        <DSSExtend2MAC></DSSExtend2MAC>
+        <DSSExtend2IP></DSSExtend2IP>
+        <DSSExtend3MAC></DSSExtend3MAC>
+        <DSSExtend3IP></DSSExtend3IP>
+        <DSSExtend4MAC></DSSExtend4MAC>
+        <DSSExtend4IP></DSSExtend4IP>
+        <DSSExtend5MAC></DSSExtend5MAC>
+        <DSSExtend5IP></DSSExtend5IP>
+
+        
+        <internal index="1">
+            <Fkey index="1">
+                <Type>2</Type>
+                <Value>SIP1</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="2">
+                <Type>2</Type>
+                <Value>SIP2</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="3">
+                <Type>2</Type>
+                <Value>SIP3</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="4">
+                <Type>2</Type>
+                <Value>SIP4</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="5">
+                <Type>2</Type>
+                <Value>SIP5</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="6">
+                <Type>3</Type>
+                <Value>F_HEADSET</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="7">
+                <Type>3</Type>
+                <Value>F_REDIAL</Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="8">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="9">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="10">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="11">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="12">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="13">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="14">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="15">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="16">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="17">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="18">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="19">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="20">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="21">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="22">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="23">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="24">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="25">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="26">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="27">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="28">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="29">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+        </internal>
+        <internal index="2">
+            <Fkey index="1">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="2">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="3">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="4">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="5">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="6">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="7">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="8">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="9">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="10">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="11">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="12">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="13">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="14">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="15">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="16">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="17">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="18">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="19">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="20">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="21">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="22">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="23">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="24">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="25">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="26">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="27">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="28">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="29">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+        </internal>
+        <internal index="3">
+            <Fkey index="1">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="2">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="3">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="4">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="5">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="6">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="7">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="8">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="9">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="10">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="11">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="12">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="13">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="14">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="15">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="16">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="17">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="18">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="19">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="20">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="21">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="22">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="23">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="24">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="25">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="26">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="27">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="28">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="29">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+        </internal>
+        <internal index="4">
+            <Fkey index="1">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="2">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="3">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="4">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="5">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="6">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="7">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="8">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="9">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="10">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="11">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="12">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="13">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="14">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="15">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="16">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="17">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="18">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="19">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="20">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="21">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="22">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="23">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="24">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="25">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="26">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="27">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="28">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+            <Fkey index="29">
+                <Type>0</Type>
+                <Value></Value>
+                <Title></Title>
+                <ICON>Green</ICON>
+            </Fkey>
+        </internal>
+        <dssSoft index="1">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="2">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="3">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="4">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="5">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="6">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="7">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="8">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="9">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+        <dssSoft index="10">
+            <Type>0</Type>
+            <Value></Value>
+            <Title></Title>
+            <ICON>Green</ICON>
+        </dssSoft>
+    </dsskey>
+    <web>
+        <WebServerType>0</WebServerType>
+        <WebPort>80</WebPort>
+        <HttpsWebPort>443</HttpsWebPort>
+        <RemoteControl>1</RemoteControl>
+        <EnableMMIFilter>0</EnableMMIFilter>
+        <WebAuthentication>0</WebAuthentication>
+        <EnableTelnet>0</EnableTelnet>
+        <TelnetPort>23</TelnetPort>
+        <TelnetPrompt></TelnetPrompt>
+        <LogonTimeout>15</LogonTimeout>
+        <account index="1">
+            <Name>{% if ((((((admin_name) is defined and (admin_name) is not none))) is defined and ((((admin_name) is defined and (admin_name) is not none))) is not none) and ((((admin_name) is defined and (admin_name) is not none))) != false and ((((admin_name) is defined and (admin_name) is not none))) != 0 and ((((admin_name) is defined and (admin_name) is not none))) != '' and ((((admin_name) is defined and (admin_name) is not none))) != '0' and ((((admin_name) is defined and (admin_name) is not none))) != [] and ((((admin_name) is defined and (admin_name) is not none))) != {}) %}{{ (1 if (admin_name) is sameas true else '' if (admin_name) is sameas false or (admin_name) is none else (admin_name)) }}{% else %}admin{% endif %}</Name>
+            <Password>{% if ((((((admin_password) is defined and (admin_password) is not none))) is defined and ((((admin_password) is defined and (admin_password) is not none))) is not none) and ((((admin_password) is defined and (admin_password) is not none))) != false and ((((admin_password) is defined and (admin_password) is not none))) != 0 and ((((admin_password) is defined and (admin_password) is not none))) != '' and ((((admin_password) is defined and (admin_password) is not none))) != '0' and ((((admin_password) is defined and (admin_password) is not none))) != [] and ((((admin_password) is defined and (admin_password) is not none))) != {}) %}{{ (1 if (admin_password) is sameas true else '' if (admin_password) is sameas false or (admin_password) is none else (admin_password)) }}{% else %}admin{% endif %}</Password>
+            <Level>10</Level>
+        </account>
+        <account index="2">
+            <Name>guest</Name>
+            <Password>guest</Password>
+            <Level>5</Level>
+        </account>
+    </web>
+    <log>
+        <Level>INFO</Level>
+        <Style>level,tag</Style>
+        {% if ((((fanvil_syslog_enable == "1")) is defined and ((fanvil_syslog_enable == "1")) is not none) and ((fanvil_syslog_enable == "1")) != false and ((fanvil_syslog_enable == "1")) != 0 and ((fanvil_syslog_enable == "1")) != '' and ((fanvil_syslog_enable == "1")) != '0' and ((fanvil_syslog_enable == "1")) != [] and ((fanvil_syslog_enable == "1")) != {}) %}<OutputDevice>syslog</OutputDevice>
+        {% elif ((((fanvil_output_device == "")) is defined and ((fanvil_output_device == "")) is not none) and ((fanvil_output_device == "")) != false and ((fanvil_output_device == "")) != 0 and ((fanvil_output_device == "")) != '' and ((fanvil_output_device == "")) != '0' and ((fanvil_output_device == "")) != [] and ((fanvil_output_device == "")) != {}) %}<OutputDevice></OutputDevice>
+        {% elif ((((fanvil_output_device == "syslog")) is defined and ((fanvil_output_device == "syslog")) is not none) and ((fanvil_output_device == "syslog")) != false and ((fanvil_output_device == "syslog")) != 0 and ((fanvil_output_device == "syslog")) != '' and ((fanvil_output_device == "syslog")) != '0' and ((fanvil_output_device == "syslog")) != [] and ((fanvil_output_device == "syslog")) != {}) %}<OutputDevice>syslog</OutputDevice>
+        {% elif ((((fanvil_output_device == "stdout")) is defined and ((fanvil_output_device == "stdout")) is not none) and ((fanvil_output_device == "stdout")) != false and ((fanvil_output_device == "stdout")) != 0 and ((fanvil_output_device == "stdout")) != '' and ((fanvil_output_device == "stdout")) != '0' and ((fanvil_output_device == "stdout")) != [] and ((fanvil_output_device == "stdout")) != {}) %}<OutputDevice>stdout</OutputDevice>
+        {% elif ((((fanvil_output_device == "syslog,stdout")) is defined and ((fanvil_output_device == "syslog,stdout")) is not none) and ((fanvil_output_device == "syslog,stdout")) != false and ((fanvil_output_device == "syslog,stdout")) != 0 and ((fanvil_output_device == "syslog,stdout")) != '' and ((fanvil_output_device == "syslog,stdout")) != '0' and ((fanvil_output_device == "syslog,stdout")) != [] and ((fanvil_output_device == "syslog,stdout")) != {}) %}<OutputDevice>syslog,stdout</OutputDevice>
+        {% elif ((((fanvil_output_device == "stdout,syslog")) is defined and ((fanvil_output_device == "stdout,syslog")) is not none) and ((fanvil_output_device == "stdout,syslog")) != false and ((fanvil_output_device == "stdout,syslog")) != 0 and ((fanvil_output_device == "stdout,syslog")) != '' and ((fanvil_output_device == "stdout,syslog")) != '0' and ((fanvil_output_device == "stdout,syslog")) != [] and ((fanvil_output_device == "stdout,syslog")) != {}) %}<OutputDevice>syslog,stdout</OutputDevice>
+        {% endif %}
+        <FileName>platform.log</FileName>
+        <FileSize>512KB</FileSize>
+        <SyslogTag>platform</SyslogTag>
+        <SyslogServer>{% if ((((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) is defined and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) is not none) and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != false and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != 0 and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != '' and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != '0' and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != [] and ((((fanvil_syslog_server) is defined and (fanvil_syslog_server) is not none))) != {}) %}{{ (1 if (fanvil_syslog_server) is sameas true else '' if (fanvil_syslog_server) is sameas false or (fanvil_syslog_server) is none else (fanvil_syslog_server)) }}{% else %}0.0.0.0{% endif %}</SyslogServer>
+        <SyslogServerPort>{% if ((((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) is defined and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) is not none) and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != false and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != 0 and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != '' and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != '0' and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != [] and ((((fanvil_syslog_server_port) is defined and (fanvil_syslog_server_port) is not none))) != {}) %}{{ (1 if (fanvil_syslog_server_port) is sameas true else '' if (fanvil_syslog_server_port) is sameas false or (fanvil_syslog_server_port) is none else (fanvil_syslog_server_port)) }}{% else %}514{% endif %}</SyslogServerPort>
+    </log>
+    <tr069>
+        <TR069Tone>1</TR069Tone>
+        <CPESerialNumber></CPESerialNumber>
+        <ACSServerType>1</ACSServerType>
+        <EnableTR069>0</EnableTR069>
+        <ACSURL>0.0.0.0</ACSURL>
+        <ACSUserName>admin</ACSUserName>
+        <ACSPassword></ACSPassword>
+        <ACSBackupURL>0.0.0.0</ACSBackupURL>
+        <ACSBackupUserName></ACSBackupUserName>
+        <ACSBackupPassword></ACSBackupPassword>
+        <CPEUserName>dps</CPEUserName>
+        <CPEPassword>dps</CPEPassword>
+        <PeriodixInterval>3600</PeriodixInterval>
+        <TLSVersion>2</TLSVersion>
+        <AreaCode></AreaCode>
+        <STUNEnable>0</STUNEnable>
+        <STUNServerAddr>{{ (1 if (fanvil_stun_server) is sameas true else '' if (fanvil_stun_server) is sameas false or (fanvil_stun_server) is none else (fanvil_stun_server)) }}</STUNServerAddr>
+        <STUNServerPort>{{ (1 if (fanvil_stun_port) is sameas true else '' if (fanvil_stun_port) is sameas false or (fanvil_stun_port) is none else (fanvil_stun_port)) }}</STUNServerPort>
+        <STUNLocalPort>30000</STUNLocalPort>
+    </tr069>
+    <hotspot>
+        <EnableHotspot>0</EnableHotspot>
+        <Mode>1</Mode>
+        <ListenType>0</ListenType>
+        <ListenIP>224.0.2.0</ListenIP>
+        <ListenPort>16360</ListenPort>
+        <OwnName>SIP Hotspot</OwnName>
+        <RingMode>0</RingMode>
+        <GroupCallMode>0</GroupCallMode>
+        <EnableManageMode>0</EnableManageMode>
+        <EnableConfigMode>0</EnableConfigMode>
+        <hs index="1">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="2">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="3">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="4">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="5">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="6">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="7">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="8">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="9">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="10">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="11">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="12">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="13">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="14">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="15">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="16">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="17">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="18">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="19">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+        <hs index="20">
+            <Enable>1</Enable>
+            <ExtPrefix></ExtPrefix>
+        </hs>
+    </hotspot>
+    <mt>
+        <ContactUpdateMode>0</ContactUpdateMode>
+        <AutoServerDigest>0</AutoServerDigest>
+    </mt>
+    <ap>
+        <DefaultUsername>{{ (1 if (http_auth_username) is sameas true else '' if (http_auth_username) is sameas false or (http_auth_username) is none else (http_auth_username)) }}</DefaultUsername>
+        <DefaultPassword>{{ (1 if (http_auth_password) is sameas true else '' if (http_auth_password) is sameas false or (http_auth_password) is none else (http_auth_password)) }}</DefaultPassword>
+        <InputCfgFileName></InputCfgFileName>
+        <DeviceCfgFileKey></DeviceCfgFileKey>
+        <CommonCfgFileKey></CommonCfgFileKey>
+        <DownloadCommonConf>1</DownloadCommonConf>
+        <SaveProvisionInfo>1</SaveProvisionInfo>
+        <CheckFailTimes>5</CheckFailTimes>
+        <FlashServerIP>{% if ((((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) is defined and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) is not none) and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != false and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != 0 and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != '' and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != '0' and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != [] and ((((fanvil_provision_url) is defined and (fanvil_provision_url) is not none))) != {}) %}{{ (1 if (fanvil_provision_url) is sameas true else '' if (fanvil_provision_url) is sameas false or (fanvil_provision_url) is none else (fanvil_provision_url)) }}{% else %}{{ (1 if (domain_name) is sameas true else '' if (domain_name) is sameas false or (domain_name) is none else (domain_name)) }}/app/provision{% endif %}</FlashServerIP>
+        <FlashFileName>{{ (1 if (fanvil_firmware_config) is sameas true else '' if (fanvil_firmware_config) is sameas false or (fanvil_firmware_config) is none else (fanvil_firmware_config)) }}</FlashFileName>
+        <FlashProtocol>5</FlashProtocol>
+        <FlashMode>1</FlashMode>
+        <FlashInterval>1</FlashInterval>
+        <updatePBInterval>720</updatePBInterval>
+        <pnp>
+            <PNPEnable>1</PNPEnable>
+            <PNPIP>224.0.1.75</PNPIP>
+            <PNPPort>5060</PNPPort>
+            <PNPTransport>0</PNPTransport>
+            <PNPInterval>1</PNPInterval>
+        </pnp>
+        <opt>
+            <DHCPOption>66</DHCPOption>
+            <DhcpOption120>0</DhcpOption120>
+            <DHCPv6Option>0</DHCPv6Option>
+        </opt>
+    </ap>
+    <qos>
+        <EnableVLAN>{% if ((((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) is defined and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) is not none) and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != false and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != 0 and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != '' and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != '0' and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != [] and ((((fanvil_enable_vlan) is defined and (fanvil_enable_vlan) is not none))) != {}) %}{{ (1 if (fanvil_enable_vlan) is sameas true else '' if (fanvil_enable_vlan) is sameas false or (fanvil_enable_vlan) is none else (fanvil_enable_vlan)) }}{% else %}0{% endif %}</EnableVLAN>
+        <VLANID>{% if ((((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) is defined and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) is not none) and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != false and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != 0 and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != '' and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != '0' and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != [] and ((((fanvil_lan_port_vlan) is defined and (fanvil_lan_port_vlan) is not none))) != {}) %}{{ (1 if (fanvil_lan_port_vlan) is sameas true else '' if (fanvil_lan_port_vlan) is sameas false or (fanvil_lan_port_vlan) is none else (fanvil_lan_port_vlan)) }}{% else %}256{% endif %}</VLANID>
+        <EnablePVID>{% if ((((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) is defined and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) is not none) and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != false and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != 0 and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != '' and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != '0' and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != [] and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != {}) %}2{% else %}0{% endif %}</EnablePVID>
+        <PVIDValue>{% if ((((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) is defined and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) is not none) and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != false and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != 0 and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != '' and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != '0' and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != [] and ((((fanvil_pc_port_vlan) is defined and (fanvil_pc_port_vlan) is not none))) != {}) %}{{ (1 if (fanvil_pc_port_vlan) is sameas true else '' if (fanvil_pc_port_vlan) is sameas false or (fanvil_pc_port_vlan) is none else (fanvil_pc_port_vlan)) }}{% else %}254{% endif %}</PVIDValue>
+        <SignallingPriority>{% if ((((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) is defined and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) is not none) and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != false and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != 0 and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != '' and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != '0' and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != [] and ((((fanvil_qos_sip) is defined and (fanvil_qos_sip) is not none))) != {}) %}{{ (1 if (fanvil_qos_sip) is sameas true else '' if (fanvil_qos_sip) is sameas false or (fanvil_qos_sip) is none else (fanvil_qos_sip)) }}{% else %}0{% endif %}</SignallingPriority>
+        <VoicePriority>{% if ((((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) is defined and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) is not none) and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != false and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != 0 and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != '' and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != '0' and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != [] and ((((fanvil_qos_rtp_voice) is defined and (fanvil_qos_rtp_voice) is not none))) != {}) %}{{ (1 if (fanvil_qos_rtp_voice) is sameas true else '' if (fanvil_qos_rtp_voice) is sameas false or (fanvil_qos_rtp_voice) is none else (fanvil_qos_rtp_voice)) }}{% else %}0{% endif %}</VoicePriority>
+        <VideoPriority>{% if ((((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) is defined and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) is not none) and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != false and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != 0 and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != '' and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != '0' and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != [] and ((((fanvil_qos_rtp_video) is defined and (fanvil_qos_rtp_video) is not none))) != {}) %}{{ (1 if (fanvil_qos_rtp_video) is sameas true else '' if (fanvil_qos_rtp_video) is sameas false or (fanvil_qos_rtp_video) is none else (fanvil_qos_rtp_video)) }}{% else %}0{% endif %}</VideoPriority>
+        <LANPortPriority>0</LANPortPriority>
+        <EnablediffServ>{% if ((((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) is defined and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) is not none) and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != false and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != 0 and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != '' and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != '0' and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != [] and ((((fanvil_enable_diffserv) is defined and (fanvil_enable_diffserv) is not none))) != {}) %}{{ (1 if (fanvil_enable_diffserv) is sameas true else '' if (fanvil_enable_diffserv) is sameas false or (fanvil_enable_diffserv) is none else (fanvil_enable_diffserv)) }}{% else %}0{% endif %}</EnablediffServ>
+        <SingallingDSCP>{% if ((((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) is defined and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) is not none) and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != false and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != 0 and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != '' and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != '0' and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != [] and ((((fanvil_dscp_sip) is defined and (fanvil_dscp_sip) is not none))) != {}) %}{{ (1 if (fanvil_dscp_sip) is sameas true else '' if (fanvil_dscp_sip) is sameas false or (fanvil_dscp_sip) is none else (fanvil_dscp_sip)) }}{% else %}46{% endif %}</SingallingDSCP>
+        <VoiceDSCP>{% if ((((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) is defined and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) is not none) and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != false and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != 0 and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != '' and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != '0' and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != [] and ((((fanvil_dscp_rtp_voice) is defined and (fanvil_dscp_rtp_voice) is not none))) != {}) %}{{ (1 if (fanvil_dscp_rtp_voice) is sameas true else '' if (fanvil_dscp_rtp_voice) is sameas false or (fanvil_dscp_rtp_voice) is none else (fanvil_dscp_rtp_voice)) }}{% else %}46{% endif %}</VoiceDSCP>
+        <VideoDSCP>{% if ((((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) is defined and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) is not none) and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != false and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != 0 and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != '' and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != '0' and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != [] and ((((fanvil_dscp_rtp_video) is defined and (fanvil_dscp_rtp_video) is not none))) != {}) %}{{ (1 if (fanvil_dscp_rtp_video) is sameas true else '' if (fanvil_dscp_rtp_video) is sameas false or (fanvil_dscp_rtp_video) is none else (fanvil_dscp_rtp_video)) }}{% else %}34{% endif %}</VideoDSCP>
+        <LLDPTransmit>{% if ((((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) is defined and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) is not none) and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != false and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != 0 and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != '' and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != '0' and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != [] and ((((fanvil_lldp_tx_enable) is defined and (fanvil_lldp_tx_enable) is not none))) != {}) %}{{ (1 if (fanvil_lldp_tx_enable) is sameas true else '' if (fanvil_lldp_tx_enable) is sameas false or (fanvil_lldp_tx_enable) is none else (fanvil_lldp_tx_enable)) }}{% else %}0{% endif %}</LLDPTransmit>
+        <LLDPRefreshTime>{% if ((((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) is defined and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) is not none) and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != false and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != 0 and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != '' and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != '0' and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != [] and ((((fanvil_lldp_refresh) is defined and (fanvil_lldp_refresh) is not none))) != {}) %}{{ (1 if (fanvil_lldp_refresh) is sameas true else '' if (fanvil_lldp_refresh) is sameas false or (fanvil_lldp_refresh) is none else (fanvil_lldp_refresh)) }}{% else %}60{% endif %}</LLDPRefreshTime>
+        <LLDPLearnPolicy>{% if ((((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) is defined and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) is not none) and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != false and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != 0 and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != '' and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != '0' and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != [] and ((((fanvil_lldp_learn) is defined and (fanvil_lldp_learn) is not none))) != {}) %}{{ (1 if (fanvil_lldp_learn) is sameas true else '' if (fanvil_lldp_learn) is sameas false or (fanvil_lldp_learn) is none else (fanvil_lldp_learn)) }}{% else %}0{% endif %}</LLDPLearnPolicy>
+        <LLDPSaveLearnData>1</LLDPSaveLearnData>
+        <CDPEnable>0</CDPEnable>
+        <CDPRefreshTime>60</CDPRefreshTime>
+        <DHCPOptionVlan>132</DHCPOptionVlan>
+    </qos>
+    <dot1x>
+        <XsupMode>0</XsupMode>
+        <XsupUser>admin</XsupUser>
+        <XsupPassword>admin</XsupPassword>
+        <sslMode>
+            <PermissionCTF>0</PermissionCTF>
+            <CommonName>0</CommonName>
+            <CTFmode>0</CTFmode>
+            <DeviceCertMode>0</DeviceCertMode>
+        </sslMode>
+    </dot1x>
+    <rtsp>
+        <RtspClientWorkMode>0</RtspClientWorkMode>
+    </rtsp>
+    <pubApp>
+        <WatchDogEnabled>1</WatchDogEnabled>
+        <EnableInAccess>0</EnableInAccess>
+        <EnableOutAccess>0</EnableOutAccess>
+    </pubApp>
+    <android>
+        <displayConfig>
+            <OperatorMode>0</OperatorMode>
+            <EnableShortcuts>1</EnableShortcuts>
+            <EnableLCDPassword>1</EnableLCDPassword>
+        </displayConfig>
+        <softKeyConfig>
+            <DIdleSoftkey>dialpad;mwi;contact;history;cfwd;redial;capse;</DIdleSoftkey>
+            <DTalkingSoftkey>dialpad;new;conf;hold;xfer;end;capse;</DTalkingSoftkey>
+            <DRingSoftkey>dialpad;forward;audio;video;mute;reject;capse;</DRingSoftkey>
+            <DAlertingSoftkey>dialpad;none;none;none;xfer;cancel;capse;</DAlertingSoftkey>
+            <DXAlertingSoftkey>dialpad;none;none;none;xfer;none;capse;</DXAlertingSoftkey>
+            <DConferenceSoftkey>dialpad;exit;split;hold;xfer;end;capse;</DConferenceSoftkey>
+            <DEndingSoftkey>contact;history;new;complete;autoRedial;end;capse;</DEndingSoftkey>
+            <DPredialSoftkey>dialpad;mwi;contact;history;redial;cancel;capse;</DPredialSoftkey>
+            <DDialingSoftkey>dialpad;mwi;contact;history;redial;cancel;capse;</DDialingSoftkey>
+            <DDialerCfwdSoftkey>dialpad;new;contact;history;forward;cancel;capse;</DDialerCfwdSoftkey>
+            <DDialerXferSoftkey>dialpad;new;contact;history;xfer;cancel;capse;</DDialerXferSoftkey>
+            <DSlectionSoftkey>new;cancel;ok;conf;hold;xfer;capse;</DSlectionSoftkey>
+        </softKeyConfig>
+        <dspConfig>
+            <VideoDisplayMosaic>1</VideoDisplayMosaic>
+        </dspConfig>
+        <teleConfig>
+            <EnableRecord>1</EnableRecord>
+            <EnableIMApp>0</EnableIMApp>
+            <OffhooktoOpenApp>0</OffhooktoOpenApp>
+            <IMAppPackageInfo></IMAppPackageInfo>
+            <SupportedIMSet></SupportedIMSet>
+            <HideLocalCode>0</HideLocalCode>
+            <UpdateDialCall>0</UpdateDialCall>
+            <CountryCode></CountryCode>
+        </teleConfig>
+    </android>
+    <uiMainTainConfig>
+        <EHSHeadsettype>0</EHSHeadsettype>
+        <TimeoutToScreensaver>7200</TimeoutToScreensaver>
+        <DisplayProvisionprompt>0</DisplayProvisionprompt>
+    </uiMainTainConfig>
+    <fwCheck>
+        <EnableAutoUpgrade>0</EnableAutoUpgrade>
+        <UpgradeServer1></UpgradeServer1>
+        <UpgradeServer2></UpgradeServer2>
+        <AutoUpgradeInterval>24</AutoUpgradeInterval>
+    </fwCheck>
+    <record>
+        <Enabled>1</Enabled>
+        <VoiceCodec>PCMU</VoiceCodec>
+        <RecordType>0</RecordType>
+        <FileSizeLimit>0</FileSizeLimit>
+        <ServerAddr>0.0.0.0</ServerAddr>
+        <ServerPort>10000</ServerPort>
+    </record>
+    <IO>
+        <RingtoneDuration>5</RingtoneDuration>
+        <AlarmServerAddr></AlarmServerAddr>
+        <DTMFTriggerRing>NONE</DTMFTriggerRing>
+        <URITriggerRing>NONE</URITriggerRing>
+        <SMSTriggerRing>NONE</SMSTriggerRing>
+        <DsskeyTriggerRing>NONE</DsskeyTriggerRing>
+    </IO>
+</sysConf>

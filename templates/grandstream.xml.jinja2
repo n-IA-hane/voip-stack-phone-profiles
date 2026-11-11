@@ -1,0 +1,23 @@
+{# SPDX-License-Identifier: MPL-1.1
+Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
+2026-11-11: sparse account and VPK parameters; network, firmware and audio omitted.
+-#}
+<?xml version="1.0" encoding="UTF-8"?>
+<gs_provision version="1"><config version="2">
+{% for line in lines %}
+<item name="account.{{ line.slot }}.enable">Yes</item>
+<item name="account.{{ line.slot }}.name">{{ line.display_name or physical.name }}</item>
+<item name="account.{{ line.slot }}.sip.server.1.address">{{ line.server }}:{{ line.port }}</item>
+<item name="account.{{ line.slot }}.sip.userid">{{ line.username }}</item>
+<item name="account.{{ line.slot }}.sip.subscriber.userid">{{ line.auth_username or line.username }}</item>
+<item name="account.{{ line.slot }}.sip.subscriber.password">{{ line.password }}</item>
+<item name="account.{{ line.slot }}.sip.subscriber.name">{{ line.display_name or physical.name }}</item>
+<item name="account.{{ line.slot }}.sip.transport">{{ {'udp':0,'tcp':1,'tls':2}[line.transport] }}</item>
+{% endfor %}
+{% for key in keys %}
+<item name="pks.vpk.{{ key.slot }}.keyMode">{{ 1 if key.function in ['blf','queue_login','queue_pause','park'] else 0 }}</item>
+<item name="pks.vpk.{{ key.slot }}.account">{{ key.line - 1 }}</item>
+<item name="pks.vpk.{{ key.slot }}.description">{{ key.label }}</item>
+<item name="pks.vpk.{{ key.slot }}.value">{{ key.subscription_target or key.dial_target }}</item>
+{% endfor %}
+</config></gs_provision>

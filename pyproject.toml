@@ -1,0 +1,20 @@
+[project]
+name = "voip-stack-phone-profiles"
+version = "0.1.0"
+description = "Offline, provenance-preserving SIP phone profile catalog builder"
+requires-python = ">=3.12"
+dependencies = ["Jinja2>=3.1.6,<4"]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["phone_profiles"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100

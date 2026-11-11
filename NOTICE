@@ -1,0 +1,17 @@
+FusionPBX-derived phone configuration templates, Mozilla Public License 1.1.
+Original Code: FusionPBX. Its project notice identifies Mark J Crane as Initial Developer.
+Upstream commit: 07f0d76acd044e8a07d2f87aeb50bf59f856393b.
+Original per-file notices were absent. The upstream project notice is retained
+in provenance/upstream-project-notice.txt. No public-domain claim is made.
+
+Modifications by n-IA-hane contributors, 2026-11-11:
+- Offline conversion of the supported Smarty subset to Jinja2.
+- Explicit normalized input context and sparse parameter projection.
+- Conservative, documented projection limits and exclusion of unsafe content.
+
+Original sources, converted sources, per-file hashes and modification history
+are included in this repository and in each downloadable model bundle.
+The MPL 1.1 text is included with each bundle, as is its source availability
+notice. Derived template source remains MPL 1.1. Original build tools are MIT.
+
+No physical qualification of provisioning or partial-merge behavior is claimed.

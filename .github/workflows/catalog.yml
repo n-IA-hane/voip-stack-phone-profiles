@@ -1,0 +1,25 @@
+name: Catalog software validation
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14'
+      - run: python -m pip install -e . 'pytest>=8.3,<10' 'ruff>=0.8,<1'
+      - run: ruff check phone_profiles tests
+      - run: ruff format --check phone_profiles tests
+      - run: python -m phone_profiles.build
+      - run: python -m pytest -q
+      - name: Committed artifacts match the offline builder
+        run: git diff --exit-code -- manifest.json bundles converted provenance/conversion-report.json

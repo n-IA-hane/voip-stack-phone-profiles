@@ -1,0 +1,7 @@
+This repository contains separately licensed material.
+
+Original tools in phone_profiles/ and tests/: MIT, see LICENSES/MIT.txt.
+FusionPBX-derived upstream/, converted/, templates/ and bundles/: MPL 1.1,
+see LICENSES/MPL-1.1.txt, NOTICE and provenance/fusionpbx.json.
+
+The MIT license on the tools does not relicense imported or adapted templates.

@@ -1,0 +1,8 @@
+{# SPDX-License-Identifier: MPL-1.1; see NOTICE and provenance.json #}
+#!version:1.0.0.1
+## The header above must appear as-is in the first line
+
+include:config "y000000000076.cfg"
+include:config "{{ (1 if (mac) is sameas true else '' if (mac) is sameas false or (mac) is none else (mac)) }}.cfg"
+
+overwrite_mode = {{ (1 if (yealink_overwrite_mode) is sameas true else '' if (yealink_overwrite_mode) is sameas false or (yealink_overwrite_mode) is none else (yealink_overwrite_mode)) }}

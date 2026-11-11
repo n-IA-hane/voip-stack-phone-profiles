@@ -1,0 +1,25 @@
+{# SPDX-License-Identifier: MPL-1.1
+Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
+2026-11-11: sparse account and linekey parameters only; unrelated defaults omitted.
+-#}
+#!version:1.0.0.1
+{% for line in lines %}
+account.{{ line.slot }}.enable = 1
+account.{{ line.slot }}.label = {{ line.display_name or physical.name }}
+account.{{ line.slot }}.display_name = {{ line.display_name or physical.name }}
+account.{{ line.slot }}.auth_name = {{ line.auth_username or line.username }}
+account.{{ line.slot }}.user_name = {{ line.username }}
+account.{{ line.slot }}.password = {{ line.password }}
+account.{{ line.slot }}.sip_server.1.address = {{ line.server }}
+account.{{ line.slot }}.sip_server.1.port = {{ line.port }}
+account.{{ line.slot }}.sip_server.1.transport_type = {{ {'udp':0,'tcp':1,'tls':2}[line.transport] }}
+account.{{ line.slot }}.sip_server.1.expires = {{ line.expires or 3600 }}
+{% if line.outbound_proxy %}account.{{ line.slot }}.outbound_proxy.1.address = {{ line.outbound_proxy }}{% endif %}
+{% endfor %}
+{% for key in keys %}
+linekey.{{ key.slot }}.type = {{ 15 if key.function == 'line' else 16 if key.function in ['blf','queue_login','queue_pause','park'] else 13 }}
+linekey.{{ key.slot }}.line = {{ key.line }}
+linekey.{{ key.slot }}.value = {{ key.subscription_target or key.dial_target }}
+linekey.{{ key.slot }}.label = {{ key.label }}
+linekey.{{ key.slot }}.extension = {{ key.pickup_target }}
+{% endfor %}

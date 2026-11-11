@@ -1,0 +1,52 @@
+{
+  "physical": {
+    "name": "Software fixture",
+    "mac": "020000000001",
+    "language": "",
+    "language_code": ""
+  },
+  "lines": [
+    {
+      "slot": 1,
+      "username": "fixture480",
+      "password": "fixture-not-a-device-secret",
+      "server": "192.0.2.10",
+      "port": 5060,
+      "transport": "udp",
+      "auth_username": "",
+      "display_name": "",
+      "expires": 3600,
+      "outbound_proxy": ""
+    }
+  ],
+  "keys": [
+    {
+      "slot": "1",
+      "function": "blf",
+      "dial_target": "430",
+      "line": 1,
+      "label": "P4",
+      "subscription_target": "",
+      "pickup_target": "",
+      "event_package": "dialog"
+    }
+  ],
+  "directory": {
+    "ldap": {
+      "host": "",
+      "port": 389,
+      "base_dn": "",
+      "bind_dn": "",
+      "password": "",
+      "name_filter": "",
+      "number_filter": "",
+      "name_attributes": "cn sn displayName",
+      "number_attributes": "telephonenumber mobile",
+      "display_name": "LDAP",
+      "display_attribute": "displayName"
+    }
+  },
+  "provisioning": {
+    "url": ""
+  }
+}
