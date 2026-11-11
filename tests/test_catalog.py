@@ -44,9 +44,10 @@ def only_output(profile, templates, context):
 
 def source_of(profile_id):
     parent = UPSTREAM / profile_id
-    return next(p for p in parent.iterdir() if p.name.startswith("{$mac}")).read_text(
-        encoding="utf-8-sig"
-    )
+    # A model can contain both MAC.boot and MAC.cfg. Golden sources are explicit,
+    # independent of directory iteration order and of the builder's selection.
+    name = "{$mac}.cfg" if profile_id.startswith(("fanvil/", "yealink/")) else "{$mac}.xml"
+    return (parent / name).read_text(encoding="utf-8-sig")
 
 
 def original_fragment(fragment, context):
