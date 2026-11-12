@@ -299,11 +299,13 @@ def build() -> dict:
                 ],
             }
             if (vendor, model) == ("fanvil", "x3u-pro"):
-                profile_provenance["modifications"].append({
-                    "date": "2026-11-12",
-                    "author": "n-IA-hane contributors",
-                    "description": "Use phone rather than timePlan for X3U Pro 2.12 language and LDAP settings; retain the original upstream source unchanged.",
-                })
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-12",
+                        "author": "n-IA-hane contributors",
+                        "description": "Use phone rather than timePlan for X3U Pro 2.12 language and LDAP settings; retain the original upstream source unchanged.",
+                    }
+                )
             files["provenance.json"] = canonical(profile_provenance)
             blob = deterministic_zip(files)
             path = "bundles/" + rel_parent + ".zip"

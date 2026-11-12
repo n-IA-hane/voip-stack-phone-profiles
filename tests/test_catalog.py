@@ -387,10 +387,15 @@ def test_fanvil_phone_parent_keeps_language_and_ldap_together(profile_id):
     context["keys"] = []
     context["physical"]["language"] = "it"
     context["lines"][0]["expires"] = 300
-    context["directory"] = {"ldap": {
-        "host": "192.0.2.10", "port": 1389, "base_dn": "ou=phonebook,dc=fixture",
-        "bind_dn": "uid=fixture,dc=fixture", "password": "fixture-only",
-    }}
+    context["directory"] = {
+        "ldap": {
+            "host": "192.0.2.10",
+            "port": 1389,
+            "base_dn": "ou=phonebook,dc=fixture",
+            "bind_dn": "uid=fixture,dc=fixture",
+            "password": "fixture-only",
+        }
+    }
     context["provisioning"] = {"url": "https://example.invalid/provision/"}
     root = ET.fromstring(only_output(profile, templates, context))
     assert root.find("timePlan") is None
