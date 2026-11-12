@@ -302,8 +302,8 @@ def test_fanvil_six_lines_three_keys_utf8_ldap_and_no_unselected_settings():
     root = ET.fromstring(result)
     assert len(root.findall("./sip/line")) == 6
     assert len(root.findall("./dsskey/internal/Fkey")) == 3
-    assert root.find("./timePlan/display/DefaultLanguage").text == "it"
-    assert root.find("./timePlan/ldap/TelAttr").text == "telephonenumber"
+    assert root.find("./phone/display/DefaultLanguage").text == "it"
+    assert root.find("./phone/ldap/TelAttr").text == "telephonenumber"
     assert root.find("./ap/FlashServerIP").text == c["provisioning"]["url"]
     assert_sparse(profile, result)
 
@@ -377,3 +377,28 @@ def test_non_dialog_keys_accept_the_core_empty_event_package(function):
     context = fixture_context()
     context["keys"][0].update(function=function, event_package="")
     assert only_output(profile, templates, context)
+
+
+@pytest.mark.parametrize("profile_id", ["fanvil/x3u-pro", "fanvil/x3u", "fanvil/x4u"])
+def test_fanvil_phone_parent_keeps_language_and_ldap_together(profile_id):
+    """X3U Pro's current projection uses the same phone subtree as X3U/X4U."""
+    profile, templates = load_bundle(profile_id)
+    context = fixture_context()
+    context["keys"] = []
+    context["physical"]["language"] = "it"
+    context["lines"][0]["expires"] = 300
+    context["directory"] = {"ldap": {
+        "host": "192.0.2.10", "port": 1389, "base_dn": "ou=phonebook,dc=fixture",
+        "bind_dn": "uid=fixture,dc=fixture", "password": "fixture-only",
+    }}
+    context["provisioning"] = {"url": "https://example.invalid/provision/"}
+    root = ET.fromstring(only_output(profile, templates, context))
+    assert root.find("timePlan") is None
+    assert root.find("./phone/display/DefaultLanguage").text == "it"
+    assert root.find("./phone/ldap/Server").text == "192.0.2.10"
+    assert root.find("./phone/ldap/port").text == "1389"
+    assert root.find("./phone/ldap/Base").text == "ou=phonebook,dc=fixture"
+    assert root.find("./phone/ldap/Username").text == "uid=fixture,dc=fixture"
+    assert root.find("./phone/ldap/Password").text == "fixture-only"
+    assert root.find("./sip/line/RegisterTTL").text == "300"
+    assert root.find("./ap/FlashServerIP").text == context["provisioning"]["url"]

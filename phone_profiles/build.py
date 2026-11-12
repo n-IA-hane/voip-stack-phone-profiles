@@ -69,6 +69,10 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         parent = "timePlan" if "<timePlan>" in source else "phone"
         if f"<{parent}>" not in source:
             raise UnsupportedSmarty("Fanvil phone settings parent unavailable")
+        if model == "x3u-pro":
+            # X3U Pro 2.12 uses the phone settings parent shared by X3U/X4U.
+            # Preserve its original FusionPBX timePlan source as provenance.
+            parent = "phone"
         text = text.replace("__PHONE_PARENT__", parent)
         keys = "<Fkey index=" in source and '<internal index="1">' in source
         if keys:
@@ -294,6 +298,12 @@ def build() -> dict:
                     }
                 ],
             }
+            if (vendor, model) == ("fanvil", "x3u-pro"):
+                profile_provenance["modifications"].append({
+                    "date": "2026-11-12",
+                    "author": "n-IA-hane contributors",
+                    "description": "Use phone rather than timePlan for X3U Pro 2.12 language and LDAP settings; retain the original upstream source unchanged.",
+                })
             files["provenance.json"] = canonical(profile_provenance)
             blob = deterministic_zip(files)
             path = "bundles/" + rel_parent + ".zip"
