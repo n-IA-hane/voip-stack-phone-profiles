@@ -1255,8 +1255,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "f3654ac04c5f5f594996fc5688183008d80b3379939a5891a5a65b6e3bc651b3",
-        "size": 256844
+        "sha256": "a6fd45022479c8c603b576f3b1bfc82394a46214406ab0dadd5f2914b1005e90",
+        "size": 257079
       }
     },
     {
@@ -8401,5 +8401,5 @@
       }
     }
   ],
-  "catalog_revision": "d008ad0dea4fa007a417778bf0a7e62c08e848e5b94198cba4b8c44fbee31815"
+  "catalog_revision": "e5d62a5a6de77588d67e471b51e71874a834851b775dd8a261ce5d89e8a9f828"
 }

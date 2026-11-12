@@ -73,6 +73,10 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
             # X3U Pro 2.12 uses the phone settings parent shared by X3U/X4U.
             # Preserve its original FusionPBX timePlan source as provenance.
             parent = "phone"
+            text = text.replace(
+                "directory.ldap.display_attribute|default('displayName')",
+                "'cn' if directory.ldap.display_attribute == 'displayName' else directory.ldap.display_attribute",
+            )
         text = text.replace("__PHONE_PARENT__", parent)
         keys = "<Fkey index=" in source and '<internal index="1">' in source
         if keys:
@@ -304,6 +308,13 @@ def build() -> dict:
                         "date": "2026-11-12",
                         "author": "n-IA-hane contributors",
                         "description": "Use phone rather than timePlan for X3U Pro 2.12 language and LDAP settings; retain the original upstream source unchanged.",
+                    }
+                )
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-12",
+                        "author": "n-IA-hane contributors",
+                        "description": "Map the canonical LDAP displayName default to the original X3U Pro cn display attribute; preserve explicit cn/sn settings.",
                     }
                 )
             files["provenance.json"] = canonical(profile_provenance)
