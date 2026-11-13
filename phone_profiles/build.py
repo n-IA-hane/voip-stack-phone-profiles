@@ -344,6 +344,14 @@ def build() -> dict:
                     "description": "Add bounded owned-slot retirement capabilities and documented clear/disable commands; place Snom fkeys in functionKeys with explicit identity context. Unsupported models remain non-destructive.",
                 }
             )
+            if vendor == "fanvil":
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-13",
+                        "author": "n-IA-hane contributors",
+                        "description": "Serialize BLF New Call as target@line/bc and speed dial as target@line/f, from Fanvil vendor function definitions in FusionPBX app/devices/app_config.php at the pinned upstream commit. Native web UI enum90 is not a configuration suffix; line keys remain Type2/SIP.",
+                    }
+                )
             if (vendor, model) == ("fanvil", "x3u-pro"):
                 profile_provenance["modifications"].append(
                     {

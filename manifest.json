@@ -79,8 +79,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/h2u-v2.zip",
-        "sha256": "d6a66ab6865a6a87559bcb878e4ba1b39e53c048edfae2f5b30152a049cc243c",
-        "size": 256906
+        "sha256": "8f5fa6a11bc435c48c6e3f77c89d761ddd13991467dcb79f04094174c00d37c3",
+        "size": 257327
       }
     },
     {
@@ -205,8 +205,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62.zip",
-        "sha256": "a60bf9cbc6ed5766cdf5799b6541dba1d1b7b1c92fe0d11381a61e8b1f063175",
-        "size": 227570
+        "sha256": "92934a26ecefac2d6f77f5127c12624a7a30b79813de1eb32c3d9d7a55981402",
+        "size": 227991
       }
     },
     {
@@ -283,8 +283,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62-pro.zip",
-        "sha256": "b99b66adf54d69e04d44d7e381991292ee0c165b11589d5e278d4a8b4a2517ce",
-        "size": 227582
+        "sha256": "d4ea5719b7911460fad2da56e7aca57f8564d7c121b4a7643df75fdc19b5dc58",
+        "size": 228003
       }
     },
     {
@@ -361,8 +361,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v63.zip",
-        "sha256": "96aec1a7756b8ca7e3738a44d58c08ca0326215d0890d70a8dbab712efbb72c4",
-        "size": 227570
+        "sha256": "2d6ef6e497dc775fd5ddbd79bd3e785caa208eaec9ce37776a00ee0e7484ed06",
+        "size": 227991
       }
     },
     {
@@ -439,8 +439,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v64.zip",
-        "sha256": "e8bb8ace82b814c34491b6515b832465f2762cc5fc7f6f571565e69d2cb1257e",
-        "size": 227570
+        "sha256": "5974aa0526bcf707a8d117d342c7a7ea14094e10d4e43ab50e8257aa5a025c15",
+        "size": 227991
       }
     },
     {
@@ -517,8 +517,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v65.zip",
-        "sha256": "f532843564fbbe769e16666d4da4c749283102964e1f55641bd4a42ee0776af5",
-        "size": 227570
+        "sha256": "c87267c99bc5d2d182ffd5d741592cdc3cb6ef34c406ea9579a02a9a5e9bb186",
+        "size": 227991
       }
     },
     {
@@ -595,8 +595,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v67.zip",
-        "sha256": "b3258ad22d1cb0aec3b04da40d21a646aa9c46694c92ad102384feac7f627ba8",
-        "size": 227578
+        "sha256": "69c4570f1a734835f0fe2dbee98dc1659636e36e32f4143b0b4307c1c11648ab",
+        "size": 227999
       }
     },
     {
@@ -697,8 +697,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1s.zip",
-        "sha256": "c9db41f2fabe70df8f91f805bdab34f4de5572e1709738d9acdb0fd76519a820",
-        "size": 207463
+        "sha256": "448b2b438b188e934ed55725abc5027cf9ae6fabe1fe25b812f5c617646429e8",
+        "size": 207884
       }
     },
     {
@@ -775,8 +775,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sg.zip",
-        "sha256": "11ec5de5844288c5100a5e34ce97953b508f6ed41ecd8143c9a28a799c631e9b",
-        "size": 207466
+        "sha256": "8c5a4ceff24212c4fb2356766b0d81052896553e43d92561f76a2f697800001f",
+        "size": 207887
       }
     },
     {
@@ -853,8 +853,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sp.zip",
-        "sha256": "d5521a03e2e4f52eee9e3c550c067078828d08c3ffcb644f91f6c7e76dd615fd",
-        "size": 207466
+        "sha256": "486eb007196c2632873a00500402b572f8881f03b2d57d15d8b526a5f0fb0599",
+        "size": 207887
       }
     },
     {
@@ -931,8 +931,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x210.zip",
-        "sha256": "6118d8bf8bd20844692e48eb8b3c41094b1cdd9a0717870ac8874c7332c37b75",
-        "size": 720477
+        "sha256": "ccfee05fb6a6ac4370c5273c8fa71bed0d6de8bb9c1610944b5faabb9a3653a6",
+        "size": 720898
       }
     },
     {
@@ -1057,8 +1057,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sg.zip",
-        "sha256": "abeecdda782896033afd2057e6515d8d6ce3f0e03767537e5e445704d74d82b0",
-        "size": 256900
+        "sha256": "4b19f36dad630948cb3b64e4f116c94915c889c75eb6df37c71ca0ad7581746b",
+        "size": 257321
       }
     },
     {
@@ -1159,8 +1159,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sw.zip",
-        "sha256": "cf283178ad352879a0e748f6eff8000c30eeb1bd4b0134b9236854ee477d0694",
-        "size": 256900
+        "sha256": "31d570944aab95f3daf66fe29be7b27e7aca1d1b7298d726ff7e49a833e13291",
+        "size": 257321
       }
     },
     {
@@ -1217,8 +1217,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u.zip",
-        "sha256": "244fca7cbdc2b2109353c8e0f4d465536511961a9428e84f8fffdb2efbbb0fa3",
-        "size": 321883
+        "sha256": "f49c767922464c149aee207318106b88f3459ec1361caee741b599cec8e15e8a",
+        "size": 322304
       }
     },
     {
@@ -1330,8 +1330,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "18dc3b1fe3a1023cce42568412a86e28f0f9357b41a67076ecae19254df051be",
-        "size": 258308
+        "sha256": "75ac6ae3914447eb061fb997df8c3444e246071da70606ea120864951adc3ccf",
+        "size": 258729
       }
     },
     {
@@ -1456,8 +1456,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4sg.zip",
-        "sha256": "6baaa6df1dfa9b42078d8f1a0ac13b9955d25b4fb0bacde5d32fbdb630d8afca",
-        "size": 293728
+        "sha256": "3ff696c2fa853efaf741ac97fbb44e026d5333c1bf6b27328a5962f2fc126c1c",
+        "size": 294149
       }
     },
     {
@@ -1534,8 +1534,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4u.zip",
-        "sha256": "0f1ca2f758c133e9bbe89813066a9e885a60fe3c45f48af1fd8b7d2f1d595b5d",
-        "size": 525244
+        "sha256": "f97a917479407b8298203ed48e73a688fd0995838635493b98fae842a3419bff",
+        "size": 525665
       }
     },
     {
@@ -1612,8 +1612,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5s.zip",
-        "sha256": "ef5abf6be543932745939d446234b3ae05f94043f492148137f6bf03cfc3e866",
-        "size": 396969
+        "sha256": "c185021e657835ad28d7c4ff8a4cd94305ec4248d17ac7443e05af145ae78ff2",
+        "size": 397390
       }
     },
     {
@@ -1690,8 +1690,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5u.zip",
-        "sha256": "eae55423d8ee336a8f8c7198a8ab0fe444bf09aa1318d5132fbe95326a18dd08",
-        "size": 630772
+        "sha256": "9e0763c372dbea54fb008bce5ef100c3c3125cc91c6a45aa6a1dc119166bd1e0",
+        "size": 631193
       }
     },
     {
@@ -1768,8 +1768,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6.zip",
-        "sha256": "4ef4a669e8c0732be3eea16d47be222354818f6abbf7ce1a6047fa04bdfb66fc",
-        "size": 397288
+        "sha256": "db1e878e23e3038661923debbf187a0a4a331ff2b105f321bc4e0b7c6f3b7f31",
+        "size": 397709
       }
     },
     {
@@ -1846,8 +1846,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6u.zip",
-        "sha256": "3da2531796e4d0c45f8308035d7023bac2635b3d34ca731afec375cf54aefcbc",
-        "size": 738274
+        "sha256": "77a0ece20f610cd068c8d80b5a397fbc6e807c5b7c3f15f95fa153a73fa339ad",
+        "size": 738695
       }
     },
     {
@@ -1924,8 +1924,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7.zip",
-        "sha256": "755214b5d90196dbcffbaf20d5929f68cb1359ebc3e92bf02ba286119fa542ef",
-        "size": 669732
+        "sha256": "04690789cfc4e1e954103dc04047cd0755f079cccb1c8eae6d3d4f85e27e6d0f",
+        "size": 670153
       }
     },
     {
@@ -2002,8 +2002,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7a.zip",
-        "sha256": "a87859118424c17a6be504fc3c42077561c1d938b6b9b5631bfdc0efab515d94",
-        "size": 701542
+        "sha256": "1045877dc0ecc04074c36ba7e665d9aa6dacc1ae44a053d83d0dafdeed083f82",
+        "size": 701963
       }
     },
     {
@@ -9030,5 +9030,5 @@
       }
     }
   ],
-  "catalog_revision": "2bdd467b3a5fbe7212e4de42bb7a74015e0261ba86aef3274e08628a48ed9f87"
+  "catalog_revision": "8a838e6b7afadaa128df4da78b72f77794d213ed6b7284cdcf5a10870311d19d"
 }

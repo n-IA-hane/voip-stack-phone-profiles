@@ -101,7 +101,9 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
         row = {
             "device_key_id": 1,
             "device_key_line": 1,
-            "device_key_type": 90,
+            "device_key_type": json.loads(
+                (ROOT / "tests/fixtures/fusionpbx_fanvil_functions.json").read_text()
+            )["functions"]["blf_new"]["value"],
             "device_key_value": "430",
             "device_key_label": "P4",
             "device_key_icon": "",
@@ -112,7 +114,7 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
         assert [emitted.find(n).text for n in ("Type", "Value", "Title")] == [
             oracle.find(n).text for n in ("Type", "Value", "Title")
         ]
-        assert emitted.find("Value").text == "430@1/90"
+        assert emitted.find("Value").text == "430@1/bc"
     elif vendor == "yealink":
         config = dict(line.split("=", 1) for line in rendered.splitlines() if "=" in line)
         config = {k.strip(): v.strip() for k, v in config.items()}
@@ -434,7 +436,7 @@ def test_x3upro_active_and_retired_side_keys_use_comparable_mpl_container():
     group = positive.find("./dsskey/dssSide")
     assert group is not None and group.attrib == oracle.attrib
     third = group.find("Fkey[@index='3']")
-    assert [third.findtext(tag) for tag in ("Type", "Value", "Title")] == ["1", "430@1/90", "QA-P4"]
+    assert [third.findtext(tag) for tag in ("Type", "Value", "Title")] == ["1", "430@1/bc", "QA-P4"]
     original = {
         slot: {
             tag: group.find(f"Fkey[@index='{slot}']").findtext(tag)

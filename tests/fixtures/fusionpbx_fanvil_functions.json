@@ -1,0 +1,107 @@
+{
+  "spdx_license_identifier": "MPL-1.1",
+  "upstream_repository": "fusionpbx/fusionpbx",
+  "upstream_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
+  "source_path": "app/devices/app_config.php",
+  "source_blob_sha1": "15a1da49f8c6d01ed4cba64b81e122e827f5ce61",
+  "source_sha256": "46c00b2ed25100977c3030e2791247fa853eec0a6110945c423dd52855245598",
+  "notice": "Derived vendor function data from FusionPBX. Original project notice and MPL1.1 are retained in this repository. Extracted2026-11-13; no PHP or vendor JavaScript execution.",
+  "functions": {
+    "line": {
+      "label": "label-line",
+      "type": "line",
+      "subtype": "",
+      "value": "1"
+    },
+    "voicemail": {
+      "label": "label-voicemail",
+      "type": "voicemail",
+      "subtype": "",
+      "value": "2",
+      "description": "You can press the key to listen to voice messages and configure the line. The LED is on if a new voice message is received."
+    },
+    "none": {
+      "label": "label-none",
+      "type": "none",
+      "subtype": "",
+      "value": "3"
+    },
+    "intercom": {
+      "label": "label-intercom",
+      "type": "intercom",
+      "subtype": "",
+      "value": "i",
+      "description": "Directly speak without answering the call."
+    },
+    "call_park": {
+      "label": "label-call_park",
+      "type": "call_park",
+      "subtype": "",
+      "value": "c",
+      "description": "If you need to move to another place during a call, use this function."
+    },
+    "call_forward": {
+      "label": "label-call_forward",
+      "type": "call_forward",
+      "subtype": "",
+      "value": "a",
+      "description": "When receiving a call, you can press the key to transfer the call to the specified number."
+    },
+    "speed_dial": {
+      "label": "label-speed_dial",
+      "type": "speed_dial",
+      "subtype": "",
+      "value": "f",
+      "description": "Automatically call the specified number when key is pressed. (No BFL)"
+    },
+    "blf_new": {
+      "label": "label-blf_new",
+      "type": "blf_new",
+      "subtype": "",
+      "value": "bc",
+      "description": "BLF - New Call"
+    },
+    "blf_new_video": {
+      "label": "label-blf_new_video",
+      "type": "blf_new_video",
+      "subtype": "",
+      "value": "bcV",
+      "description": "BLF - New Video Call"
+    },
+    "blf_bxfer": {
+      "label": "label-blf_bxfer",
+      "type": "blf_bxfer",
+      "subtype": "",
+      "value": "bb",
+      "description": "BLF - Blind Transfer"
+    },
+    "blf_axfer": {
+      "label": "label-blf_axfer",
+      "type": "blf_axfer",
+      "subtype": "",
+      "value": "ba",
+      "description": "BLF - Attended Transfer"
+    },
+    "blf_conference": {
+      "label": "label-blf_conference",
+      "type": "blf_conference",
+      "subtype": "",
+      "value": "bf",
+      "description": "BLF - Conference"
+    },
+    "mwi": {
+      "label": "label-mwi",
+      "type": "mwi",
+      "subtype": "",
+      "value": "m",
+      "description": "MWI - *97 Voicemail"
+    },
+    "multicast_paging": {
+      "label": "label-multicast_paging",
+      "type": "multicast_paging",
+      "subtype": "",
+      "value": "14",
+      "description": "Multicast Paging"
+    }
+  }
+}

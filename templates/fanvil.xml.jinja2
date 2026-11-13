@@ -2,6 +2,7 @@
 Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
 2026-11-11: retain only explicit SIP, DSS, language, LDAP and provisioning fields.
 2026-11-13: bounded owned DSS clears and registration disables, no global reset.
+2026-11-13: vendor configuration suffixes bc/f for BLF New Call and speed dial.
 -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <sysConf>
@@ -23,7 +24,7 @@ Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
 {% if keys or retired['keys'] %}<dsskey><internal index="1">
 {% for key in keys %}<Fkey index="{{ key.slot }}">
 <Type>{{ 2 if key.function == 'line' else 1 }}</Type>
-<Value>{% if key.function == 'line' %}SIP{{ key.line }}{% else %}{{ key.subscription_target or key.dial_target }}@{{ key.line }}/{{ 90 if key.function in ['blf','queue_login','queue_pause','park'] else 0 }}{% endif %}</Value>
+<Value>{% if key.function == 'line' %}SIP{{ key.line }}{% else %}{{ key.subscription_target or key.dial_target }}@{{ key.line }}/{{ 'bc' if key.function in ['blf','queue_login','queue_pause','park'] else 'f' }}{% endif %}</Value>
 <Title>{{ key.label }}</Title>
 </Fkey>{% endfor %}{% for slot in retired['keys'] %}<Fkey index="{{ slot }}"><Type>0</Type><Value></Value><Title></Title></Fkey>{% endfor %}
 </internal></dsskey>{% endif %}
