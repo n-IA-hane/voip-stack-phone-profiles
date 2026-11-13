@@ -1,6 +1,7 @@
 {# SPDX-License-Identifier: MPL-1.1
 Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
 2026-11-11: sparse account and linekey parameters only; unrelated defaults omitted.
+2026-11-13: explicit clear/disable commands for previously owned slots only.
 -#}
 #!version:1.0.0.1
 {% for line in lines %}
@@ -22,4 +23,14 @@ linekey.{{ key.slot }}.line = {{ key.line }}
 linekey.{{ key.slot }}.value = {{ key.subscription_target or key.dial_target }}
 linekey.{{ key.slot }}.label = {{ key.label }}
 linekey.{{ key.slot }}.extension = {{ key.pickup_target }}
+{% endfor %}{% for slot in retired['keys'] %}
+linekey.{{ slot }}.type = 0
+linekey.{{ slot }}.value = %NULL%
+linekey.{{ slot }}.label = %NULL%
+linekey.{{ slot }}.extension = %NULL%
+{% endfor %}{% for slot in retired['lines'] %}
+account.{{ slot }}.enable = 0
+account.{{ slot }}.user_name = %NULL%
+account.{{ slot }}.auth_name = %NULL%
+account.{{ slot }}.password = %NULL%
 {% endfor %}

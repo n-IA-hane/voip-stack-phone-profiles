@@ -50,7 +50,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -75,8 +79,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/h2u-v2.zip",
-        "sha256": "93997d6d04d01d1bf388b0adb1f2389111dfabda0aa0a7d2fb6b9742abd49eff",
-        "size": 256190
+        "sha256": "d6a66ab6865a6a87559bcb878e4ba1b39e53c048edfae2f5b30152a049cc243c",
+        "size": 256906
       }
     },
     {
@@ -91,7 +95,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -113,7 +119,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -168,7 +176,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -193,8 +205,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62.zip",
-        "sha256": "6c19cc6c915c194ebdf9762a1cf6b6225430902aecbcd91c40ed8b435c1e3669",
-        "size": 226854
+        "sha256": "a60bf9cbc6ed5766cdf5799b6541dba1d1b7b1c92fe0d11381a61e8b1f063175",
+        "size": 227570
       }
     },
     {
@@ -242,7 +254,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -267,8 +283,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62-pro.zip",
-        "sha256": "4af50159d74c1c05abf142505a12604ae9c232ce133040f50c154112e02e2e18",
-        "size": 226866
+        "sha256": "b99b66adf54d69e04d44d7e381991292ee0c165b11589d5e278d4a8b4a2517ce",
+        "size": 227582
       }
     },
     {
@@ -316,7 +332,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -341,8 +361,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v63.zip",
-        "sha256": "1bf746dfd0eba15e17fd68bfc4ff4f57086f8e36d6fc52fbee3f879cc07348cd",
-        "size": 226854
+        "sha256": "96aec1a7756b8ca7e3738a44d58c08ca0326215d0890d70a8dbab712efbb72c4",
+        "size": 227570
       }
     },
     {
@@ -390,7 +410,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -415,8 +439,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v64.zip",
-        "sha256": "21026f7ba7477c683483d18b93d1a9b0d78fc308c1db7030c36f0f64083b9c1e",
-        "size": 226854
+        "sha256": "e8bb8ace82b814c34491b6515b832465f2762cc5fc7f6f571565e69d2cb1257e",
+        "size": 227570
       }
     },
     {
@@ -464,7 +488,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -489,8 +517,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v65.zip",
-        "sha256": "c8b133cf54840d2d2d63a1e94d25355ce4ec03ee403cb97660def38ac8ce8e13",
-        "size": 226854
+        "sha256": "f532843564fbbe769e16666d4da4c749283102964e1f55641bd4a42ee0776af5",
+        "size": 227570
       }
     },
     {
@@ -538,7 +566,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -563,8 +595,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v67.zip",
-        "sha256": "b094b63fb5c809f9a3ec8008bb7aae041c409cb39ec63d16617e87d3c927905c",
-        "size": 226862
+        "sha256": "b3258ad22d1cb0aec3b04da40d21a646aa9c46694c92ad102384feac7f627ba8",
+        "size": 227578
       }
     },
     {
@@ -579,7 +611,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -634,7 +668,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -659,8 +697,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1s.zip",
-        "sha256": "546d03ec4fa436963d13e0280d5547911f5e42de056b79d403366dc56d4e61db",
-        "size": 206747
+        "sha256": "c9db41f2fabe70df8f91f805bdab34f4de5572e1709738d9acdb0fd76519a820",
+        "size": 207463
       }
     },
     {
@@ -708,7 +746,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -733,8 +775,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sg.zip",
-        "sha256": "cf1ebecff8b4cfbddd8aa8969307a485c107f3294ff6ae341399db09827cba62",
-        "size": 206750
+        "sha256": "11ec5de5844288c5100a5e34ce97953b508f6ed41ecd8143c9a28a799c631e9b",
+        "size": 207466
       }
     },
     {
@@ -782,7 +824,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -807,8 +853,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sp.zip",
-        "sha256": "c8ecce963877d1e1e2bbe44888dc608c8b29a93342c9d84ca0baad172e6d2bc8",
-        "size": 206750
+        "sha256": "d5521a03e2e4f52eee9e3c550c067078828d08c3ffcb644f91f6c7e76dd615fd",
+        "size": 207466
       }
     },
     {
@@ -856,7 +902,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -881,8 +931,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x210.zip",
-        "sha256": "9666b76a63cc41acc15816564fde14f1ad378f60ea3d596ef4d3f4e03a8fbe90",
-        "size": 719761
+        "sha256": "6118d8bf8bd20844692e48eb8b3c41094b1cdd9a0717870ac8874c7332c37b75",
+        "size": 720477
       }
     },
     {
@@ -897,7 +947,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -919,7 +971,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -974,7 +1028,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -999,8 +1057,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sg.zip",
-        "sha256": "a89bf511f0243354d85e01a32ecd9117d2a9f4727699cd68deb03f752d70dc96",
-        "size": 256184
+        "sha256": "abeecdda782896033afd2057e6515d8d6ce3f0e03767537e5e445704d74d82b0",
+        "size": 256900
       }
     },
     {
@@ -1015,7 +1073,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1070,7 +1130,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1095,8 +1159,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sw.zip",
-        "sha256": "c569f3a8bab8a3f056b41508a4686daa5d43a6a0d23db773b12daa533286df4f",
-        "size": 256184
+        "sha256": "cf283178ad352879a0e748f6eff8000c30eeb1bd4b0134b9236854ee477d0694",
+        "size": 256900
       }
     },
     {
@@ -1124,7 +1188,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1149,8 +1217,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u.zip",
-        "sha256": "8a156d6a296b6d0ad4a54b3b955d8a5a1b1690d109401c0811d3a996158a74ab",
-        "size": 321167
+        "sha256": "244fca7cbdc2b2109353c8e0f4d465536511961a9428e84f8fffdb2efbbb0fa3",
+        "size": 321883
       }
     },
     {
@@ -1225,6 +1293,13 @@
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
         "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "source_documented_candidate",
+        "retirement_evidence": [
+          "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
+          "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg"
+        ],
         "hardware_max_lines": 6,
         "hardware_key_count": 3,
         "evidence": [
@@ -1255,8 +1330,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "a6fd45022479c8c603b576f3b1bfc82394a46214406ab0dadd5f2914b1005e90",
-        "size": 257079
+        "sha256": "ac24519a8aa3c61496a127087b0e05a956c7a2291d882bda976d850f5e66b39a",
+        "size": 258019
       }
     },
     {
@@ -1271,7 +1346,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1293,7 +1370,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1348,7 +1427,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1373,8 +1456,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4sg.zip",
-        "sha256": "0947f7abe4999973ba741392c62bfbd1bfc7cecced3c398c97def6ac99cf5d4f",
-        "size": 293012
+        "sha256": "6baaa6df1dfa9b42078d8f1a0ac13b9955d25b4fb0bacde5d32fbdb630d8afca",
+        "size": 293728
       }
     },
     {
@@ -1422,7 +1505,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1447,8 +1534,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4u.zip",
-        "sha256": "226a1675234160e392ae88ba60c3f9e0a6fedaf2e785ceaf5aebbf9f452170c4",
-        "size": 524528
+        "sha256": "0f1ca2f758c133e9bbe89813066a9e885a60fe3c45f48af1fd8b7d2f1d595b5d",
+        "size": 525244
       }
     },
     {
@@ -1496,7 +1583,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1521,8 +1612,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5s.zip",
-        "sha256": "eaf2cb5542c47290f042730026cab0eb6f7265b883443dec93d867aea1f4593f",
-        "size": 396253
+        "sha256": "ef5abf6be543932745939d446234b3ae05f94043f492148137f6bf03cfc3e866",
+        "size": 396969
       }
     },
     {
@@ -1570,7 +1661,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1595,8 +1690,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5u.zip",
-        "sha256": "bf05db52e3bed1703105351ecf1648bd65ff7635f5b16844b8d2a0fa0f94ff23",
-        "size": 630056
+        "sha256": "eae55423d8ee336a8f8c7198a8ab0fe444bf09aa1318d5132fbe95326a18dd08",
+        "size": 630772
       }
     },
     {
@@ -1644,7 +1739,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1669,8 +1768,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6.zip",
-        "sha256": "b559d60e2be02d6c089592f712ed76418144c158fb4e2a1f24dd7dfecabf1767",
-        "size": 396572
+        "sha256": "4ef4a669e8c0732be3eea16d47be222354818f6abbf7ce1a6047fa04bdfb66fc",
+        "size": 397288
       }
     },
     {
@@ -1718,7 +1817,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1743,8 +1846,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6u.zip",
-        "sha256": "2ec44f458fc9be14859debc421df509175d0c18e6d8e9da63dd145c458d6b87c",
-        "size": 737558
+        "sha256": "3da2531796e4d0c45f8308035d7023bac2635b3d34ca731afec375cf54aefcbc",
+        "size": 738274
       }
     },
     {
@@ -1792,7 +1895,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1817,8 +1924,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7.zip",
-        "sha256": "3e354b967cf46a7ac8c01a9b429b67567bcd7319f526763f2df36bf738f8856b",
-        "size": 669016
+        "sha256": "755214b5d90196dbcffbaf20d5929f68cb1359ebc3e92bf02ba286119fa542ef",
+        "size": 669732
       }
     },
     {
@@ -1866,7 +1973,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1891,8 +2002,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7a.zip",
-        "sha256": "506735260dad2e336a3b347d94c4cee769da712444fed4b52b5527a0b2f4f536",
-        "size": 700826
+        "sha256": "a87859118424c17a6be504fc3c42077561c1d938b6b9b5631bfdc0efab515d94",
+        "size": 701542
       }
     },
     {
@@ -1907,7 +2018,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1929,7 +2042,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1951,7 +2066,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1973,7 +2090,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1995,7 +2114,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2017,7 +2138,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2039,7 +2162,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2086,7 +2211,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2108,8 +2237,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2612.zip",
-        "sha256": "83841f63a3c6e332702d25eb4b17bc732503f896da9aff71ba5c07e9f12a627d",
-        "size": 494301
+        "sha256": "634d9a3c5ffd8d120c6f38110b2c1cb0e1d2db8ea7e9643f4a7a6befa7fe23fe",
+        "size": 494674
       }
     },
     {
@@ -2149,7 +2278,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2171,8 +2304,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2612w.zip",
-        "sha256": "6f4072b808a18c49b927bf265ecbb836e7e663bb1a0a479bd9153a9c0a7f1661",
-        "size": 487796
+        "sha256": "3a10c9fc717e9207670311df6c70fb7faacd737db06e1f7fbd405d7ddb28a548",
+        "size": 488169
       }
     },
     {
@@ -2212,7 +2345,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2234,8 +2371,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2613.zip",
-        "sha256": "1c2903d2cd7f202aa0c39fc2a5cdf5a76cb56b7ef65b82a3ec30e4378ca705b6",
-        "size": 497240
+        "sha256": "25d4d7bbfcfcee0d3a39a3e53536347bb0603c71a28ee0f54dcd3eec888cf4c3",
+        "size": 497613
       }
     },
     {
@@ -2275,7 +2412,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2297,8 +2438,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2614.zip",
-        "sha256": "7f801388c67e6115b4c4ae9b5aaf28536ec612647f1e2f351c6f682a4a64a471",
-        "size": 497240
+        "sha256": "cb44e5069328d7bcdebd3731814380ac9f327f71b00213d7ae10fc0afcf7a07a",
+        "size": 497613
       }
     },
     {
@@ -2338,7 +2479,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2360,8 +2505,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2615.zip",
-        "sha256": "87a3e04ed0e2f45d63802358cab9e3db7421303afc2b47a2ca4f4af99922dd6c",
-        "size": 497240
+        "sha256": "64de2cc5fc633c26ff5da1d41368c40280d34c0c48aeeaa4f5e63a8071160d22",
+        "size": 497613
       }
     },
     {
@@ -2401,7 +2546,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2423,8 +2572,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2616.zip",
-        "sha256": "c3576cab4854d6b4d011a2dc496c3a9664e660c507561129e6dc33074f94be45",
-        "size": 497240
+        "sha256": "df219024afb3dd8dcd0953a03f761bef2026a5fe5d04929d94bfcb9df6001092",
+        "size": 497613
       }
     },
     {
@@ -2439,7 +2588,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2461,7 +2612,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2483,7 +2636,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2505,7 +2660,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2534,7 +2691,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2556,8 +2717,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gswave.zip",
-        "sha256": "6fca84d34b813bf4181a95e8c87f7fa0a28f1b979663bf4e80ff898644a1d02f",
-        "size": 472657
+        "sha256": "058b028e3cd0554319ca4f22b4811db0edcd77c4543c6b1a902249b0c38d9ea0",
+        "size": 473030
       }
     },
     {
@@ -2572,7 +2733,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2601,7 +2764,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2623,8 +2790,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp116x.zip",
-        "sha256": "5ba18562048e06d5c3d14396cf5a078a2cc3376341692e39c4167c66404be12f",
-        "size": 148588
+        "sha256": "593b29cce10801f2928c04dbc617e8f476c17fd9b7de96ce5b405d1cfc7f21ce",
+        "size": 148961
       }
     },
     {
@@ -2639,7 +2806,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2661,7 +2830,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2683,7 +2854,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2712,7 +2885,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2734,8 +2911,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp1450bk.zip",
-        "sha256": "0d3de0d5a1c73f9ddd15e87d51ae5b4e0bc34b7d5528871044cf8528c4a42c70",
-        "size": 179497
+        "sha256": "591f80368e99d43da0eeb875573ebc25cfdb9941d210efd2f8d0ce227607a41b",
+        "size": 179870
       }
     },
     {
@@ -2750,7 +2927,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2779,7 +2958,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2801,8 +2984,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp17xx.zip",
-        "sha256": "208fb3471df98a6db8dba4cfb0aeedf227d47d379aa4c3d4eaf313bacf1d9467",
-        "size": 798467
+        "sha256": "3e8c090a4480cbba4ecdcbaa089cd455460872c354c364f326bc3e56d83787a2",
+        "size": 798840
       }
     },
     {
@@ -2824,7 +3007,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2846,8 +3033,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp20xx.zip",
-        "sha256": "15d141c849785f885075855cccc67721bafd5eead7e909339b2384c22d905f59",
-        "size": 223604
+        "sha256": "8d46c257701e638f06804d369034dc4a2e5e75231c36ac43af18eed306cad32c",
+        "size": 223977
       }
     },
     {
@@ -2869,7 +3056,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2891,8 +3082,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2100.zip",
-        "sha256": "146e01e65bdedcc709111589968dd15e8a6abfbfeade2ab0cd8a40503fae4268",
-        "size": 338615
+        "sha256": "03005bebe390892141d85b565b89723323f8eb582fd2f3649b9fe3247a1c405d",
+        "size": 338988
       }
     },
     {
@@ -2914,7 +3105,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2936,8 +3131,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2124.zip",
-        "sha256": "1652519469405a4678c87354315c5e0f29f6893d9d512534df3d000c37d6959e",
-        "size": 308409
+        "sha256": "23480ad5d619c50d742d5ca6aecac3933243ecc459048ed4f1d20ae26e142d95",
+        "size": 308782
       }
     },
     {
@@ -2977,7 +3172,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2999,8 +3198,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2130.zip",
-        "sha256": "5a737e125cf819f7ad5c9da59ca897f7e2d997a71d3262b3bc8c7bfc91add4bf",
-        "size": 415080
+        "sha256": "e1a01b255fb91ad82fd69253d79e5eb8e71e5f5f2afa902553b68b74b61ae390",
+        "size": 415453
       }
     },
     {
@@ -3040,7 +3239,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3062,8 +3265,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2135.zip",
-        "sha256": "1c46fad8085cbdaf2e526055104d711ff6b8818599e8fbd9b99d8a3863f32fd1",
-        "size": 427960
+        "sha256": "3d57950ae58eda197735c02290cf6661a08b1f500e3bf9b2cc513d5ac24042f6",
+        "size": 428333
       }
     },
     {
@@ -3103,7 +3306,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3125,8 +3332,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2140.zip",
-        "sha256": "a28c4e7f836e7a190260ae47439176707efcf689a31121c67b1ebc4363dd1154",
-        "size": 415078
+        "sha256": "6d60cf7f02de1c41fc052b3a3fbf7bb4a1b81e29e0850d1e584a83fb6ae45ba4",
+        "size": 415451
       }
     },
     {
@@ -3166,7 +3373,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3188,8 +3399,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2160.zip",
-        "sha256": "b05bf515a91bfd50dbb9fbe3c1be2b91f6bd6bdc5d64240ccde1f86fa0a038ad",
-        "size": 415078
+        "sha256": "1860da33145edd6deac0da9cf7abe45f947a1cdf169701eec2a6c7da59c7dc51",
+        "size": 415451
       }
     },
     {
@@ -3229,7 +3440,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3251,8 +3466,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2170.zip",
-        "sha256": "c07502b60ccf3b1263099ebf4404b9601478efbaeb6d80aadcf05319d07b67f9",
-        "size": 414724
+        "sha256": "2fa54224bda82999e7e6f7dbbc13683582ad95e77ed6945945781d30ad1d8006",
+        "size": 415097
       }
     },
     {
@@ -3274,7 +3489,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3296,8 +3515,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp21xx.zip",
-        "sha256": "f5b243d2c7a8996fd316a3d91b0d433e82fa777d50436a1983d096ce99ca4bfc",
-        "size": 396792
+        "sha256": "579bc61ab12ad532720c9bb7628c1a9da4fc68fbd18487d54f0e5f56b4026e43",
+        "size": 397165
       }
     },
     {
@@ -3319,7 +3538,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3341,8 +3564,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp21xxbk.zip",
-        "sha256": "0d367faaf9578700073ee899704eac804afae657bb305e9e0fe4c7c81c303693",
-        "size": 326222
+        "sha256": "74f17dc1b96b5dc9c77f96314ae97a88f7b7a61a870deb32c028b9b485b1f360",
+        "size": 326595
       }
     },
     {
@@ -3364,7 +3587,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3386,8 +3613,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2200.zip",
-        "sha256": "c9cfcacec90263fd1a9c1e28b89f888fbcfc32c40120c75d380ea5e28f0575e0",
-        "size": 581629
+        "sha256": "202c636466d426eb9b5e67f2bc638e6240538de96d8b941df1e83ec759ccbb8f",
+        "size": 582002
       }
     },
     {
@@ -3409,7 +3636,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3431,8 +3662,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp3240.zip",
-        "sha256": "19dc06b458bc43240b80ce848b2cc6e799e86b7e0946943428a5e054b613beb7",
-        "size": 591408
+        "sha256": "2ab7089fe3ac0057ceed4de9db4281a549bbf61a3df15e42d3eb1fc9fd142954",
+        "size": 591781
       }
     },
     {
@@ -3454,7 +3685,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3476,8 +3711,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv300x.zip",
-        "sha256": "269abfc7b0ced4554139430c065c78d9b0061bed81446006a3cc5529429b133f",
-        "size": 130702
+        "sha256": "716f906a9f5168dae8e0c3a13865d62588b426514390f76fc6bf8325aa402217",
+        "size": 131075
       }
     },
     {
@@ -3499,7 +3734,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3521,8 +3760,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3140.zip",
-        "sha256": "529f61a7147eb525774101eb0eb44ddc92dffe663ee4503995daa488377d472a",
-        "size": 137890
+        "sha256": "f3f0774bd74a1e4c918f2ec818446f2fc38a513d580f8f1aacc93723ecc3adf9",
+        "size": 138263
       }
     },
     {
@@ -3544,7 +3783,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3566,8 +3809,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3175.zip",
-        "sha256": "8103dcdc3766a2a7aa548b520f3695d1c978906b507035c47880bf17692cee6a",
-        "size": 214587
+        "sha256": "52321eba04c0e52a4f07fdd8e47b4219ef89177c281421d2b5d110f46fac384d",
+        "size": 214960
       }
     },
     {
@@ -3589,7 +3832,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3611,8 +3858,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3175v2.zip",
-        "sha256": "d9ea5986b308f52337288bba69f8cbc2c140de54bb1ff0520d8bad518aa5ac06",
-        "size": 228893
+        "sha256": "9abacb43a2f5a57c8aa10c8f056d54c1e243e137da1b8ab3fdfaa0049cadddb9",
+        "size": 229266
       }
     },
     {
@@ -3627,7 +3874,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3649,7 +3898,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3671,7 +3922,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3693,7 +3946,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3715,7 +3970,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3737,7 +3994,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3759,7 +4018,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3781,7 +4042,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3803,7 +4066,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3825,7 +4090,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3847,7 +4114,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3869,7 +4138,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3891,7 +4162,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3913,7 +4186,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3935,7 +4210,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3957,7 +4234,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3979,7 +4258,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4001,7 +4282,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4023,7 +4306,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4045,7 +4330,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4067,7 +4354,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4089,7 +4378,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4111,7 +4402,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4140,7 +4433,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4162,8 +4459,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/wp810.zip",
-        "sha256": "76dfc27d72b5426fbe7c76ba4ed4c5c6be2c6615b7aed3184dd264072ae6b023",
-        "size": 321849
+        "sha256": "bbf7c5bca70f4845f10ebb9b016f322b339e52f38cc6ef14faff106cb6ae5bae",
+        "size": 322222
       }
     },
     {
@@ -4185,7 +4482,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4207,8 +4508,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/wp820.zip",
-        "sha256": "4a2c1cb03453d634652a813febacc9aa83eb51d7e14e2428b9691d22e9c2d4b7",
-        "size": 360717
+        "sha256": "d6b4bae62ede4053ed806aa60ae68d76971ada2aeeb3333336ffc8fd69efd264",
+        "size": 361090
       }
     },
     {
@@ -4223,7 +4524,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4245,7 +4548,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4294,7 +4599,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4316,8 +4625,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/300.zip",
-        "sha256": "7be4b50e4e36091bff35909ab740bdb9078c7bd9630bb9872199f659e8177d69",
-        "size": 55865
+        "sha256": "f16935ebec66c526f77675e411ad4fba1d82e6c95e4df3ac48bcee3b7a2d9036",
+        "size": 56612
       }
     },
     {
@@ -4359,7 +4668,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4381,8 +4694,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/320.zip",
-        "sha256": "d774e2f0f7c18fac60a3aa70b29a6a4c73778faed593f8252ccf4fa8698abe3d",
-        "size": 58386
+        "sha256": "896867b38cb599904f09e336968f79f889e2a557690f4118d7a638397fc423f9",
+        "size": 59133
       }
     },
     {
@@ -4424,7 +4737,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4446,8 +4763,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/360.zip",
-        "sha256": "33dd1e01a2902899aa1ab32627f09fcc2394491dabbf48083fd041f3b54618ad",
-        "size": 47672
+        "sha256": "b3947b70f336c6e0135e3b74b07ed6a53cc756fbec02de59ee948230957fe7f5",
+        "size": 48419
       }
     },
     {
@@ -4489,7 +4806,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4511,8 +4832,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/3xx.zip",
-        "sha256": "21d17bb1e1baebe7708b8c106bb0d89083d8f4886d0fff179eec471e03dbdae4",
-        "size": 58046
+        "sha256": "214e80f13313060f45c8e2c5a7f18e34e7ceaf15c92dae83ac07db6d7ff773b0",
+        "size": 58793
       }
     },
     {
@@ -4554,7 +4875,14 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
+          "https://service.snom.com/spaces/wiki/pages/234343563/user_active"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4576,8 +4904,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/720.zip",
-        "sha256": "20ce186591d6ef6c52e8d6516d221e4e5708091fc6c989c683ca3a51a3b6e954",
-        "size": 265898
+        "sha256": "6786d9cb694370d3c51cfb05217dbe16233ef7a71d84db14ec6a3d70b5e09ec0",
+        "size": 266789
       }
     },
     {
@@ -4619,7 +4947,14 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
+          "https://service.snom.com/spaces/wiki/pages/234343563/user_active"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4641,8 +4976,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/7xx.zip",
-        "sha256": "5f389ea65b985c683f43037fe0da09cb66fe66be6f9317045ab3ed80d70aeec6",
-        "size": 59947
+        "sha256": "1eaf687d877cbe1b669ef933fdd3826643d56afd5bdca5ef9811be90d3cc2029",
+        "size": 60838
       }
     },
     {
@@ -4684,7 +5019,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4706,8 +5045,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/820.zip",
-        "sha256": "15a8bb1ad81448750bf2112aabd9273a0e50d80ac130ba00ef69e5d6ba4d1b41",
-        "size": 42113
+        "sha256": "97edd9bbd4051256d5813015724ca01a1d94c540b80547cbf41eb90bed6185f5",
+        "size": 42860
       }
     },
     {
@@ -4749,7 +5088,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4771,8 +5114,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/8xx.zip",
-        "sha256": "24564238d3fcaa13b04997a51d1c2110efa5609c793ce76459d9fe9623e545c9",
-        "size": 56449
+        "sha256": "bb95f1a1cc62b183d670487304dcac9c7cdcaf3ef9ada72a2e4be65da78362cc",
+        "size": 57196
       }
     },
     {
@@ -4787,7 +5130,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4809,7 +5154,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4831,7 +5178,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4853,7 +5202,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4875,7 +5226,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4897,7 +5250,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4919,7 +5274,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4941,7 +5298,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4963,7 +5322,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4985,7 +5346,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5007,7 +5370,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5029,7 +5394,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5051,7 +5418,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5073,7 +5442,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5095,7 +5466,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5117,7 +5490,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5139,7 +5514,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5161,7 +5538,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5183,7 +5562,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5205,7 +5586,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5227,7 +5610,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5249,7 +5634,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5271,7 +5658,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5293,7 +5682,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5315,7 +5706,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5337,7 +5730,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5386,7 +5781,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5408,8 +5807,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/cp860.zip",
-        "sha256": "791c65de943b1bc5c3f7d6abbd3ff5a5e38aec51fc903abef2c316df13af6519",
-        "size": 642627
+        "sha256": "aac2004c39abd069fde00c49620631755dc987b7f2de9c494af63a9e32c50b23",
+        "size": 643447
       }
     },
     {
@@ -5424,7 +5823,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5446,7 +5847,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5468,7 +5871,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5490,7 +5895,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5512,7 +5919,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5534,7 +5943,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5583,7 +5994,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5605,8 +6020,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t21p.zip",
-        "sha256": "8f99bd2f0b4477f81ed98d86bc875f8184fa6d47fff1c4c910d2be9c452959e8",
-        "size": 665868
+        "sha256": "bab260cb30561fba60c92ace893f977e5e8ed9627b732e909f55ce5546208124",
+        "size": 666688
       }
     },
     {
@@ -5621,7 +6036,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5670,7 +6087,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5692,8 +6113,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t23g.zip",
-        "sha256": "ba024b2d9fbe6061effa6dae644b9de6447dfed5a2d0c4c838638c69ddad1e48",
-        "size": 663234
+        "sha256": "9c6fbdb82be27163d8812121ac7d67df95f4405d8d2d8c3be1236f1de8768b83",
+        "size": 664054
       }
     },
     {
@@ -5735,7 +6156,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5757,8 +6182,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t23p.zip",
-        "sha256": "3d25a4bb74844495643920a52ca95e327877386c3b660ff230685c9c6428fb26",
-        "size": 655811
+        "sha256": "7e275135857c0162325af3489077f961c730660a21cc9809b45b6d23ec712a3e",
+        "size": 656631
       }
     },
     {
@@ -5773,7 +6198,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5822,7 +6249,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5844,8 +6275,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t27g.zip",
-        "sha256": "34019100aa80fb653f0a141bfe85cad3f102482b648a6eee1aba7d019d15ce52",
-        "size": 667962
+        "sha256": "3edba4fd738e391755c2fe0f1f197b3c91ce08688eeb6dc2e29ec0dcafa27ce8",
+        "size": 668782
       }
     },
     {
@@ -5887,7 +6318,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5909,8 +6344,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t27p.zip",
-        "sha256": "c935c62d9f74c0fa9f2615f45fda8e95803c68c2cb4de417e4ee99412a777d76",
-        "size": 659897
+        "sha256": "d10170b5a19bff10ee397e35de18ee26bba09cb5cf706349f747bf788d66106a",
+        "size": 660717
       }
     },
     {
@@ -5925,7 +6360,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5974,7 +6411,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5996,8 +6437,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t29g.zip",
-        "sha256": "eb51772eb9e7dbf733cb6dceaedc9230c215c2b1f522756cda42b21a276ffa98",
-        "size": 676325
+        "sha256": "521d49681d4fe3fb37f6e61a5357b71c00978509cc0de31b734bd1f3e92882b3",
+        "size": 677145
       }
     },
     {
@@ -6012,7 +6453,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6061,7 +6504,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6083,8 +6530,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t31g.zip",
-        "sha256": "05595eab9822b10571120de6923505757315b4df9dba4a17eb7a52a2c192fffd",
-        "size": 487827
+        "sha256": "c3fd538a7319a15a5844b06fcb57c47dbba852b60d890f072751f3fcc7b5dfb8",
+        "size": 488647
       }
     },
     {
@@ -6099,7 +6546,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6148,7 +6597,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6170,8 +6623,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t32g.zip",
-        "sha256": "f5973c908f58fa9eb02e0c536938ede45a9ec7da99568712a2304a96934415e1",
-        "size": 490252
+        "sha256": "19cfd2def728e7bf49c74d2962b40745b38cf1468c8dbda254a6a50855780285",
+        "size": 491072
       }
     },
     {
@@ -6213,7 +6666,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6235,8 +6692,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t33g.zip",
-        "sha256": "5fa4b71c15741d0ff488f6314e41824fed4a8b2de8de6e152cc2d9b6f32f1b38",
-        "size": 890208
+        "sha256": "a5cff29c2f759d33bec16f567428207d05c9f3340d155438beaa81f916573034",
+        "size": 891028
       }
     },
     {
@@ -6251,7 +6708,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6300,7 +6759,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6322,8 +6785,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t38g.zip",
-        "sha256": "30fa3b00f1d257a894c2c8abb37a45b88c5541feba60f7a73a12370f5b8a14d8",
-        "size": 490410
+        "sha256": "60ebe1f26edaac964c9e450281c4a38e07f3a304b5acfa1d6ee04041a43cb605",
+        "size": 491230
       }
     },
     {
@@ -6365,7 +6828,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6387,8 +6854,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t40g.zip",
-        "sha256": "b5c90a5a8f47ecbbd10b8039938ca064d0aa197921c71ca4c9e3ce5b99daff80",
-        "size": 672338
+        "sha256": "d25a19c2ecb76badee48088e65d66a1e70c803261525df9741d7610fe0c32cee",
+        "size": 673158
       }
     },
     {
@@ -6430,7 +6897,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6452,8 +6923,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t40p.zip",
-        "sha256": "a5ca9e18df71ec119e49c92ceeeea4a09b7daecbde967ea3368f1232c386fba8",
-        "size": 675520
+        "sha256": "d85b8fd29f944deeb75b0acec281a2a582e28a18259c0ddde56827c68b9fecef",
+        "size": 676340
       }
     },
     {
@@ -6495,7 +6966,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6517,8 +6992,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t41p.zip",
-        "sha256": "9f2bd286a793877fcbd7295293d00097f43e077a267c17c84e23b8cb52fb38f8",
-        "size": 668097
+        "sha256": "800ee8530cbbc49e0721a419af63a67603b9c22481b71dde3f0a8db0954e11e6",
+        "size": 668917
       }
     },
     {
@@ -6560,7 +7035,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6582,8 +7061,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t41s.zip",
-        "sha256": "0ac0b04e4e897a34654236b91ce8ba468138a43b43bb680e6bbdebff837b2b53",
-        "size": 394361
+        "sha256": "a72c10566c5e8f4c1a27ad62fa42eced43081aac7b04ff4f4e486626739dc258",
+        "size": 395181
       }
     },
     {
@@ -6625,7 +7104,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6647,8 +7130,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t42g.zip",
-        "sha256": "b86469cba5741c55ce0a082671a58b4f8834bdf256bfd802854317afd25f31bf",
-        "size": 661889
+        "sha256": "d6d56850fb56006d23b3417525aee5d0c7251ad96b00b9b09e1b94b1d3dbfcb9",
+        "size": 662709
       }
     },
     {
@@ -6690,7 +7173,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6712,8 +7199,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t42s.zip",
-        "sha256": "c0dcda24ebb97367626d0acf6b54d9770df2c50cef00e41392508db8de87b041",
-        "size": 651378
+        "sha256": "03959dc810624feb2f2b7f712fc7187ed8fac9297c0ec4266715ba69c09b8885",
+        "size": 652198
       }
     },
     {
@@ -6755,7 +7242,15 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+          "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+          "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6777,8 +7272,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t42u.zip",
-        "sha256": "f66ccbdb634b4020984c23a5dc1b7a974189da065d10e76206def235bea87796",
-        "size": 661994
+        "sha256": "ad1fb5a14a30aa635e9ee2fd4702cdd917063e348c6f2edad5d33a06ea3a70c1",
+        "size": 663190
       }
     },
     {
@@ -6820,7 +7315,15 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+          "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+          "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6842,8 +7345,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t43u.zip",
-        "sha256": "8cc5c387896afe4ec58320b51a3eb23cb017c19fdd18204d80bbb9b3a9090378",
-        "size": 1270929
+        "sha256": "78e52a522ae61cb79c0dc7c18a7cd8892bcf57680c561246d750631d40949a89",
+        "size": 1272125
       }
     },
     {
@@ -6858,7 +7361,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6907,7 +7412,15 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+          "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+          "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6929,8 +7442,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t46g.zip",
-        "sha256": "474b072ec1a158fc4664d540787a4793aecdf94751a50013d79f9ea189fccaa2",
-        "size": 678085
+        "sha256": "92eaf09f7f13a581d825731c52ea5a26a1f8c1ea5d7ce800c9adeab89041cde7",
+        "size": 679281
       }
     },
     {
@@ -6972,7 +7485,15 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+          "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+          "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -6994,8 +7515,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t46s.zip",
-        "sha256": "bf522f7a1fc684481ec3611e16f8455d82541ad3d63c8cbdc5fd3ba4950a0e5f",
-        "size": 397532
+        "sha256": "12fb0827151c794d2afd362b69ad87a1fea65cc8e7b29426df3b86f7f3f0ff87",
+        "size": 398728
       }
     },
     {
@@ -7037,7 +7558,15 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": true,
+        "disable_lines": true,
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+          "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+          "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7059,8 +7588,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t46u.zip",
-        "sha256": "915d7372f08ad962e5e2d0732e83a0503ec811fcbfa152c02075c4bd96c786ce",
-        "size": 660547
+        "sha256": "fadf328abd869bd9621c18c62fe8b181dc602dbe73a9a65d3f40f59c7de6f8c9",
+        "size": 661743
       }
     },
     {
@@ -7102,7 +7631,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7124,8 +7657,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t48g.zip",
-        "sha256": "3ceb3268a39776a0e4b116c752ba6cbed4a55798e7dc057287e142df0eb5fbd6",
-        "size": 676635
+        "sha256": "b550411b83619db2c4e0d13c99dad589fb3c1c9dc8debcff2efa4081fac9fd8d",
+        "size": 677455
       }
     },
     {
@@ -7167,7 +7700,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7189,8 +7726,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t48s.zip",
-        "sha256": "d4b1a495ba2d9a928e2424bc1f21d57a493347e9cab9d4e544d820c562615f6a",
-        "size": 683853
+        "sha256": "46b6985726559d530f582e5f58d47791faf60518775598ef97577eace0f57f4b",
+        "size": 684673
       }
     },
     {
@@ -7205,7 +7742,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7254,7 +7793,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7276,8 +7819,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t49g.zip",
-        "sha256": "f2f5b484fc3b7d636e303cc270e06da663417c8e4ff2f067d79d01a6ec10efcf",
-        "size": 679484
+        "sha256": "4215e8e6af0b0a5978004fcc5f4a84fcdaccd60f28fa33bfb43cbeb2feca5b62",
+        "size": 680304
       }
     },
     {
@@ -7292,7 +7835,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7341,7 +7886,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7363,8 +7912,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t52s.zip",
-        "sha256": "2681f85b65410c01da2d548b554347fcaba3ba9110824acc1a3ef6669ea5b6ba",
-        "size": 337991
+        "sha256": "78fbe6d9c6caa0f0b9165c32a369dd5b5c1a5b91411e75c8235275b7bab8d562",
+        "size": 338811
       }
     },
     {
@@ -7406,7 +7955,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7428,8 +7981,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t53.zip",
-        "sha256": "fb79165b456eaaf12783094ddca99e7429a4d0d81c2b043a75bd14709c51efa6",
-        "size": 872467
+        "sha256": "a32fb306763bb5a3d9fa0572b14c8f30ea8a5648b0306b2c4a1612bf95c5d140",
+        "size": 873287
       }
     },
     {
@@ -7471,7 +8024,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7493,8 +8050,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t53w.zip",
-        "sha256": "bd9f11f0584b4dee968851ee66643dd36c6dab0144fc9c487f0d0f72a00971a1",
-        "size": 894792
+        "sha256": "b486257509ccbcad1679ab4011006c05440a5c0d7d1159b634edaa5e3b98955a",
+        "size": 895612
       }
     },
     {
@@ -7536,7 +8093,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7558,8 +8119,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t54s.zip",
-        "sha256": "5fcfe259c70af42fd504a47114d72a8b23bfa4c1a92207cd9230ccee9b9b424a",
-        "size": 348421
+        "sha256": "66d1f5d8d476473270d2bff23bfffa456e28011e0b47f6c50f496316370306a6",
+        "size": 349241
       }
     },
     {
@@ -7574,7 +8135,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7623,7 +8186,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7645,8 +8212,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t56a.zip",
-        "sha256": "e949a1c2c91baf071dceb447d56118300924272d9fb647fe05e53775cf8d3b06",
-        "size": 619728
+        "sha256": "fef826bf88411b8b084494aea3faa11d64f2327917323be34dad557cfaeb0b38",
+        "size": 620548
       }
     },
     {
@@ -7688,7 +8255,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7710,8 +8281,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t57w.zip",
-        "sha256": "450d0e32e75ac3dafda4c4bccf814bca84498b9a545b7f83737102387ec823bc",
-        "size": 874507
+        "sha256": "feea45a07e95c637ac8b77fef74d74cd8bf8a14406801e18f9de1438540f184a",
+        "size": 875327
       }
     },
     {
@@ -7753,7 +8324,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7775,8 +8350,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/t58a.zip",
-        "sha256": "13bf7356e78ce741f1e8cd588201c017c9eb0e884bf26debd536ad75286455dc",
-        "size": 618354
+        "sha256": "7276f784797ba396bc88242d4ea69d2575baecb551adf8868a38111da9896977",
+        "size": 619174
       }
     },
     {
@@ -7791,7 +8366,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7813,7 +8390,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7835,7 +8414,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7857,7 +8438,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7879,7 +8462,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7901,7 +8486,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7923,7 +8510,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7945,7 +8534,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7967,7 +8558,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -7989,7 +8582,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8011,7 +8606,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8033,7 +8630,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8082,7 +8681,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8104,8 +8707,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/vp530.zip",
-        "sha256": "856f1368152e8792941d5f874dcef60d83e58fcd8b4011d747cda1d086056b4d",
-        "size": 616488
+        "sha256": "ad1832a06a21125aa13e86e86467876e573966530f6be907b4560706d54a495e",
+        "size": 617308
       }
     },
     {
@@ -8120,7 +8723,9 @@
         "key_slots": [],
         "functions": [],
         "languages": {},
-        "capability_basis": "not_validated"
+        "capability_basis": "not_validated",
+        "clear_keys": false,
+        "disable_lines": false
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8149,7 +8754,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8171,8 +8780,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w52p.zip",
-        "sha256": "3f42f04e7322a1caa827bc82e2f9f90902792871228298d33195e06880ea0291",
-        "size": 391987
+        "sha256": "ef794c026fc65ca3dfb91c1b388f12256c4d4b749037511955f21df6f16ed256",
+        "size": 392807
       }
     },
     {
@@ -8194,7 +8803,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8216,8 +8829,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w56p.zip",
-        "sha256": "82b81ca68fb8e34cb2bf2b9985b3b63fab24fa7621019735b154a6b885cb294f",
-        "size": 378464
+        "sha256": "191df9d2ae4ca9ee3f9a3f21a4a1a76a7e1d8ed80c240cd006b54e72295f5a7d",
+        "size": 379284
       }
     },
     {
@@ -8239,7 +8852,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8261,8 +8878,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w60b.zip",
-        "sha256": "09740b4096200a40a5cf6d1e0ea7b2f1e68b94071d182eeac9719098e76da0e3",
-        "size": 543800
+        "sha256": "5ab5e52ac8a7448b44918f010d80c4f15b437324c751d552d2baade1c9aaba44",
+        "size": 544620
       }
     },
     {
@@ -8284,7 +8901,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8306,8 +8927,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w70b.zip",
-        "sha256": "141a06856d94b2656330d22903d8d881b8ed300fa7badd1db421fd0ea2188dc1",
-        "size": 543898
+        "sha256": "c9a18bea537f1a4045301c384f462ccbacc2d9c6a86e031709758eec71243691",
+        "size": 544718
       }
     },
     {
@@ -8329,7 +8950,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8351,8 +8976,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w7xp.zip",
-        "sha256": "b7da9ec67a79fd6673c2c2f6dd477d24b1c3d0be19bf33182a07b2b7a9e22ee0",
-        "size": 541547
+        "sha256": "fa5f8cd451d53d5afaed12320a39ecd027b462f01bebfb24911e8de7ceefb4ff",
+        "size": 542367
       }
     },
     {
@@ -8374,7 +8999,11 @@
         "separate_subscription_target": false,
         "separate_pickup_target": true,
         "projection_qualification": "software_only",
-        "partial_merge_qualification": "not_physically_verified"
+        "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": false,
+        "disable_lines": false,
+        "retirement_qualification": "unsupported",
+        "retirement_evidence": []
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -8396,10 +9025,10 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/yealink/w80.zip",
-        "sha256": "001bb3f5893e43f37d8808907cccbf5f6c4fa1ff172cfec835040f487f4333b0",
-        "size": 258340
+        "sha256": "cbf43d20e68d276fa4634d7180e6757a511152e92000a143947485ddced8b58e",
+        "size": 259160
       }
     }
   ],
-  "catalog_revision": "e5d62a5a6de77588d67e471b51e71874a834851b775dd8a261ce5d89e8a9f828"
+  "catalog_revision": "fe24aa6f3086ce6c9fc73db0186f0df945f9e457a4df8b784b66a88fd8137210"
 }

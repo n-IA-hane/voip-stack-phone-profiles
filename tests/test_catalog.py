@@ -147,8 +147,9 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
                 fragment, legacy
             )
             assert parsed.find(f"./phone-settings/{tag}").text == str(legacy_line[field])
-        fkey = parsed.find("./phone-settings/fkey")
+        fkey = parsed.find("./functionKeys/fkey")
         assert fkey.attrib["idx"] == "0"
+        assert fkey.attrib["context"] == "1"
         assert fkey.text.strip() == "blf 430"
     else:
         parsed = ET.fromstring(rendered)
@@ -211,8 +212,9 @@ def assert_sparse(profile, output):
             "user_pass",
             "user_host",
             "user_expiry",
-            "fkey",
         }
+        assert {n.tag for n in root} <= {"phone-settings", "functionKeys"}
+        assert all(n.tag == "fkey" for n in root.findall("./functionKeys/*"))
     else:
         for node in root.find("config"):
             if node.tag == "item":

@@ -23,6 +23,11 @@ def normalized_context(context: dict[str, Any]) -> dict[str, Any]:
     p.setdefault("language_code", "")
     c.setdefault("lines", [])
     c.setdefault("keys", [])
+    retired = c.setdefault("retired", {})
+    if not isinstance(retired, dict) or set(retired) - {"keys", "lines"}:
+        raise ValueError("invalid_retired_slots")
+    for kind in ("keys", "lines"):
+        retired.setdefault(kind, [])
     for line in c["lines"]:
         for key, default in {
             "auth_username": "",
@@ -117,6 +122,31 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
             raise ValueError("only dialog subscriptions are mapped; non-dialog keys may be empty")
         if key["pickup_target"] and profile["vendor"] != "yealink":
             raise ValueError("separate pickup target is not mapped for this subset")
+    for kind, allowed, active, feature in (
+        ("keys", set(key_caps), seen, "clear_keys"),
+        (
+            "lines",
+            {str(slot) for slot in range(1, caps["max_lines"] + 1)},
+            {str(slot) for slot in slots},
+            "disable_lines",
+        ),
+    ):
+        retired = c["retired"][kind]
+        if (
+            not isinstance(retired, list)
+            or any(
+                not isinstance(slot, str)
+                or not re.fullmatch(r"[1-9][0-9]*", slot)
+                or slot not in allowed
+                for slot in retired
+            )
+            or len(set(retired)) != len(retired)
+        ):
+            raise ValueError(f"invalid_retired_{kind}")
+        if set(retired) & active:
+            raise ValueError(f"retired_{kind}_still_active")
+        if retired and caps.get(feature, False) is not True:
+            raise ValueError(f"profile_{feature}_unsupported")
     if c["physical"]["language"] not in ("", *caps["languages"].values()):
         raise ValueError("language has no declared vendor mapping")
     if c["directory"]["ldap"]["host"] and "ldap" not in caps["functions"]:

@@ -39,6 +39,13 @@ paths and expands to twelve lowercase hexadecimal digits.
   Functions are `line`, `speed_dial`, `blf`, `queue_login`, `queue_pause`, `park`.
   This subset supports one common dial/subscription target; differing values
   fail validation. Separate pickup target is mapped only for Yealink.
+- `retired`: optional mapping containing `keys` and `lines`, each a list of
+  canonical positive decimal slot strings. Missing lists default to empty,
+  preserving version 1 callers. Slots must be declared by the profile, unique,
+  and absent from the active `keys`/`lines` in this revision. A retired key does
+  not require an active line or account credentials. Unknown fields and slots
+  fail validation. The HA provisioning ledger, not a template, establishes
+  historical ownership before supplying these intents.
 - `directory.ldap`: `host` (empty means omit), integer `port`, `base_dn`,
   `bind_dn`, `password`, `name_filter`, `number_filter`, `name_attributes`
   (space-separated string), `number_attributes` (space-separated string),
@@ -52,6 +59,39 @@ Require byte limits before rendering. Never truncate a key target or label.
 Keys must refer to an included configured line. Validate optional features
 against capabilities. `phone_profiles/render.py` is the original MIT reference
 validator/renderer, not code to download and execute in HA.
+
+## Owned slot retirement
+
+Every profile declares boolean `clear_keys` and `disable_lines` capabilities.
+An absent flag is false for older profiles. Nonempty retired lists require the
+corresponding flag to be exactly true. A documented allowlist covers Fanvil
+X3U Pro, Snom 720/7xx and Yealink T42U/T43U/T46G/T46S/T46U. Other profiles,
+including all current Grandstream projections, retain positive configuration
+support while removals remain unsupported. `retirement_evidence` and
+`retirement_qualification` distinguish documented commands from the Fanvil
+source-based candidate; neither is a physical application acknowledgement.
+
+Only the requested slots are emitted. There is no full-device reset, blanket
+key list replacement, boot default change or takeover of unknown slots.
+
+- Yealink keys use explicit `type = 0` (N/A), with `%NULL%` for the value,
+  label and extension strings. `%NULL%` resets a parameter to its documented
+  default, which is empty for these strings. It must never reset the key type,
+  whose factory default can be Line (15). Retired lines use `enable = 0` and
+  reset `user_name`, `auth_name` and `password` to their empty defaults.
+- Snom keys use `none` under the `functionKeys` sibling of `phone-settings`;
+  retired identities use `user_active = off`. Active keys use numeric,
+  one-based identity context, while function key indices remain zero-based.
+- Fanvil keys use `Type = 0` with empty `Value` and `Title`; retired lines use
+  `EnableReg = 0`. Snom and Fanvil line disabling does not claim erasure of
+  stored credentials. Sparse clearing on X3U Pro 2.12.20 remains a candidate
+  until independently qualified on the device.
+
+Retirement commands are idempotent. The caller must retain a tombstone until
+the slot is reused or its removal is independently acknowledged. Download of
+a configuration, SIP registration and a prepared file are distinct states;
+none alone proves application. Existing phones without an ownership history
+must not infer old slots from the profile's total capacity.
 
 ## Capability and evidence meaning
 

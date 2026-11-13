@@ -20,6 +20,26 @@ ROOT = Path(__file__).resolve().parent.parent
 UPSTREAM = ROOT / "upstream" / "fusionpbx"
 SOURCE_COMMIT = "07f0d76acd044e8a07d2f87aeb50bf59f856393b"
 FUNCTIONS = ["line", "speed_dial", "blf", "queue_login", "queue_pause", "park"]
+_SNOM_RETIREMENT_EVIDENCE = [
+    "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
+    "https://service.snom.com/spaces/wiki/pages/234343563/user_active",
+]
+_YEALINK_RETIREMENT_EVIDENCE = [
+    "https://support.yealink.com/docs/sip-t42u/dss-keys/711335ef674b43e39937b51d22f7ae2d",
+    "https://support.yealink.com/docs/sip-t46u/account-registration/f81ad0a1c8b04d9b943a1fd504239f67",
+    "https://support-cdn.yealink.com/attachment/upload/attachment/2015-3-11/3/84f5d504-7f97-4b90-bbb2-8f0ab01dda61/Yealink_SIP-T2_Series_T4_Series_IP_Phones_Auto_Provisioning_Guide_V73_40.pdf",
+]
+RETIREMENT_EVIDENCE = {
+    "fanvil/x3u-pro": [
+        "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
+        "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg",
+    ],
+    **{f"snom/{model}": _SNOM_RETIREMENT_EVIDENCE for model in ("720", "7xx")},
+    **{
+        f"yealink/{model}": _YEALINK_RETIREMENT_EVIDENCE
+        for model in ("t42u", "t43u", "t46g", "t46s", "t46u")
+    },
+}
 NOTICE = """FusionPBX-derived phone configuration templates, Mozilla Public License 1.1.
 Original Code: FusionPBX. Its project notice identifies Mark J Crane as Initial Developer.
 Upstream commit: 07f0d76acd044e8a07d2f87aeb50bf59f856393b.
@@ -156,6 +176,16 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         "separate_pickup_target": vendor == "yealink",
         "projection_qualification": "software_only",
         "partial_merge_qualification": "not_physically_verified",
+        "clear_keys": bool(keys and f"{vendor}/{model}" in RETIREMENT_EVIDENCE),
+        "disable_lines": f"{vendor}/{model}" in RETIREMENT_EVIDENCE,
+        "retirement_qualification": (
+            "source_documented_candidate"
+            if (vendor, model) == ("fanvil", "x3u-pro")
+            else "vendor_documented"
+            if f"{vendor}/{model}" in RETIREMENT_EVIDENCE
+            else "unsupported"
+        ),
+        "retirement_evidence": RETIREMENT_EVIDENCE.get(f"{vendor}/{model}", []),
     }
     if max_lines == 6:
         caps.update(
@@ -237,6 +267,8 @@ def build() -> dict:
                 "functions": [],
                 "languages": {},
                 "capability_basis": "not_validated",
+                "clear_keys": False,
+                "disable_lines": False,
             },
             "source_commit": SOURCE_COMMIT,
             "qualification": {
@@ -302,6 +334,13 @@ def build() -> dict:
                     }
                 ],
             }
+            profile_provenance["modifications"].append(
+                {
+                    "date": "2026-11-13",
+                    "author": "n-IA-hane contributors",
+                    "description": "Add bounded owned-slot retirement capabilities and documented clear/disable commands; place Snom fkeys in functionKeys with explicit identity context. Unsupported models remain non-destructive.",
+                }
+            )
             if (vendor, model) == ("fanvil", "x3u-pro"):
                 profile_provenance["modifications"].append(
                     {
