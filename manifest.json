@@ -25,7 +25,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -37,6 +38,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -79,8 +81,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/h2u-v2.zip",
-        "sha256": "8f5fa6a11bc435c48c6e3f77c89d761ddd13991467dcb79f04094174c00d37c3",
-        "size": 257327
+        "sha256": "38903342eff703a81a1238d2a7d8566c388dc49b67597382de862cff057a821c",
+        "size": 257679
       }
     },
     {
@@ -151,7 +153,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -163,6 +166,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -205,8 +209,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62.zip",
-        "sha256": "92934a26ecefac2d6f77f5127c12624a7a30b79813de1eb32c3d9d7a55981402",
-        "size": 227991
+        "sha256": "7649ded463748afa748166803804c400c764999c94be134bfb548e2eb0e017b0",
+        "size": 228343
       }
     },
     {
@@ -229,7 +233,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -241,6 +246,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -283,8 +289,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62-pro.zip",
-        "sha256": "d4ea5719b7911460fad2da56e7aca57f8564d7c121b4a7643df75fdc19b5dc58",
-        "size": 228003
+        "sha256": "8a929cc0cb55deaa1bdf7daa83c83990ead2665468daeb06fc48d2f877790132",
+        "size": 228355
       }
     },
     {
@@ -307,7 +313,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -319,6 +326,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -361,8 +369,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v63.zip",
-        "sha256": "2d6ef6e497dc775fd5ddbd79bd3e785caa208eaec9ce37776a00ee0e7484ed06",
-        "size": 227991
+        "sha256": "95d9de57c1f26a83057f394cd193513d807daaa698def423e5ab24e15da39b16",
+        "size": 228343
       }
     },
     {
@@ -385,7 +393,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -397,6 +406,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -439,8 +449,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v64.zip",
-        "sha256": "5974aa0526bcf707a8d117d342c7a7ea14094e10d4e43ab50e8257aa5a025c15",
-        "size": 227991
+        "sha256": "1239ad5bf894fb076587602629ee919a6da7f51b587855a06f95245dad37100d",
+        "size": 228343
       }
     },
     {
@@ -463,7 +473,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -475,6 +486,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -517,8 +529,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v65.zip",
-        "sha256": "c87267c99bc5d2d182ffd5d741592cdc3cb6ef34c406ea9579a02a9a5e9bb186",
-        "size": 227991
+        "sha256": "4de08f0296d3621d94ca41914b5109ee66111f1dcfe7ee2349e5d9aeeade2dd8",
+        "size": 228343
       }
     },
     {
@@ -541,7 +553,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -553,6 +566,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -595,8 +609,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v67.zip",
-        "sha256": "69c4570f1a734835f0fe2dbee98dc1659636e36e32f4143b0b4307c1c11648ab",
-        "size": 227999
+        "sha256": "dae17f7452de723cc3725a4a04685a644ea45c29d0f444438ce8c3aaebd74ab5",
+        "size": 228351
       }
     },
     {
@@ -643,7 +657,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -655,6 +670,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -697,8 +713,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1s.zip",
-        "sha256": "448b2b438b188e934ed55725abc5027cf9ae6fabe1fe25b812f5c617646429e8",
-        "size": 207884
+        "sha256": "6bf1abd456f288269f16824fbc7faa1f1fe8ae06c7f7dd9f569a1236085abbb4",
+        "size": 208236
       }
     },
     {
@@ -721,7 +737,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -733,6 +750,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -775,8 +793,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sg.zip",
-        "sha256": "8c5a4ceff24212c4fb2356766b0d81052896553e43d92561f76a2f697800001f",
-        "size": 207887
+        "sha256": "1d09fc3ad6dcd20dbc3c56105edab3348bc84561759f8f3aaff4c12458299deb",
+        "size": 208239
       }
     },
     {
@@ -799,7 +817,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -811,6 +830,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -853,8 +873,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sp.zip",
-        "sha256": "486eb007196c2632873a00500402b572f8881f03b2d57d15d8b526a5f0fb0599",
-        "size": 207887
+        "sha256": "7372ad75fd9084d3f39f9d1fa8bb3f6a4443db1e02f30e0244b3fadfa9faa8e9",
+        "size": 208239
       }
     },
     {
@@ -877,7 +897,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -889,6 +910,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -931,8 +953,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x210.zip",
-        "sha256": "ccfee05fb6a6ac4370c5273c8fa71bed0d6de8bb9c1610944b5faabb9a3653a6",
-        "size": 720898
+        "sha256": "97f63231f37852b3b94463b5115428881304308d8c333cdb105cb777b361d459",
+        "size": 721250
       }
     },
     {
@@ -1003,7 +1025,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1015,6 +1038,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1057,8 +1081,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sg.zip",
-        "sha256": "4b19f36dad630948cb3b64e4f116c94915c889c75eb6df37c71ca0ad7581746b",
-        "size": 257321
+        "sha256": "41c29b2f6392ce999316f84054a5e4e8630e238dfa237bcbf2773a6690102310",
+        "size": 257673
       }
     },
     {
@@ -1105,7 +1129,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1117,6 +1142,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1159,8 +1185,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sw.zip",
-        "sha256": "31d570944aab95f3daf66fe29be7b27e7aca1d1b7298d726ff7e49a833e13291",
-        "size": 257321
+        "sha256": "9705a2fb7cd0f685720a0b0ed9df49a33f4805930c975b23602bff6aaecc7262",
+        "size": 257673
       }
     },
     {
@@ -1217,8 +1243,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u.zip",
-        "sha256": "f49c767922464c149aee207318106b88f3459ec1361caee741b599cec8e15e8a",
-        "size": 322304
+        "sha256": "e60a6ab8885bb1bfe673870f55c9186576c6ab55e52a0e73986d859a40aba5d3",
+        "size": 322632
       }
     },
     {
@@ -1241,7 +1267,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           },
           {
@@ -1254,7 +1281,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           },
           {
@@ -1267,7 +1295,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1279,6 +1308,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1300,6 +1330,7 @@
           "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
           "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg"
         ],
+        "dnd_sync": true,
         "time_zones": {
           "Europe/Rome": {
             "code": 4,
@@ -1351,8 +1382,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "3f7730ecbd2df02307aaccc881cdb311558b85fe77984595e6c3fe1a772546d6",
-        "size": 259968
+        "sha256": "ffe50584735b89f4d5dc355a1785cb4ae357648be8b6b18e19f3ae6594e71e3c",
+        "size": 260778
       }
     },
     {
@@ -1423,7 +1454,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1435,6 +1467,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1477,8 +1510,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4sg.zip",
-        "sha256": "3ff696c2fa853efaf741ac97fbb44e026d5333c1bf6b27328a5962f2fc126c1c",
-        "size": 294149
+        "sha256": "8130e30e9b2c214b45d47b24a8deada94bf88803567ef81f94094605827c01a4",
+        "size": 294501
       }
     },
     {
@@ -1501,7 +1534,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1513,6 +1547,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1555,8 +1590,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4u.zip",
-        "sha256": "f97a917479407b8298203ed48e73a688fd0995838635493b98fae842a3419bff",
-        "size": 525665
+        "sha256": "b8c08d946be7c5ae41b3a1264ee3efb303776105a25bef3765df2dbaf90f327d",
+        "size": 526017
       }
     },
     {
@@ -1579,7 +1614,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1591,6 +1627,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1633,8 +1670,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5s.zip",
-        "sha256": "c185021e657835ad28d7c4ff8a4cd94305ec4248d17ac7443e05af145ae78ff2",
-        "size": 397390
+        "sha256": "24df2a22a41ba36f2dc75a04c1dcc9981a0c9f1e48cf6dd8b403bc1f39fc99f1",
+        "size": 397742
       }
     },
     {
@@ -1657,7 +1694,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1669,6 +1707,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1711,8 +1750,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5u.zip",
-        "sha256": "9e0763c372dbea54fb008bce5ef100c3c3125cc91c6a45aa6a1dc119166bd1e0",
-        "size": 631193
+        "sha256": "f2fa2d2fb8e68e076e281a874aea50e789b20a9c249182a774d2259debd887be",
+        "size": 631545
       }
     },
     {
@@ -1735,7 +1774,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1747,6 +1787,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1789,8 +1830,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6.zip",
-        "sha256": "db1e878e23e3038661923debbf187a0a4a331ff2b105f321bc4e0b7c6f3b7f31",
-        "size": 397709
+        "sha256": "5b30087ac8edd9428f8dba2ce61143cb49b8aa8ab551f4448affb2bbe005ce3b",
+        "size": 398061
       }
     },
     {
@@ -1813,7 +1854,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1825,6 +1867,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1867,8 +1910,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6u.zip",
-        "sha256": "77a0ece20f610cd068c8d80b5a397fbc6e807c5b7c3f15f95fa153a73fa339ad",
-        "size": 738695
+        "sha256": "b68f4ff8bf8893b89dead40aa7639b3f37a1948ee66da2dea7b14799bc2194aa",
+        "size": 739047
       }
     },
     {
@@ -1891,7 +1934,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1903,6 +1947,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -1945,8 +1990,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7.zip",
-        "sha256": "04690789cfc4e1e954103dc04047cd0755f079cccb1c8eae6d3d4f85e27e6d0f",
-        "size": 670153
+        "sha256": "0c1853cbff4a73ee43ee46c6119a543baecba81ce6fc76fcb556a9b3af7c4482",
+        "size": 670505
       }
     },
     {
@@ -1969,7 +2014,8 @@
               "blf",
               "queue_login",
               "queue_pause",
-              "park"
+              "park",
+              "park_call"
             ]
           }
         ],
@@ -1981,6 +2027,7 @@
           "queue_login",
           "queue_pause",
           "park",
+          "park_call",
           "ldap",
           "language",
           "provision"
@@ -2023,8 +2070,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7a.zip",
-        "sha256": "1045877dc0ecc04074c36ba7e665d9aa6dacc1ae44a053d83d0dafdeed083f82",
-        "size": 701963
+        "sha256": "36583a65586f51561e54ca9874afa6711edc95d0943c1f0cfefe66604b6eab43",
+        "size": 702315
       }
     },
     {
@@ -9051,5 +9098,5 @@
       }
     }
   ],
-  "catalog_revision": "656c44bfc066bb33e84f22cd8ba9540cb640c2c679592198410e080cc569e481"
+  "catalog_revision": "4801bbee29fe27eec9068522c8947e0d740e5b4a8d327796396eefd599f30eea"
 }

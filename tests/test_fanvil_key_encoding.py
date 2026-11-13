@@ -63,3 +63,34 @@ def test_line_key_keeps_its_type_and_sip_identity_without_memory_suffix(identity
     context["keys"][0].update(function="line", dial_target="", event_package="")
     key = ET.fromstring(only_output(profile, templates, context)).find(f"./dsskey/{group}/Fkey")
     assert key.findtext("Type") == "2" and key.findtext("Value") == "SIP1"
+
+
+@pytest.mark.parametrize("function,semantic", [("park", "blf_new"), ("park_call", "call_park")])
+def test_parking_monitor_and_explicit_action_have_different_vendor_functions(function, semantic):
+    profile, templates = load_bundle("fanvil/x3u-pro")
+    context = fixture_context()
+    context["keys"][0].update(
+        function=function, dial_target="700", event_package="dialog" if function == "park" else ""
+    )
+    key = ET.fromstring(only_output(profile, templates, context)).find("./dsskey/dssSide/Fkey")
+    assert key.findtext("Type") == "1"
+    assert key.findtext("Value") == "700@1/" + FIXTURE["functions"][semantic]["value"]
+
+
+def test_only_qualified_x3u_pro_projection_enables_feature_sync_and_never_on_empty_lines():
+    profile, templates = load_bundle("fanvil/x3u-pro")
+    assert profile["capabilities"]["dnd_sync"] is True
+    context = fixture_context()
+    context["dnd_sync"] = False  # The declared capability owns emitted behavior.
+    root = ET.fromstring(only_output(profile, templates, context))
+    assert root.findtext("./sip/line/FeatureSync") == "1"
+    context.update(lines=[], keys=[])
+    assert ET.fromstring(only_output(profile, templates, context)).find("sip") is None
+    other, templates = load_bundle("fanvil/x4u")
+    assert not other["capabilities"].get("dnd_sync", False)
+    assert (
+        ET.fromstring(only_output(other, templates, fixture_context())).find(
+            "./sip/line/FeatureSync"
+        )
+        is None
+    )

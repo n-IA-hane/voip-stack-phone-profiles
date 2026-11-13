@@ -37,7 +37,8 @@ paths and expands to twelve lowercase hexadecimal digits.
   `line`, integer 1-based `line`, `label`; optional `subscription_target`,
   `pickup_target` default empty; `event_package` defaults `dialog`.
   `line` and `speed_dial` may instead use an empty value, without a subscription.
-  Functions are `line`, `speed_dial`, `blf`, `queue_login`, `queue_pause`, `park`.
+  Functions are `line`, `speed_dial`, `blf`, `queue_login`, `queue_pause`, `park`,
+  and, only where declared, `park_call`.
   This subset supports one common dial/subscription target; differing values
   fail validation. Separate pickup target is mapped only for Yealink.
 - `retired`: optional mapping containing `keys` and `lines`, each a list of
@@ -82,6 +83,27 @@ time zone or every phone model. Unsupported zones fail validation rather than
 being guessed from a current UTC offset. Rome locality and mode come from
 read-only X3U Pro 2.12.20 options; provisioning application remains separately
 qualified. Empty time zones preserve the existing generated configuration.
+
+## Hardware-only inventory and phone features
+
+An empty `lines` list describes an unassigned physical phone. It may generate
+declared language, clock and provisioning fields and explicitly retired slots,
+but no SIP or LDAP credentials. Keys must still reference configured lines.
+This does not create an account or claim that the phone has applied removals.
+
+`park` retains its existing monitor/retrieve BLF behavior. `park_call` explicitly
+requests the vendor Call Park action. For Fanvil the suffixes are respectively
+`bc` and `c`, from pinned FusionPBX vendor function definitions. The target
+number is never changed automatically; monitor a configured slot and use the
+configured parking access number for the action. Physical key behavior requires
+its own qualification.
+
+Only the X3U Pro source subset declares `dnd_sync=true`. Validation derives the
+context flag from that capability, and the template enables per-line
+`FeatureSync`. Older renderers without the context flag omit it. The PBX uses
+authenticated `as-feature-event` subscriptions for explicit DND ON/OFF and
+NOTIFY state; it never infers DND from a busy response. Device application and
+synchronization remain separate from software validation.
 
 ## Owned slot retirement
 

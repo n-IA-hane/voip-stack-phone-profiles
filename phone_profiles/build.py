@@ -108,10 +108,15 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
                 "<__PHONE_PARENT__>",
                 "<__PHONE_PARENT__>" + (ROOT / "templates/fanvil-clock.xml.jinja2").read_text(),
             )
+            text = text.replace(
+                "<EnableReg>1</EnableReg>",
+                "<EnableReg>1</EnableReg>{% if dnd_sync|default(false) %}<FeatureSync>1</FeatureSync>{% endif %}",
+            )
         text = text.replace("__PHONE_PARENT__", parent)
         keys = "<Fkey index=" in source and '<internal index="1">' in source
         if keys:
             functions.extend(FUNCTIONS)
+            functions.append("park_call")
         if '<ldap index="1">' in source:
             functions.append("ldap")
         if "<DefaultLanguage>en</DefaultLanguage>" in source:
@@ -173,7 +178,7 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
                 "slot": str(i),
                 "max_value_bytes": 31 if vendor == "fanvil" else 64,
                 "max_label_bytes": 16,
-                "functions": [f for f in functions if f in FUNCTIONS],
+                "functions": [f for f in functions if f in [*FUNCTIONS, "park_call"]],
             }
             for i in range(1, max_keys + 1)
         ],
@@ -200,6 +205,7 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
     }
     if max_lines == 6:
         caps.update(
+            dnd_sync=True,
             time_zones={
                 "Europe/Rome": {"code": 4, "name": "UTC+1", "dst_type": 1, "dst_location": 13},
                 "UTC": {"code": 0, "name": "UTC", "dst_type": 0, "dst_location": 0},
@@ -367,7 +373,21 @@ def build() -> dict:
                         "description": "Serialize BLF New Call as target@line/bc and speed dial as target@line/f, from Fanvil vendor function definitions in FusionPBX app/devices/app_config.php at the pinned upstream commit. Native web UI enum90 is not a configuration suffix; line keys remain Type2/SIP.",
                     }
                 )
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-13",
+                        "author": "n-IA-hane contributors",
+                        "description": "Preserve park as BLF New Call monitor/retrieve. Add explicit park_call action using vendor call_park suffixc from pinned Fusion app/devices/app_config.php; no automatic target URI changes or physical keypress claim.",
+                    }
+                )
             if (vendor, model) == ("fanvil", "x3u-pro"):
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-13",
+                        "author": "n-IA-hane contributors",
+                        "description": "Enable per-line FeatureSync for DND only on this qualified source subset. Element retained from pinned X3U Pro SIP line source; server uses authenticated BroadSoft as-feature-event and canonical DND. Physical synchronization remains pending independent device qualification.",
+                    }
+                )
                 profile_provenance["modifications"].append(
                     {
                         "date": "2026-11-12",

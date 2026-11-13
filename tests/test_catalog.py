@@ -198,6 +198,7 @@ def assert_sparse(profile, output):
                 "EnableReg",
                 "Transport",
                 "ProxyAddr",
+                "FeatureSync",
             }
         assert root.find("./net") is None
         for parent in ("timePlan", "phone"):

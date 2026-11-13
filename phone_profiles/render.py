@@ -79,6 +79,7 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
         raise ValueError("time zone has no declared vendor mapping")
     # Vendor clock data is owned by the verified profile, never by the caller.
     c["clock"] = deepcopy(time_zones[time_zone]) if time_zone else {}
+    c["dnd_sync"] = caps.get("dnd_sync") is True
 
     def strings(value: Any) -> None:
         if isinstance(value, str) and any(ord(ch) < 32 or ord(ch) == 127 for ch in value):
@@ -160,6 +161,8 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
         raise ValueError("language has no declared vendor mapping")
     if c["directory"]["ldap"]["host"] and "ldap" not in caps["functions"]:
         raise ValueError("LDAP is not mapped for this subset")
+    if not c["lines"] and c["directory"]["ldap"]["host"]:
+        raise ValueError("unassigned hardware configuration cannot include LDAP credentials")
     if c["provisioning"]["url"] and "provision" not in caps["functions"]:
         raise ValueError("provisioning URL is not mapped for this subset")
     return c
