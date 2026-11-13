@@ -107,7 +107,8 @@ def test_seven_samples_differential_account_and_key_against_original_fragments(p
             "device_key_icon": "",
         }
         oracle = ET.fromstring(original_fragment(fragment, {"row": row}))
-        emitted = parsed.find("./dsskey/internal/Fkey")
+        group = "dssSide" if profile_id == "fanvil/x3u-pro" else "internal"
+        emitted = parsed.find(f"./dsskey/{group}/Fkey")
         assert [emitted.find(n).text for n in ("Type", "Value", "Title")] == [
             oracle.find(n).text for n in ("Type", "Value", "Title")
         ]
@@ -303,7 +304,7 @@ def test_fanvil_six_lines_three_keys_utf8_ldap_and_no_unselected_settings():
     result = only_output(profile, templates, c)
     root = ET.fromstring(result)
     assert len(root.findall("./sip/line")) == 6
-    assert len(root.findall("./dsskey/internal/Fkey")) == 3
+    assert len(root.findall("./dsskey/dssSide/Fkey")) == 3
     assert root.find("./phone/display/DefaultLanguage").text == "it"
     assert root.find("./phone/ldap/TelAttr").text == "telephonenumber"
     assert root.find("./ap/FlashServerIP").text == c["provisioning"]["url"]
@@ -368,7 +369,7 @@ def test_line_key_needs_no_dial_target(profile_id):
     c["keys"] = [{"slot": "1", "function": "line", "line": 1, "label": "SIP1"}]
     output = only_output(p, templates, c)
     if p["vendor"] == "fanvil":
-        assert ET.fromstring(output).find("./dsskey/internal/Fkey/Value").text == "SIP1"
+        assert ET.fromstring(output).find("./dsskey/dssSide/Fkey/Value").text == "SIP1"
     else:
         assert "linekey.1.type = 15" in output
 
@@ -409,3 +410,49 @@ def test_fanvil_phone_parent_keeps_language_and_ldap_together(profile_id):
     assert root.find("./phone/ldap/Password").text == "fixture-only"
     assert root.find("./sip/line/RegisterTTL").text == "300"
     assert root.find("./ap/FlashServerIP").text == context["provisioning"]["url"]
+
+
+def test_x3upro_active_and_retired_side_keys_use_comparable_mpl_container():
+    """W611W provides the container golden; X3U Pro applicability is a candidate."""
+    comparable = (UPSTREAM / "fanvil/w611w/{$mac}.xml").read_text(encoding="utf-8-sig")
+    fragment = re.search(r'<dssSide index="1">.*?</dssSide>', comparable, re.DOTALL)[0]
+    oracle = ET.fromstring(fragment)
+    assert oracle.tag == "dssSide" and oracle.attrib == {"index": "1"}
+    assert oracle.findall("Fkey")
+    profile, templates = load_bundle("fanvil/x3u-pro")
+    c = fixture_context()
+    c["keys"] = [
+        dict(c["keys"][0], slot=str(slot), label=title, dial_target=target)
+        for slot, title, target in [
+            (1, "Queue-test", "queue-login+1010"),
+            (2, "Casa", "Casa"),
+            (3, "QA-P4", "430"),
+        ]
+    ]
+    positive = ET.fromstring(only_output(profile, templates, c))
+    assert positive.find("./dsskey/internal") is None
+    group = positive.find("./dsskey/dssSide")
+    assert group is not None and group.attrib == oracle.attrib
+    third = group.find("Fkey[@index='3']")
+    assert [third.findtext(tag) for tag in ("Type", "Value", "Title")] == ["1", "430@1/90", "QA-P4"]
+    original = {
+        slot: {
+            tag: group.find(f"Fkey[@index='{slot}']").findtext(tag)
+            for tag in ("Type", "Value", "Title")
+        }
+        for slot in ("1", "2")
+    }
+    c["keys"] = c["keys"][:2]
+    c["retired"] = {"keys": ["3"], "lines": []}
+    retired = ET.fromstring(only_output(profile, templates, c))
+    group = retired.find("./dsskey/dssSide")
+    assert retired.find("./dsskey/internal") is None and group.attrib == oracle.attrib
+    assert [node.attrib["index"] for node in group.findall("Fkey")] == ["1", "2", "3"]
+    for slot, expected in original.items():
+        assert {
+            tag: group.find(f"Fkey[@index='{slot}']").findtext(tag)
+            for tag in ("Type", "Value", "Title")
+        } == expected
+    third = group.find("Fkey[@index='3']")
+    assert third.findtext("Type") == "0"
+    assert third.find("Value").text is None and third.find("Title").text is None

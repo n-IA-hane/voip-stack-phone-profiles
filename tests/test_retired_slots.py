@@ -94,7 +94,7 @@ def test_owned_key_present_removed_and_readded_has_explicit_vendor_commands(iden
         assert key.attrib["idx"] == "0" and key.text.strip() == "none"
         assert key.attrib["label"] == ""
     else:
-        (key,) = ET.fromstring(removed).findall("./dsskey/internal/Fkey")
+        (key,) = ET.fromstring(removed).findall("./dsskey/dssSide/Fkey")
         assert key.attrib["index"] == "1" and key.findtext("Type") == "0"
         assert key.find("Value").text is None and key.find("Title").text is None
     c["keys"] = context()["keys"]
@@ -131,9 +131,9 @@ def test_known_unowned_fanvil_slot_is_never_reset():
     c = context()
     c["retired"] = {"keys": ["2"], "lines": ["2"]}
     root = ET.fromstring(only_output(profile, templates, c))
-    assert [key.attrib["index"] for key in root.findall("./dsskey/internal/Fkey")] == ["1", "2"]
+    assert [key.attrib["index"] for key in root.findall("./dsskey/dssSide/Fkey")] == ["1", "2"]
     assert [line.attrib["index"] for line in root.findall("./sip/line")] == ["1", "2"]
-    assert root.find("./dsskey/internal/Fkey[@index='3']") is None
+    assert root.find("./dsskey/dssSide/Fkey[@index='3']") is None
     assert root.find("./sip/line[@index='3']") is None
 
 
