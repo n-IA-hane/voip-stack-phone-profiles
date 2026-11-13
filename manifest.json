@@ -1300,6 +1300,26 @@
           "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
           "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg"
         ],
+        "time_zones": {
+          "Europe/Rome": {
+            "code": 4,
+            "name": "UTC+1",
+            "dst_type": 1,
+            "dst_location": 13
+          },
+          "UTC": {
+            "code": 0,
+            "name": "UTC",
+            "dst_type": 0,
+            "dst_location": 0
+          },
+          "Etc/UTC": {
+            "code": 0,
+            "name": "UTC",
+            "dst_type": 0,
+            "dst_location": 0
+          }
+        },
         "hardware_max_lines": 6,
         "hardware_key_count": 3,
         "evidence": [
@@ -1325,13 +1345,14 @@
         "keys",
         "language",
         "ldap",
-        "provision"
+        "provision",
+        "clock"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "75ac6ae3914447eb061fb997df8c3444e246071da70606ea120864951adc3ccf",
-        "size": 258729
+        "sha256": "3f7730ecbd2df02307aaccc881cdb311558b85fe77984595e6c3fe1a772546d6",
+        "size": 259968
       }
     },
     {
@@ -9030,5 +9051,5 @@
       }
     }
   ],
-  "catalog_revision": "8a838e6b7afadaa128df4da78b72f77794d213ed6b7284cdcf5a10870311d19d"
+  "catalog_revision": "656c44bfc066bb33e84f22cd8ba9540cb640c2c679592198410e080cc569e481"
 }

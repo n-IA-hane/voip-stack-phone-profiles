@@ -26,7 +26,8 @@ paths and expands to twelve lowercase hexadecimal digits.
 
 - `physical`: required `name`, `mac`; `language` is already the vendor value
   from `capabilities.languages` (BCP47-to-vendor mapping), empty means omit;
-  optional `language_code` preserves the canonical UI locale.
+  optional `language_code` preserves the canonical UI locale. Optional
+  `time_zone` is an IANA identifier, default empty means omit clock settings.
 - `lines`: objects with integer 1-based `slot`, required `username`, `password`,
   `server`, integer `port`, lowercase `transport` (`udp`, `tcp`, `tls`). Optional
   `auth_username`, `display_name`, `outbound_proxy` default empty; `expires`
@@ -59,6 +60,28 @@ Require byte limits before rendering. Never truncate a key target or label.
 Keys must refer to an included configured line. Validate optional features
 against capabilities. `phone_profiles/render.py` is the original MIT reference
 validator/renderer, not code to download and execute in HA.
+
+## Optional clock mapping
+
+`capabilities.time_zones` maps supported IANA identifiers to vendor clock data.
+An absent or empty mapping supports only an empty `physical.time_zone`.
+For a nonempty zone, validation requires exact membership and derives `clock`
+from that declared mapping, replacing any caller-supplied `clock`. The data
+fields are `code`, `name`, `dst_type` and `dst_location`. Templates use
+`clock|default({})` so older version 1 renderers omit the optional block.
+
+Only Fanvil X3U Pro currently declares mappings: `Europe/Rome` uses base
+UTC+1 (quarter-hour code4) and automatic DST for Rome locality13; `UTC` and
+`Etc/UTC` use code0 with DST disabled. The generated `phone/date` block contains
+only `TimeZone`, `TimeZoneName`, `DSTType` and `DSTLocation`. It does not change
+NTP servers, date format, manual DST rules or the current time directly.
+The base offset remains UTC+1 in summer; the phone applies DST separately.
+
+This is a deliberately partial, extensible mapping, not support for every HA
+time zone or every phone model. Unsupported zones fail validation rather than
+being guessed from a current UTC offset. Rome locality and mode come from
+read-only X3U Pro 2.12.20 options; provisioning application remains separately
+qualified. Empty time zones preserve the existing generated configuration.
 
 ## Owned slot retirement
 

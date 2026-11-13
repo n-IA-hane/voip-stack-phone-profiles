@@ -1,0 +1,5 @@
+{# SPDX-License-Identifier: MPL-1.1; see NOTICE and provenance.json #}
+{% if clock|default({}) %}<date>
+<TimeZone>{{ clock.code }}</TimeZone><TimeZoneName>{{ clock.name }}</TimeZoneName>
+<DSTType>{{ clock.dst_type }}</DSTType><DSTLocation>{{ clock.dst_location }}</DSTLocation>
+</date>{% endif %}

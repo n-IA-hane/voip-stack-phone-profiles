@@ -100,6 +100,14 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
                 "directory.ldap.display_attribute|default('displayName')",
                 "'cn' if directory.ldap.display_attribute == 'displayName' else directory.ldap.display_attribute",
             )
+            text = text.replace(
+                "{% if physical.language or directory.ldap.host %}",
+                "{% if physical.language or directory.ldap.host or clock|default({}) %}",
+            )
+            text = text.replace(
+                "<__PHONE_PARENT__>",
+                "<__PHONE_PARENT__>" + (ROOT / "templates/fanvil-clock.xml.jinja2").read_text(),
+            )
         text = text.replace("__PHONE_PARENT__", parent)
         keys = "<Fkey index=" in source and '<internal index="1">' in source
         if keys:
@@ -192,6 +200,11 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
     }
     if max_lines == 6:
         caps.update(
+            time_zones={
+                "Europe/Rome": {"code": 4, "name": "UTC+1", "dst_type": 1, "dst_location": 13},
+                "UTC": {"code": 0, "name": "UTC", "dst_type": 0, "dst_location": 0},
+                "Etc/UTC": {"code": 0, "name": "UTC", "dst_type": 0, "dst_location": 0},
+            },
             hardware_max_lines=6,
             hardware_key_count=3,
             evidence=[
@@ -300,6 +313,8 @@ def build() -> dict:
             profile["managed_sections"] = ["sip_accounts", "keys"] + [
                 f for f in ("language", "ldap", "provision") if f in caps["functions"]
             ]
+            if caps.get("time_zones"):
+                profile["managed_sections"].append("clock")
             profile["merge_verification"] = "not_physically_verified"
             context = fixture_context()
             if not caps["key_slots"]:
@@ -372,6 +387,17 @@ def build() -> dict:
                         "date": "2026-11-13",
                         "author": "n-IA-hane contributors",
                         "description": "Candidate X3U Pro 2.12 side-key projection uses dssSide index1 instead of internal, following the retained Fanvil W611W container. Active and retired inner fields are unchanged; physical qualification remains separate.",
+                    }
+                )
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-13",
+                        "author": "n-IA-hane contributors",
+                        "description": "Add optional IANA clock mappings only for Europe/Rome and UTC aliases. Emit TimeZone/TimeZoneName/DSTType/DSTLocation under phone/date; no NTP or manual DST rules. Quarter-hour offsets follow Cisco/Fanvil ISPEC Appendix B; automatic mode follows X3U Pro manual Table29. Rome locality13 follows read-only X3U Pro 2.12.20 options, pending independent provisioning readback. Empty time_zone preserves legacy output.",
+                        "evidence": [
+                            "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
+                            "https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/broadworks/Config/All/Fanvil/Fanvil-ISPEC/PartnerConfigGuide_Fanvil_ISPEC_Series.pdf",
+                        ],
                     }
                 )
             files["provenance.json"] = canonical(profile_provenance)

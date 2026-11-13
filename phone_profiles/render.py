@@ -21,6 +21,7 @@ def normalized_context(context: dict[str, Any]) -> dict[str, Any]:
     p = c.setdefault("physical", {})
     p.setdefault("language", "")
     p.setdefault("language_code", "")
+    p.setdefault("time_zone", "")
     c.setdefault("lines", [])
     c.setdefault("keys", [])
     retired = c.setdefault("retired", {})
@@ -70,6 +71,14 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
     caps = profile["capabilities"]
     if not re.fullmatch(r"[0-9a-f]{12}", c["physical"]["mac"]):
         raise ValueError("physical.mac must be twelve lowercase hex digits")
+    time_zone = c["physical"]["time_zone"]
+    time_zones = caps.get("time_zones", {})
+    if not isinstance(time_zone, str) or not isinstance(time_zones, dict):
+        raise ValueError("invalid time zone mapping")
+    if time_zone and not isinstance(time_zones.get(time_zone), dict):
+        raise ValueError("time zone has no declared vendor mapping")
+    # Vendor clock data is owned by the verified profile, never by the caller.
+    c["clock"] = deepcopy(time_zones[time_zone]) if time_zone else {}
 
     def strings(value: Any) -> None:
         if isinstance(value, str) and any(ord(ch) < 32 or ord(ch) == 127 for ch in value):
