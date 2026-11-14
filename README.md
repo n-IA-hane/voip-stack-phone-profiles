@@ -76,7 +76,20 @@ Fetch, applied configuration, live SIP registration, BLF behavior and physical
 keypress behavior are different evidence levels. HTTP 200 does not prove an
 action occurred. Physical testing requires its own explicit test session and
 independent LCD/SIP/HA observations. Provisioning never invokes test calls, keys,
-reboots, resets, audio or PoE automatically.
+resets, audio or PoE automatically, and sends no explicit reboot command.
+
+### Directory modes and application capabilities
+
+The current LDAP projections declare `ldap_modes: ["plain"]`. Existing contexts
+default to plain LDAP. A requested TLS mode is rejected until that profile has
+a verified vendor mapping; it is never silently rendered as a plain connection.
+
+The X3U Pro profile describes its native HTTP application command and exact
+firmware scope. Its `apply.qualified` capability remains false until independent
+physical qualification of the worker. Software validation alone does not enable
+automatic application. The HA integration requires explicit administrative
+credentials and an idle, current owner before using a qualified method.
+Changing the global catalog does not change an existing phone's pinned revision.
 
 ## Licenses
 

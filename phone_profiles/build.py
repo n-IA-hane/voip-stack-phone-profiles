@@ -203,9 +203,18 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         ),
         "retirement_evidence": RETIREMENT_EVIDENCE.get(f"{vendor}/{model}", []),
     }
+    if "ldap" in functions:
+        # Imported mappings contain plain LDAP fields only. A TLS listener
+        # needs a separate, source-verified mode mapping before use.
+        caps["ldap_modes"] = ["plain"]
     if max_lines == 6:
         caps.update(
             dnd_sync=True,
+            apply={
+                "method": "fanvil_native_http", "qualified": False,
+                "model": "X3U Pro", "firmwares": ["2.12.20"], "scheme": "http", "port": 80,
+                "qualification": "native_form_observed_physical_worker_qualification_pending",
+            },
             time_zones={
                 "Europe/Rome": {"code": 4, "name": "UTC+1", "dst_type": 1, "dst_location": 13},
                 "UTC": {"code": 0, "name": "UTC", "dst_type": 0, "dst_location": 0},

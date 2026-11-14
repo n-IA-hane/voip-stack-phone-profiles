@@ -47,6 +47,7 @@ def normalized_context(context: dict[str, Any]) -> dict[str, Any]:
         }.items():
             key.setdefault(field, default)
     ldap = c.setdefault("directory", {}).setdefault("ldap", {})
+    ldap.setdefault("mode", "plain")
     for key, default in {
         "host": "",
         "port": 389,
@@ -80,6 +81,17 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
     # Vendor clock data is owned by the verified profile, never by the caller.
     c["clock"] = deepcopy(time_zones[time_zone]) if time_zone else {}
     c["dnd_sync"] = caps.get("dnd_sync") is True
+    ldap = c["directory"]["ldap"]
+    modes = caps.get("ldap_modes", ["plain"])
+    if (
+        not isinstance(modes, list)
+        or any(not isinstance(mode, str) or mode not in {"plain", "ldaps"} for mode in modes)
+        or not isinstance(ldap["mode"], str)
+        or ldap["mode"] not in {"plain", "ldaps"}
+        or (ldap["host"] and ldap["mode"] not in modes)
+        or (ldap.get("tls") and ldap["mode"] != "ldaps")
+    ):
+        raise ValueError("phone_ldap_mode_unsupported")
 
     def strings(value: Any) -> None:
         if isinstance(value, str) and any(ord(ch) < 32 or ord(ch) == 127 for ch in value):

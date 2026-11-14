@@ -56,7 +56,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -81,8 +84,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/h2u-v2.zip",
-        "sha256": "38903342eff703a81a1238d2a7d8566c388dc49b67597382de862cff057a821c",
-        "size": 257679
+        "sha256": "72664b8ea55e0419372eb7da060e8d2a697f639d0c6d9839331cf18f65bfef15",
+        "size": 257702
       }
     },
     {
@@ -184,7 +187,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -209,8 +215,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62.zip",
-        "sha256": "7649ded463748afa748166803804c400c764999c94be134bfb548e2eb0e017b0",
-        "size": 228343
+        "sha256": "e2020bcf9e9a1e77ce60c763a143cc942aa68f1a513f73fb6e0ac8a4e3785eea",
+        "size": 228366
       }
     },
     {
@@ -264,7 +270,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -289,8 +298,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v62-pro.zip",
-        "sha256": "8a929cc0cb55deaa1bdf7daa83c83990ead2665468daeb06fc48d2f877790132",
-        "size": 228355
+        "sha256": "06d5226fa4167c8e1e23e76397d47900d0d35107d29e317b4f39ad34ff5ec7bd",
+        "size": 228378
       }
     },
     {
@@ -344,7 +353,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -369,8 +381,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v63.zip",
-        "sha256": "95d9de57c1f26a83057f394cd193513d807daaa698def423e5ab24e15da39b16",
-        "size": 228343
+        "sha256": "b9f62bb931e2bf8fbf89db99fd0d5b5acdb944d2878704d4657dbedd948e040d",
+        "size": 228366
       }
     },
     {
@@ -424,7 +436,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -449,8 +464,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v64.zip",
-        "sha256": "1239ad5bf894fb076587602629ee919a6da7f51b587855a06f95245dad37100d",
-        "size": 228343
+        "sha256": "e48c25b6f05dc35a7162dcd1757e205a409db699126b95b12e7368d3f304e568",
+        "size": 228366
       }
     },
     {
@@ -504,7 +519,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -529,8 +547,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v65.zip",
-        "sha256": "4de08f0296d3621d94ca41914b5109ee66111f1dcfe7ee2349e5d9aeeade2dd8",
-        "size": 228343
+        "sha256": "329fda0805e2f71bfc0a882bfced81c31f7d1dc89ea38979691424e0cdfc172f",
+        "size": 228366
       }
     },
     {
@@ -584,7 +602,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -609,8 +630,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/v67.zip",
-        "sha256": "dae17f7452de723cc3725a4a04685a644ea45c29d0f444438ce8c3aaebd74ab5",
-        "size": 228351
+        "sha256": "24e396ce2514f7121a42b9ae42684fad07bfd410981e49a83347928f2b210c10",
+        "size": 228374
       }
     },
     {
@@ -688,7 +709,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -713,8 +737,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1s.zip",
-        "sha256": "6bf1abd456f288269f16824fbc7faa1f1fe8ae06c7f7dd9f569a1236085abbb4",
-        "size": 208236
+        "sha256": "0ffa0056e9ae191fde0773de2bb135909521bbe14ecf6a9b766eb77553b69777",
+        "size": 208259
       }
     },
     {
@@ -768,7 +792,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -793,8 +820,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sg.zip",
-        "sha256": "1d09fc3ad6dcd20dbc3c56105edab3348bc84561759f8f3aaff4c12458299deb",
-        "size": 208239
+        "sha256": "60e1f54a9ec8a766605a7b1d83e478c924c05e3f324fbe6522bad586dcc1f91f",
+        "size": 208262
       }
     },
     {
@@ -848,7 +875,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -873,8 +903,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x1sp.zip",
-        "sha256": "7372ad75fd9084d3f39f9d1fa8bb3f6a4443db1e02f30e0244b3fadfa9faa8e9",
-        "size": 208239
+        "sha256": "5b6841f45802cc7bf19f9b59bfaf86774ece7a6c7df5a84acf1721d7edddcbab",
+        "size": 208262
       }
     },
     {
@@ -928,7 +958,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -953,8 +986,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x210.zip",
-        "sha256": "97f63231f37852b3b94463b5115428881304308d8c333cdb105cb777b361d459",
-        "size": 721250
+        "sha256": "e96190311d15d0b37aa89be53b52aa99657350df87316abb5d069bfc7aab0a85",
+        "size": 721273
       }
     },
     {
@@ -1056,7 +1089,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1081,8 +1117,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sg.zip",
-        "sha256": "41c29b2f6392ce999316f84054a5e4e8630e238dfa237bcbf2773a6690102310",
-        "size": 257673
+        "sha256": "5529bc236a8318b560f3f47cc657b61f993eee5a34e9292263bfce1a316c5291",
+        "size": 257696
       }
     },
     {
@@ -1160,7 +1196,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1185,8 +1224,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3sw.zip",
-        "sha256": "9705a2fb7cd0f685720a0b0ed9df49a33f4805930c975b23602bff6aaecc7262",
-        "size": 257673
+        "sha256": "6b77527bdcd0a0574d7d25029085ca3fbde5bfcf737652ce7e0988158b180db5",
+        "size": 257696
       }
     },
     {
@@ -1218,7 +1257,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1243,8 +1285,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u.zip",
-        "sha256": "e60a6ab8885bb1bfe673870f55c9186576c6ab55e52a0e73986d859a40aba5d3",
-        "size": 322632
+        "sha256": "b07f52c2121ee99a9743ca22a0ec70a5cffd8d0c4d223e9141752913457600c7",
+        "size": 322655
       }
     },
     {
@@ -1330,7 +1372,21 @@
           "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
           "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg"
         ],
+        "ldap_modes": [
+          "plain"
+        ],
         "dnd_sync": true,
+        "apply": {
+          "method": "fanvil_native_http",
+          "qualified": false,
+          "model": "X3U Pro",
+          "firmwares": [
+            "2.12.20"
+          ],
+          "scheme": "http",
+          "port": 80,
+          "qualification": "native_form_observed_physical_worker_qualification_pending"
+        },
         "time_zones": {
           "Europe/Rome": {
             "code": 4,
@@ -1382,8 +1438,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "ffe50584735b89f4d5dc355a1785cb4ae357648be8b6b18e19f3ae6594e71e3c",
-        "size": 260778
+        "sha256": "86186b0c46092c1028871de4cebc5a24ae9d158a771a79157dedc13d2b74dc2f",
+        "size": 261004
       }
     },
     {
@@ -1485,7 +1541,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1510,8 +1569,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4sg.zip",
-        "sha256": "8130e30e9b2c214b45d47b24a8deada94bf88803567ef81f94094605827c01a4",
-        "size": 294501
+        "sha256": "33a79917343489ead0b0e3fb0b3ca65ab446e0e6c0502093a1ff2be24c31071c",
+        "size": 294524
       }
     },
     {
@@ -1565,7 +1624,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1590,8 +1652,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x4u.zip",
-        "sha256": "b8c08d946be7c5ae41b3a1264ee3efb303776105a25bef3765df2dbaf90f327d",
-        "size": 526017
+        "sha256": "d28eeb5c51fa6866b39a721a87289b12ffdbdd938e9ed3827850b74dbf84e719",
+        "size": 526040
       }
     },
     {
@@ -1645,7 +1707,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1670,8 +1735,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5s.zip",
-        "sha256": "24df2a22a41ba36f2dc75a04c1dcc9981a0c9f1e48cf6dd8b403bc1f39fc99f1",
-        "size": 397742
+        "sha256": "de7825a94f6297eab2987bf4991ca404ec69ec34f978da4a03fa5e6857d3206d",
+        "size": 397765
       }
     },
     {
@@ -1725,7 +1790,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1750,8 +1818,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x5u.zip",
-        "sha256": "f2fa2d2fb8e68e076e281a874aea50e789b20a9c249182a774d2259debd887be",
-        "size": 631545
+        "sha256": "45f0bf10853b9237982c23745fdc0a98f5699325a3f26c331366b4be4e05495d",
+        "size": 631568
       }
     },
     {
@@ -1805,7 +1873,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1830,8 +1901,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6.zip",
-        "sha256": "5b30087ac8edd9428f8dba2ce61143cb49b8aa8ab551f4448affb2bbe005ce3b",
-        "size": 398061
+        "sha256": "5cbc85a8b14c52ad1da3f3d45cc211662036e9860a5742045e942f6a72ca1a70",
+        "size": 398084
       }
     },
     {
@@ -1885,7 +1956,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1910,8 +1984,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x6u.zip",
-        "sha256": "b68f4ff8bf8893b89dead40aa7639b3f37a1948ee66da2dea7b14799bc2194aa",
-        "size": 739047
+        "sha256": "2e5ea9fcb93b217e045750cc00dced419da20e3e8ae2e2ab7a6af7d44ce17d92",
+        "size": 739070
       }
     },
     {
@@ -1965,7 +2039,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -1990,8 +2067,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7.zip",
-        "sha256": "0c1853cbff4a73ee43ee46c6119a543baecba81ce6fc76fcb556a9b3af7c4482",
-        "size": 670505
+        "sha256": "aea4fda4b1eb8a2d09dc71ba8d43d2ac936ad6b4b7ac28c52d600a47f4963ff1",
+        "size": 670528
       }
     },
     {
@@ -2045,7 +2122,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "ldap_modes": [
+          "plain"
+        ]
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2070,8 +2150,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x7a.zip",
-        "sha256": "36583a65586f51561e54ca9874afa6711edc95d0943c1f0cfefe66604b6eab43",
-        "size": 702315
+        "sha256": "2795f30735ee89158c9fe067ffaef0cd84eb07d5152a8e35751a562afbd9e197",
+        "size": 702338
       }
     },
     {
@@ -9098,5 +9178,5 @@
       }
     }
   ],
-  "catalog_revision": "4801bbee29fe27eec9068522c8947e0d740e5b4a8d327796396eefd599f30eea"
+  "catalog_revision": "d96f7c01ae0c2de8bc02b5b7a1614010d44caac8da8297df24ba690ba0d5ce8c"
 }
