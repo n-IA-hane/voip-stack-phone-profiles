@@ -1378,14 +1378,14 @@
         "dnd_sync": true,
         "apply": {
           "method": "fanvil_native_http",
-          "qualified": false,
+          "qualified": true,
           "model": "X3U Pro",
           "firmwares": [
             "2.12.20"
           ],
           "scheme": "http",
           "port": 80,
-          "qualification": "native_form_observed_physical_worker_qualification_pending"
+          "qualification": "native_http_request_download_and_readback_verified_2026_11_14"
         },
         "time_zones": {
           "Europe/Rome": {
@@ -1438,8 +1438,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "86186b0c46092c1028871de4cebc5a24ae9d158a771a79157dedc13d2b74dc2f",
-        "size": 261004
+        "sha256": "509123658b02d37328fac2c67f24fa5109fe5bc4229eb0a4f87126b927ffca9f",
+        "size": 261476
       }
     },
     {
@@ -9178,5 +9178,5 @@
       }
     }
   ],
-  "catalog_revision": "d96f7c01ae0c2de8bc02b5b7a1614010d44caac8da8297df24ba690ba0d5ce8c"
+  "catalog_revision": "c6d0646970a5510e842bbdd3e6131bf434f0ceafbfc26a6df421991be5d8a277"
 }

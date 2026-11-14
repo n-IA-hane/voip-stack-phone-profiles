@@ -212,12 +212,12 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
             dnd_sync=True,
             apply={
                 "method": "fanvil_native_http",
-                "qualified": False,
+                "qualified": True,
                 "model": "X3U Pro",
                 "firmwares": ["2.12.20"],
                 "scheme": "http",
                 "port": 80,
-                "qualification": "native_form_observed_physical_worker_qualification_pending",
+                "qualification": "native_http_request_download_and_readback_verified_2026_11_14",
             },
             time_zones={
                 "Europe/Rome": {"code": 4, "name": "UTC+1", "dst_type": 1, "dst_location": 13},
@@ -394,6 +394,13 @@ def build() -> dict:
                     }
                 )
             if (vendor, model) == ("fanvil", "x3u-pro"):
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-14",
+                        "author": "n-IA-hane contributors",
+                        "description": "Qualify the native HTTP application method only for X3U Pro firmware 2.12.20: one native request, matching phone download, continuous uptime and selected SIP/DSS/language/clock/quiet readback. DND synchronization independently passed both directions. A request acknowledgement alone still does not prove application, and automatic recovery of subscriptions after a PBX restart remains unqualified.",
+                    }
+                )
                 profile_provenance["modifications"].append(
                     {
                         "date": "2026-11-13",

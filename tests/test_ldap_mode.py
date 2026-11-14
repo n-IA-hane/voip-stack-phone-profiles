@@ -14,11 +14,18 @@ def test_catalog_ldap_profiles_declare_their_plain_transport():
             assert metadata["capabilities"]["ldap_modes"] == ["plain"]
 
 
-def test_native_http_apply_stays_opt_in_and_pending_physical_qualification():
+def test_native_http_apply_is_qualified_only_for_observed_model_and_exact_firmware():
     profile, _ = load_bundle("fanvil/x3u-pro")
     method = profile["capabilities"]["apply"]
-    assert method["method"] == "fanvil_native_http" and method["qualified"] is False
+    assert method["method"] == "fanvil_native_http" and method["qualified"] is True
     assert method["model"] == "X3U Pro" and method["firmwares"] == ["2.12.20"]
+    assert method["scheme"] == "http" and method["port"] == 80
+    qualified = [
+        row["id"]
+        for row in catalog()["profiles"]
+        if row["capabilities"].get("apply", {}).get("qualified") is True
+    ]
+    assert qualified == ["fanvil/x3u-pro"]
 
 
 @pytest.mark.parametrize("mode", ["ldaps", "starttls"])

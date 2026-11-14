@@ -84,11 +84,16 @@ The current LDAP projections declare `ldap_modes: ["plain"]`. Existing contexts
 default to plain LDAP. A requested TLS mode is rejected until that profile has
 a verified vendor mapping; it is never silently rendered as a plain connection.
 
-The X3U Pro profile describes its native HTTP application command and exact
-firmware scope. Its `apply.qualified` capability remains false until independent
-physical qualification of the worker. Software validation alone does not enable
-automatic application. The HA integration requires explicit administrative
-credentials and an idle, current owner before using a qualified method.
+The X3U Pro profile qualifies its native HTTP application command only for
+firmware 2.12.20. A controlled device test observed the requested download,
+matching revision, continuous uptime and selected settings preserved after
+application. No other model or firmware is qualified by this result.
+The HA integration requires explicit administrative credentials and an idle,
+current owner before using this method. Its `requested` state acknowledges the
+command, not verified adoption of every setting. DND synchronization passed in
+both directions after a fresh SIP subscription; automatic subscription recovery
+after a PBX restart remains unqualified. Software validation alone does not
+enable automatic application for other profiles.
 Changing the global catalog does not change an existing phone's pinned revision.
 
 ## Licenses

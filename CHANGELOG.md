@@ -6,6 +6,11 @@
 - Reject unsupported LDAPS and StartTLS requests before rendering a phone configuration.
 - Keep plain LDAP as the compatibility default for existing contexts and profiles.
 - Describe the X3U Pro native HTTP application method and exact firmware scope.
-  Automatic application remains disabled in the capability until physical worker qualification.
+- Qualify that method only for X3U Pro firmware 2.12.20 after a real download,
+  native readback and continuous-uptime check. The integration still distinguishes
+  an accepted request from verified application; other models and firmware remain
+  unqualified.
+- Record bidirectional native DND synchronization on that device with a fresh
+  SIP subscription. Automatic recovery after a PBX restart is not qualified.
 
 Additional LDAP modes require a verified vendor mapping and qualification.
