@@ -211,8 +211,12 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         caps.update(
             dnd_sync=True,
             apply={
-                "method": "fanvil_native_http", "qualified": False,
-                "model": "X3U Pro", "firmwares": ["2.12.20"], "scheme": "http", "port": 80,
+                "method": "fanvil_native_http",
+                "qualified": False,
+                "model": "X3U Pro",
+                "firmwares": ["2.12.20"],
+                "scheme": "http",
+                "port": 80,
                 "qualification": "native_form_observed_physical_worker_qualification_pending",
             },
             time_zones={
