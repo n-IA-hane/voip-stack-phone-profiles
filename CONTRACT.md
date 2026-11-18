@@ -53,8 +53,29 @@ paths and expands to twelve lowercase hexadecimal digits.
   (space-separated string), `number_attributes` (space-separated string),
   `display_name` (directory label), optional `display_attribute` defaults
   `displayName`. Default number attributes are `telephonenumber mobile`.
-- `provisioning.url`: empty means omit. Only profiles declaring `provision`
-  map this field. This never changes firmware, DHCP/PnP switches or intervals.
+- `provisioning.url` supplies the manual setup URL. An empty value omits the
+  setting. Only profiles declaring `provision` map this field.
+
+## Provisioning URLs
+
+A profile can declare `capabilities.delivery`, a mapping from `manual`, `dhcp`
+or `pnp` to an exact path in `outputs`. An omitted method uses the phone's
+private provisioning directory. A declared path expands the inventory MAC.
+The Snom deskphone profiles request the settings file directly. Profiles with
+the setting in their source also write the full URL to `setting_server`.
+With its full file URL, Snom 360 requests a refresh every 3600 seconds.
+An older client that supplies a directory omits both Snom settings.
+The 360 profile also declares the `snom_check_sync` resync method for firmware
+`8.7.3.25.9`. Its `documented_request` qualification refers to the SIP
+request with the explicit `reboot=false` parameter. The resulting download,
+settings and uptime require independent observation on that firmware.
+
+Grandstream GRP26xx receives a complete file URL via SIP PnP and a server
+directory via DHCP or the web configuration. The hardware GXP, GXV, GRP26xx
+and WP8xx projections serve `cfg{mac}.xml` for boot downloads and preserve
+the original `{mac}.xml` output. The GS Wave softphone keeps its own profile.
+These mappings describe software delivery. Physical polling and application
+require their own observations.
 
 All strings reject control characters, including CR/LF, before CFG rendering.
 Require byte limits before rendering. Never truncate a key target or label.

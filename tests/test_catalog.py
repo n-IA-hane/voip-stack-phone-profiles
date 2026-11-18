@@ -42,6 +42,58 @@ def only_output(profile, templates, context):
     return next(iter(render(profile, templates, context).values())).decode()
 
 
+def test_snom_settings_refresh_requires_360_and_explicit_settings_url():
+    for model in ("360", "720", "820"):
+        profile, templates = load_bundle("snom/" + model)
+        path = "{mac}.xml"
+        assert profile["capabilities"]["delivery"] == dict.fromkeys(("manual", "dhcp", "pnp"), path)
+        resync = profile["capabilities"].get("resync")
+        assert resync == (
+            {
+                "method": "snom_check_sync",
+                "firmwares": ["8.7.3.25.9"],
+                "qualification": "documented_request",
+            }
+            if model == "360"
+            else None
+        )
+        context = fixture_context()
+        context["keys"] = []
+        for url in (
+            "",
+            "https://example.invalid/base/",
+            "https://example.invalid/base/020000000001.xml",
+        ):
+            context["provisioning"] = {
+                "url": url if "provision" in profile["capabilities"]["functions"] else ""
+            }
+            settings = ET.fromstring(only_output(profile, templates, context)).find(
+                "phone-settings"
+            )
+            settings_file = context["provisioning"]["url"] and not url.endswith("/")
+            assert settings.findtext("setting_server") == (url if settings_file else None)
+            assert settings.findtext("settings_refresh_timer") == (
+                "3600" if settings_file and model == "360" else None
+            )
+
+
+def test_hardware_grandstream_exposes_boot_file_and_keeps_existing_filename():
+    context = fixture_context()
+    context["keys"] = []
+    mac = context["physical"]["mac"]
+    for model in ("grp2614", "gxp2170", "wp810", "gswave"):
+        profile, templates = load_bundle("grandstream/" + model)
+        outputs = render(profile, templates, context)
+        assert mac + ".xml" in outputs
+        if model == "gswave":
+            assert "cfg" + mac + ".xml" not in outputs
+        else:
+            assert outputs["cfg" + mac + ".xml"] == outputs[mac + ".xml"]
+            assert profile["capabilities"]["delivery"] == (
+                {"pnp": "cfg{mac}.xml"} if model == "grp2614" else {}
+            )
+
+
 def source_of(profile_id):
     parent = UPSTREAM / profile_id
     # A model can contain both MAC.boot and MAC.cfg. Golden sources are explicit,
@@ -216,6 +268,8 @@ def assert_sparse(profile, output):
             "user_pass",
             "user_host",
             "user_expiry",
+            "setting_server",
+            "settings_refresh_timer",
         }
         assert {n.tag for n in root} <= {"phone-settings", "functionKeys"}
         assert all(n.tag == "fkey" for n in root.findall("./functionKeys/*"))

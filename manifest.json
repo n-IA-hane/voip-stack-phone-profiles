@@ -2363,7 +2363,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2376,6 +2379,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2385,8 +2393,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2612.zip",
-        "sha256": "634d9a3c5ffd8d120c6f38110b2c1cb0e1d2db8ea7e9643f4a7a6befa7fe23fe",
-        "size": 494674
+        "sha256": "f29bbae019db758348965433d70ef81fc2c10a360ef81b64e63a8c914dc6db79",
+        "size": 495219
       }
     },
     {
@@ -2430,7 +2438,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2443,6 +2454,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2452,8 +2468,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2612w.zip",
-        "sha256": "3a10c9fc717e9207670311df6c70fb7faacd737db06e1f7fbd405d7ddb28a548",
-        "size": 488169
+        "sha256": "c8ddf9f202283180388868f7ae1f629c30e59985f6d9461330ccbfeb79efa848",
+        "size": 488714
       }
     },
     {
@@ -2497,7 +2513,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2510,6 +2529,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2519,8 +2543,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2613.zip",
-        "sha256": "25d4d7bbfcfcee0d3a39a3e53536347bb0603c71a28ee0f54dcd3eec888cf4c3",
-        "size": 497613
+        "sha256": "f2ca831e7beb6e2db1c09cece8c8ca1aa4035c9a72ce0d6a9a3b45b390be0506",
+        "size": 498158
       }
     },
     {
@@ -2564,7 +2588,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2577,6 +2604,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2586,8 +2618,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2614.zip",
-        "sha256": "cb44e5069328d7bcdebd3731814380ac9f327f71b00213d7ae10fc0afcf7a07a",
-        "size": 497613
+        "sha256": "4f0d124b54c0b71e8241ba4078b0758a54195fe254bd4d206da2ad2f5f62850f",
+        "size": 498158
       }
     },
     {
@@ -2631,7 +2663,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2644,6 +2679,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2653,8 +2693,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2615.zip",
-        "sha256": "64de2cc5fc633c26ff5da1d41368c40280d34c0c48aeeaa4f5e63a8071160d22",
-        "size": 497613
+        "sha256": "9afd53ee12a3b425ad7586a94a02bcb11d91143a25e209495cea33f664f13670",
+        "size": 498158
       }
     },
     {
@@ -2698,7 +2738,10 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "pnp": "cfg{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2711,6 +2754,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2720,8 +2768,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/grp2616.zip",
-        "sha256": "df219024afb3dd8dcd0953a03f761bef2026a5fe5d04929d94bfcb9df6001092",
-        "size": 497613
+        "sha256": "d2aee678c919854af27528661864753d423909d3320b844c443290cf3725d52c",
+        "size": 498158
       }
     },
     {
@@ -2916,7 +2964,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -2929,6 +2978,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -2938,8 +2992,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp116x.zip",
-        "sha256": "593b29cce10801f2928c04dbc617e8f476c17fd9b7de96ce5b405d1cfc7f21ce",
-        "size": 148961
+        "sha256": "e0736f72f599445a27655212300587abbc3fed737a85dc94d2e3f9c7799c8cb3",
+        "size": 149486
       }
     },
     {
@@ -3037,7 +3091,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3050,6 +3105,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3059,8 +3119,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp1450bk.zip",
-        "sha256": "591f80368e99d43da0eeb875573ebc25cfdb9941d210efd2f8d0ce227607a41b",
-        "size": 179870
+        "sha256": "5a518cd654d124655e25498e98a56340e45fd9705427a0668c9612e573d480ad",
+        "size": 180395
       }
     },
     {
@@ -3110,7 +3170,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3123,6 +3184,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3132,8 +3198,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp17xx.zip",
-        "sha256": "3e8c090a4480cbba4ecdcbaa089cd455460872c354c364f326bc3e56d83787a2",
-        "size": 798840
+        "sha256": "19a148478239ca616024b17a1fb705b6ab7fa303ec6a1093840b4b61cc7574d5",
+        "size": 799365
       }
     },
     {
@@ -3159,7 +3225,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3172,6 +3239,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3181,8 +3253,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp20xx.zip",
-        "sha256": "8d46c257701e638f06804d369034dc4a2e5e75231c36ac43af18eed306cad32c",
-        "size": 223977
+        "sha256": "020e7c6d45b5b3f061d6cff884db40a30283be878a6542d38f93b5948073fc00",
+        "size": 224502
       }
     },
     {
@@ -3208,7 +3280,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3221,6 +3294,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3230,8 +3308,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2100.zip",
-        "sha256": "03005bebe390892141d85b565b89723323f8eb582fd2f3649b9fe3247a1c405d",
-        "size": 338988
+        "sha256": "bfcef01d0101a5325c4c433b4de19e4669130c2f24c45699807d79709b00094e",
+        "size": 339513
       }
     },
     {
@@ -3257,7 +3335,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3270,6 +3349,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3279,8 +3363,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2124.zip",
-        "sha256": "23480ad5d619c50d742d5ca6aecac3933243ecc459048ed4f1d20ae26e142d95",
-        "size": 308782
+        "sha256": "bf6eec0ca2d1b277943c026f3cc5ffee2c0b43dc029b68dc54865a33936ddc7d",
+        "size": 309307
       }
     },
     {
@@ -3324,7 +3408,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3337,6 +3422,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3346,8 +3436,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2130.zip",
-        "sha256": "e1a01b255fb91ad82fd69253d79e5eb8e71e5f5f2afa902553b68b74b61ae390",
-        "size": 415453
+        "sha256": "bb76492e21e9c84eaa389b6859e2aa24a363a2e94d9b7ea04612bd4183122406",
+        "size": 415978
       }
     },
     {
@@ -3391,7 +3481,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3404,6 +3495,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3413,8 +3509,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2135.zip",
-        "sha256": "3d57950ae58eda197735c02290cf6661a08b1f500e3bf9b2cc513d5ac24042f6",
-        "size": 428333
+        "sha256": "f2198da0c62226d4617bdc84ee589f1a734907f9c9e9b78e45d155ff7c7f80b2",
+        "size": 428858
       }
     },
     {
@@ -3458,7 +3554,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3471,6 +3568,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3480,8 +3582,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2140.zip",
-        "sha256": "6d60cf7f02de1c41fc052b3a3fbf7bb4a1b81e29e0850d1e584a83fb6ae45ba4",
-        "size": 415451
+        "sha256": "16812262cfe98c596fdc77b6c578ba758e54a480b18002350add859a462d5904",
+        "size": 415976
       }
     },
     {
@@ -3525,7 +3627,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3538,6 +3641,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3547,8 +3655,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2160.zip",
-        "sha256": "1860da33145edd6deac0da9cf7abe45f947a1cdf169701eec2a6c7da59c7dc51",
-        "size": 415451
+        "sha256": "544ec9234b2289aad1438c4f47a4ad43b4f3fbb41ef1ba7a05a6847991419c15",
+        "size": 415976
       }
     },
     {
@@ -3592,7 +3700,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3605,6 +3714,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3614,8 +3728,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2170.zip",
-        "sha256": "2fa54224bda82999e7e6f7dbbc13683582ad95e77ed6945945781d30ad1d8006",
-        "size": 415097
+        "sha256": "b8a507b88413e87e76a34adf5a2adaf5259a380924e312c05b6939af6aa6b2c5",
+        "size": 415622
       }
     },
     {
@@ -3641,7 +3755,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3654,6 +3769,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3663,8 +3783,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp21xx.zip",
-        "sha256": "579bc61ab12ad532720c9bb7628c1a9da4fc68fbd18487d54f0e5f56b4026e43",
-        "size": 397165
+        "sha256": "9722e569f9a466862e43d6c4668adbdc746560c57c5e87edca7276d854b3d511",
+        "size": 397690
       }
     },
     {
@@ -3690,7 +3810,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3703,6 +3824,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3712,8 +3838,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp21xxbk.zip",
-        "sha256": "74f17dc1b96b5dc9c77f96314ae97a88f7b7a61a870deb32c028b9b485b1f360",
-        "size": 326595
+        "sha256": "b5f3167863e51adccfec24deac832e6a606b8981698e71287e6e45cca7fc383f",
+        "size": 327120
       }
     },
     {
@@ -3739,7 +3865,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3752,6 +3879,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3761,8 +3893,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp2200.zip",
-        "sha256": "202c636466d426eb9b5e67f2bc638e6240538de96d8b941df1e83ec759ccbb8f",
-        "size": 582002
+        "sha256": "5f7cd9ba0afe3bc32c6530b1fbdaa83ec0287c77005ac1779f9cc8599365eea3",
+        "size": 582527
       }
     },
     {
@@ -3788,7 +3920,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3801,6 +3934,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3810,8 +3948,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxp3240.zip",
-        "sha256": "2ab7089fe3ac0057ceed4de9db4281a549bbf61a3df15e42d3eb1fc9fd142954",
-        "size": 591781
+        "sha256": "647bc3898687f1d44614997edf7b41ff20257a5cc0bebc87d48054a227299eec",
+        "size": 592306
       }
     },
     {
@@ -3837,7 +3975,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3850,6 +3989,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3859,8 +4003,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv300x.zip",
-        "sha256": "716f906a9f5168dae8e0c3a13865d62588b426514390f76fc6bf8325aa402217",
-        "size": 131075
+        "sha256": "776215fc907e7e4c4006ca5a1d11f47ec3631218deb7b5b5c93a29450313921c",
+        "size": 131600
       }
     },
     {
@@ -3886,7 +4030,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3899,6 +4044,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3908,8 +4058,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3140.zip",
-        "sha256": "f3f0774bd74a1e4c918f2ec818446f2fc38a513d580f8f1aacc93723ecc3adf9",
-        "size": 138263
+        "sha256": "ed1cd73479607422aacb1a4f8cc2d35c4bf60311847f0587a1b44ef8ba3fad2f",
+        "size": 138788
       }
     },
     {
@@ -3935,7 +4085,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3948,6 +4099,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -3957,8 +4113,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3175.zip",
-        "sha256": "52321eba04c0e52a4f07fdd8e47b4219ef89177c281421d2b5d110f46fac384d",
-        "size": 214960
+        "sha256": "f75068542f3674cfa6380294732a8c1403e76ddb2738b9e35da942e489a966df",
+        "size": 215485
       }
     },
     {
@@ -3984,7 +4140,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -3997,6 +4154,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -4006,8 +4168,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/gxv3175v2.zip",
-        "sha256": "9abacb43a2f5a57c8aa10c8f056d54c1e243e137da1b8ab3fdfaa0049cadddb9",
-        "size": 229266
+        "sha256": "c7267a0df7198fe5e5459c997336e7cad0f3ba84f0eebb365be7f845ecff708d",
+        "size": 229791
       }
     },
     {
@@ -4585,7 +4747,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4598,6 +4761,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -4607,8 +4775,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/wp810.zip",
-        "sha256": "bbf7c5bca70f4845f10ebb9b016f322b339e52f38cc6ef14faff106cb6ae5bae",
-        "size": 322222
+        "sha256": "b08ca0f9fb8fa4d6ff192cf828dd065e4e9edb65b80379d2cf68b1910db3f47d",
+        "size": 322747
       }
     },
     {
@@ -4634,7 +4802,8 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {}
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4647,6 +4816,11 @@
           "path": "{mac}.xml",
           "template": "templates/config.jinja2",
           "format": "xml"
+        },
+        {
+          "path": "cfg{mac}.xml",
+          "template": "templates/config.jinja2",
+          "format": "xml"
         }
       ],
       "managed_sections": [
@@ -4656,8 +4830,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/grandstream/wp820.zip",
-        "sha256": "d6b4bae62ede4053ed806aa60ae68d76971ada2aeeb3333336ffc8fd69efd264",
-        "size": 361090
+        "sha256": "bf5fc87a89ae83c1b8759e6fc7a768096907790ba27ade6ffcfefcce94ef9f8e",
+        "size": 361615
       }
     },
     {
@@ -4734,6 +4908,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -4751,7 +4926,12 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4768,13 +4948,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/300.zip",
-        "sha256": "f16935ebec66c526f77675e411ad4fba1d82e6c95e4df3ac48bcee3b7a2d9036",
-        "size": 56612
+        "sha256": "219ae68125e0af779f4ee4be0ea7c858b084d2ef287a502d6157f878d9641a6d",
+        "size": 57314
       }
     },
     {
@@ -4803,6 +4984,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -4820,7 +5002,12 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4837,13 +5024,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/320.zip",
-        "sha256": "896867b38cb599904f09e336968f79f889e2a557690f4118d7a638397fc423f9",
-        "size": 59133
+        "sha256": "68f198da1c5e3a945f68cfa27c5765e1cc2050a5f3c3561bf1b1314ae52504e7",
+        "size": 59835
       }
     },
     {
@@ -4872,6 +5060,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -4889,7 +5078,20 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        },
+        "settings_refresh_seconds": 3600,
+        "resync": {
+          "method": "snom_check_sync",
+          "firmwares": [
+            "8.7.3.25.9"
+          ],
+          "qualification": "documented_request"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4906,13 +5108,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/360.zip",
-        "sha256": "b3947b70f336c6e0135e3b74b07ed6a53cc756fbec02de59ee948230957fe7f5",
-        "size": 48419
+        "sha256": "e61e9e157cc5fd14180f7e91ef65609b1e23c82ca2fadebc8fc1b09953604446",
+        "size": 50326
       }
     },
     {
@@ -4941,6 +5144,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -4958,7 +5162,12 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -4975,13 +5184,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/3xx.zip",
-        "sha256": "214e80f13313060f45c8e2c5a7f18e34e7ceaf15c92dae83ac07db6d7ff773b0",
-        "size": 58793
+        "sha256": "aac0d02204a602eb5761c90924df7a85751830caafdd1e944002da7446e79140",
+        "size": 59495
       }
     },
     {
@@ -5010,6 +5220,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -5030,7 +5241,12 @@
         "retirement_evidence": [
           "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
           "https://service.snom.com/spaces/wiki/pages/234343563/user_active"
-        ]
+        ],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5047,13 +5263,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/720.zip",
-        "sha256": "6786d9cb694370d3c51cfb05217dbe16233ef7a71d84db14ec6a3d70b5e09ec0",
-        "size": 266789
+        "sha256": "28f1a5b807f617e9d0a1b9a46b4547c2683bd274126e8a64f03558d380b7a805",
+        "size": 267491
       }
     },
     {
@@ -5082,6 +5299,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -5102,7 +5320,12 @@
         "retirement_evidence": [
           "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
           "https://service.snom.com/spaces/wiki/pages/234343563/user_active"
-        ]
+        ],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5119,13 +5342,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/7xx.zip",
-        "sha256": "1eaf687d877cbe1b669ef933fdd3826643d56afd5bdca5ef9811be90d3cc2029",
-        "size": 60838
+        "sha256": "15f1b89b38cd8ae08b0bd20bb7502ecd363c4e7d74be8b5c4abbb6d83136b273",
+        "size": 61540
       }
     },
     {
@@ -5171,7 +5395,12 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5193,8 +5422,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/820.zip",
-        "sha256": "97edd9bbd4051256d5813015724ca01a1d94c540b80547cbf41eb90bed6185f5",
-        "size": 42860
+        "sha256": "85709b80a29637772768b56e16f1742a28df2cf1b494264b83389a56fee239e4",
+        "size": 43538
       }
     },
     {
@@ -5223,6 +5452,7 @@
         ],
         "functions": [
           "sip_account",
+          "provision",
           "line",
           "speed_dial",
           "blf",
@@ -5240,7 +5470,12 @@
         "clear_keys": false,
         "disable_lines": false,
         "retirement_qualification": "unsupported",
-        "retirement_evidence": []
+        "retirement_evidence": [],
+        "delivery": {
+          "manual": "{mac}.xml",
+          "dhcp": "{mac}.xml",
+          "pnp": "{mac}.xml"
+        }
       },
       "source_commit": "07f0d76acd044e8a07d2f87aeb50bf59f856393b",
       "qualification": {
@@ -5257,13 +5492,14 @@
       ],
       "managed_sections": [
         "sip_accounts",
-        "keys"
+        "keys",
+        "provision"
       ],
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/8xx.zip",
-        "sha256": "bb95f1a1cc62b183d670487304dcac9c7cdcaf3ef9ada72a2e4be65da78362cc",
-        "size": 57196
+        "sha256": "abfc44a90a199cf9942a701c04b0dd7738fe6b4b1cc65ee17dc14ceb072de981",
+        "size": 57898
       }
     },
     {
@@ -9178,5 +9414,5 @@
       }
     }
   ],
-  "catalog_revision": "c6d0646970a5510e842bbdd3e6131bf434f0ceafbfc26a6df421991be5d8a277"
+  "catalog_revision": "d64d85a415a4b904a960a4e18ab199dab04c2212daa8e5fe46f41592e3d62726"
 }

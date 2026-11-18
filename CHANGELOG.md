@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Give Snom desk phones the exact settings file for manual setup, DHCP and SIP
+  Plug and Play. The 360 stores the file URL and requests an hourly refresh.
+  Its firmware 8.7.3.25.9 profile declares the documented SIP configuration
+  refresh request. Physical application on this firmware still needs verification.
+- Serve `cfg{mac}.xml` for Grandstream hardware boot downloads and retain
+  the existing `{mac}.xml` link. GRP26xx phones receive a complete file URL
+  through SIP Plug and Play and use a directory for DHCP or manual setup.
 - Declare plain LDAP as the supported mode of the current LDAP projections.
 - Reject unsupported LDAPS and StartTLS requests before rendering a phone configuration.
 - Keep plain LDAP as the compatibility default for existing contexts and profiles.

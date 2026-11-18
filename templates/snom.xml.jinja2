@@ -2,9 +2,13 @@
 Derived from FusionPBX by Mark J Crane and contributors, pinned provenance.json.
 2026-11-11: sparse identity and fkey parameters only; preserve unrelated settings.
 2026-11-13: sibling functionKeys, explicit identity and bounded owned-slot retirement.
+2026-11-18: retain the explicitly selected settings file for future provisioning.
 -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <settings><phone-settings>
+{% if provisioning.url and not provisioning.url.endswith('/') %}
+<setting_server perm="RW">{{ provisioning.url }}</setting_server>
+{% endif %}
 {% for line in lines %}
 <user_active idx="{{ line.slot }}" perm="">on</user_active>
 <user_realname idx="{{ line.slot }}" perm="">{{ line.display_name or physical.name }}</user_realname>

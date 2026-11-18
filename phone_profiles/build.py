@@ -142,6 +142,13 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
             raise UnsupportedSmarty("Snom sparse identity mapping unavailable")
         name = "snom.xml.jinja2"
         text = (ROOT / "templates" / name).read_text()
+        if "<setting_server " in source:
+            functions.append("provision")
+            if model == "360":
+                text = text.replace(
+                    "</setting_server>",
+                    '</setting_server>\n<settings_refresh_timer perm="RW">3600</settings_refresh_timer>',
+                )
         keys = "<fkey " in source
         if keys:
             functions.extend(FUNCTIONS)
@@ -329,6 +336,21 @@ def build() -> dict:
             profile["outputs"] = [
                 {"path": filename, "template": "templates/config.jinja2", "format": fmt}
             ]
+            if vendor == "snom":
+                caps["delivery"] = dict.fromkeys(("manual", "dhcp", "pnp"), filename)
+                if model == "360":
+                    caps["settings_refresh_seconds"] = 3600
+                    caps["resync"] = {
+                        "method": "snom_check_sync",
+                        "firmwares": ["8.7.3.25.9"],
+                        "qualification": "documented_request",
+                    }
+            if vendor == "grandstream" and model.startswith(("grp26", "gxp", "gxv", "wp8")):
+                # FusionPBX has a request router; a static HTTP origin must expose
+                # the handset's actual boot filename as well as its old direct URL.
+                wire_filename = "cfg{mac}.xml"
+                profile["outputs"].append({**profile["outputs"][0], "path": wire_filename})
+                caps["delivery"] = {"pnp": wire_filename} if model.startswith("grp26") else {}
             profile["managed_sections"] = ["sip_accounts", "keys"] + [
                 f for f in ("language", "ldap", "provision") if f in caps["functions"]
             ]
@@ -378,6 +400,64 @@ def build() -> dict:
                     "description": "Add bounded owned-slot retirement capabilities and documented clear/disable commands; place Snom fkeys in functionKeys with explicit identity context. Unsupported models remain non-destructive.",
                 }
             )
+            if "delivery" in caps:
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-18",
+                        "author": "n-IA-hane contributors",
+                        "description": (
+                            "Declare the exact settings-file URL for deskphone provisioning. "
+                            "Emit setting_server only for projections with that setting in the pinned source."
+                            if vendor == "snom"
+                            else "Expose the hardware boot filename cfgMAC.xml alongside the original direct "
+                            "file. GRP26xx PnP delivers a file URL; DHCP and Config Server Path use the directory."
+                        ),
+                        "evidence": (
+                            [
+                                "https://service.snom.com/spaces/wiki/pages/234343569/setting_server",
+                                "https://service.snom.com/plugins/viewsource/viewpagesrc.action?pageId=234336488",
+                            ]
+                            if vendor == "snom"
+                            else [
+                                "https://documentation.grandstream.com/knowledge-base/sip-device-provisioning-guide/",
+                                "https://documentation.grandstream.com/knowledge-base/grp26xx-auto-configuration-plug-and-play-guide/",
+                            ]
+                        ),
+                    }
+                )
+            if "settings_refresh_seconds" in caps:
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-18",
+                        "author": "n-IA-hane contributors",
+                        "description": (
+                            "Request an hourly settings refresh only when an explicit settings file is "
+                            "supplied. The 360 8.7.3.25.9 firmware's update form binds its refresh field "
+                            "to settings_refresh_timer. Distribution image SHA256 "
+                            "d9507376ba9036277f26b0dc0588e891f0c604de37501c5aeae168ed4ed107d0."
+                        ),
+                        "evidence": [
+                            "https://www.3cx.com/docs/phone-firmware-v18/",
+                            "https://support.yeastar.com/hc/en-us/articles/218033337-Compatible-SIP-Terminals-Part-1-SIP-IP-Phone",
+                        ],
+                    }
+                )
+                profile_provenance["modifications"].append(
+                    {
+                        "date": "2026-11-18",
+                        "author": "n-IA-hane contributors",
+                        "description": (
+                            "Declare Snom's documented SIP check-sync request with reboot=false "
+                            "for the selected 360 firmware. A historical 360 report observed a fetch "
+                            "without reboot on unspecified firmware. Device application and uptime "
+                            "on 8.7.3.25.9 require independent verification."
+                        ),
+                        "evidence": [
+                            "https://github.com/asterisk/asterisk/blob/22/configs/samples/pjsip_notify.conf.sample",
+                            "https://lists.digium.com/pipermail/asterisk-dev/2007-March/026665.html",
+                        ],
+                    }
+                )
             if vendor == "fanvil":
                 profile_provenance["modifications"].append(
                     {
