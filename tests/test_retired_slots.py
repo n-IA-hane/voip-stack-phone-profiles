@@ -65,14 +65,15 @@ def test_capabilities_are_explicit_and_only_verified_profiles_allow_removal():
         caps = entry["capabilities"]
         assert type(caps["clear_keys"]) is bool and type(caps["disable_lines"]) is bool
         supported = entry["id"] in DOCUMENTED and entry["status"] == "software_validated"
-        assert caps["clear_keys"] is supported
+        key_supported = supported or entry["id"] == "snom/360"
+        assert caps["clear_keys"] is key_supported
         assert caps["disable_lines"] is supported
-        if supported:
+        if key_supported:
             assert caps["retirement_evidence"]
             assert entry["qualification"]["physical"] is False
 
 
-@pytest.mark.parametrize("identity", ["fanvil/x3u-pro", "snom/7xx", "yealink/t46s"])
+@pytest.mark.parametrize("identity", ["fanvil/x3u-pro", "snom/360", "snom/7xx", "yealink/t46s"])
 def test_owned_key_present_removed_and_readded_has_explicit_vendor_commands(identity):
     profile, templates = load_bundle(identity)
     c = context()
@@ -124,6 +125,28 @@ def test_owned_line_disable_does_not_require_or_emit_removed_credentials(identit
         (line,) = ET.fromstring(removed).findall("./sip/line")
         assert line.attrib["index"] == "1" and line.findtext("EnableReg") == "0"
     assert only_output(profile, templates, context()) == initial
+
+
+def test_snom360_hardware_only_retirement_emits_just_the_owned_p1():
+    profile, templates = load_bundle("snom/360")
+    c = context()
+    c.update(keys=[], lines=[])
+    assert ET.fromstring(only_output(profile, templates, c)).find("functionKeys") is None
+
+    c["retired"] = {"keys": ["1"]}
+    root = ET.fromstring(only_output(profile, templates, c))
+    assert list(root.find("phone-settings")) == []
+    (key,) = root.findall(".//fkey")
+    assert root.find("./functionKeys/fkey") is key
+    assert key.attrib == {"idx": "0", "label": "", "perm": ""}
+    assert key.text == "none"
+
+    c["retired"] = {"keys": ["2"]}
+    with pytest.raises(ValueError, match="invalid_retired_keys"):
+        only_output(profile, templates, c)
+    c["retired"] = {"lines": ["1"]}
+    with pytest.raises(ValueError, match="profile_disable_lines_unsupported"):
+        only_output(profile, templates, c)
 
 
 def test_known_unowned_fanvil_slot_is_never_reset():

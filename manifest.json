@@ -5075,10 +5075,13 @@
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
         "partial_merge_qualification": "not_physically_verified",
-        "clear_keys": false,
+        "clear_keys": true,
         "disable_lines": false,
-        "retirement_qualification": "unsupported",
-        "retirement_evidence": [],
+        "retirement_qualification": "vendor_documented",
+        "retirement_evidence": [
+          "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
+          "https://service.snom.com/download/attachments/234332150/UM_snom3xx_V2.2_en.pdf"
+        ],
         "delivery": {
           "manual": "{mac}.xml",
           "dhcp": "{mac}.xml",
@@ -5114,8 +5117,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/360.zip",
-        "sha256": "e61e9e157cc5fd14180f7e91ef65609b1e23c82ca2fadebc8fc1b09953604446",
-        "size": 50326
+        "sha256": "61c122197fcba7d3f54012892d528107f2f538204fc5c91b8afcf5448cf0d2b5",
+        "size": 50485
       }
     },
     {
@@ -9414,5 +9417,5 @@
       }
     }
   ],
-  "catalog_revision": "d64d85a415a4b904a960a4e18ab199dab04c2212daa8e5fe46f41592e3d62726"
+  "catalog_revision": "b280968c01967c97b98c3b3f135a319cf00f81e4ddad3c1cfd214c1e7739bfdd"
 }

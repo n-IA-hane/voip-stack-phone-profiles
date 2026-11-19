@@ -20,8 +20,9 @@ ROOT = Path(__file__).resolve().parent.parent
 UPSTREAM = ROOT / "upstream" / "fusionpbx"
 SOURCE_COMMIT = "07f0d76acd044e8a07d2f87aeb50bf59f856393b"
 FUNCTIONS = ["line", "speed_dial", "blf", "queue_login", "queue_pause", "park"]
+_SNOM_KEY_TYPES = "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types"
 _SNOM_RETIREMENT_EVIDENCE = [
-    "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
+    _SNOM_KEY_TYPES,
     "https://service.snom.com/spaces/wiki/pages/234343563/user_active",
 ]
 _YEALINK_RETIREMENT_EVIDENCE = [
@@ -210,6 +211,15 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         ),
         "retirement_evidence": RETIREMENT_EVIDENCE.get(f"{vendor}/{model}", []),
     }
+    if (vendor, model) == ("snom", "360") and keys:
+        caps.update(
+            clear_keys=True,
+            retirement_qualification="vendor_documented",
+            retirement_evidence=[
+                _SNOM_KEY_TYPES,
+                "https://service.snom.com/download/attachments/234332150/UM_snom3xx_V2.2_en.pdf",
+            ],
+        )
     if "ldap" in functions:
         # Imported mappings contain plain LDAP fields only. A TLS listener
         # needs a separate, source-verified mode mapping before use.
