@@ -12,6 +12,7 @@ from phone_profiles.render import normalized_context, render
 
 DOCUMENTED = {
     "fanvil/x3u-pro",
+    "snom/360",
     "snom/720",
     "snom/7xx",
     "yealink/t42u",
@@ -65,10 +66,9 @@ def test_capabilities_are_explicit_and_only_verified_profiles_allow_removal():
         caps = entry["capabilities"]
         assert type(caps["clear_keys"]) is bool and type(caps["disable_lines"]) is bool
         supported = entry["id"] in DOCUMENTED and entry["status"] == "software_validated"
-        key_supported = supported or entry["id"] == "snom/360"
-        assert caps["clear_keys"] is key_supported
+        assert caps["clear_keys"] is supported
         assert caps["disable_lines"] is supported
-        if key_supported:
+        if supported:
             assert caps["retirement_evidence"]
             assert entry["qualification"]["physical"] is False
 
@@ -127,9 +127,19 @@ def test_owned_line_disable_does_not_require_or_emit_removed_credentials(identit
     assert only_output(profile, templates, context()) == initial
 
 
-def test_snom360_hardware_only_retirement_emits_just_the_owned_p1():
+def test_snom360_renders_twelve_keys_and_clears_only_owned_positions():
     profile, templates = load_bundle("snom/360")
     c = context()
+    c["lines"] = [dict(c["lines"][0], slot=i, username=f"test{i}") for i in range(1, 13)]
+    c["keys"] = [dict(c["keys"][0], slot=str(i), line=i, label=f"P{i}") for i in range(1, 13)]
+    root = ET.fromstring(only_output(profile, templates, c))
+    assert [(e.attrib["idx"], e.text) for e in root.findall("./phone-settings/user_name")] == [
+        (str(i), f"test{i}") for i in range(1, 13)
+    ]
+    assert [
+        (e.attrib["idx"], e.attrib["context"], e.attrib["label"])
+        for e in root.findall("./functionKeys/fkey")
+    ] == [(str(i - 1), str(i), f"P{i}") for i in range(1, 13)]
     c.update(keys=[], lines=[])
     assert ET.fromstring(only_output(profile, templates, c)).find("functionKeys") is None
 
@@ -141,11 +151,14 @@ def test_snom360_hardware_only_retirement_emits_just_the_owned_p1():
     assert key.attrib == {"idx": "0", "label": "", "perm": ""}
     assert key.text == "none"
 
-    c["retired"] = {"keys": ["2"]}
+    c["retired"] = {"keys": ["12"], "lines": ["12"]}
+    root = ET.fromstring(only_output(profile, templates, c))
+    (key,) = root.findall("./functionKeys/fkey")
+    (active,) = root.findall("./phone-settings/user_active")
+    assert (key.attrib["idx"], key.text) == ("11", "none")
+    assert (active.attrib["idx"], active.text) == ("12", "off")
+    c["retired"] = {"keys": ["13"]}
     with pytest.raises(ValueError, match="invalid_retired_keys"):
-        only_output(profile, templates, c)
-    c["retired"] = {"lines": ["1"]}
-    with pytest.raises(ValueError, match="profile_disable_lines_unsupported"):
         only_output(profile, templates, c)
 
 

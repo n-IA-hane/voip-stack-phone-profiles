@@ -131,9 +131,10 @@ synchronization remain separate from software validation.
 Every profile declares boolean `clear_keys` and `disable_lines` capabilities.
 An absent flag is false for older profiles. Nonempty retired lists require the
 corresponding flag to be exactly true. A documented allowlist covers Fanvil
-X3U Pro, Snom 720/7xx and Yealink T42U/T43U/T46G/T46S/T46U. Snom 360
-supports key retirement for its single managed slot P1 (XML index 0).
-The profile keeps SIP identity retirement disabled. Other profiles,
+X3U Pro, Snom 360/720/7xx and Yealink T42U/T43U/T46G/T46S/T46U. Snom 360
+maps P1 through P12 to XML indices 0 through 11 and SIP identities to
+indices 1 through 12. Clearing a key or disabling a line only addresses a
+position previously managed by the integration. Other profiles,
 including all current Grandstream projections, retain positive configuration
 support while removals remain unsupported. `retirement_evidence` and
 `retirement_qualification` distinguish documented commands from the Fanvil

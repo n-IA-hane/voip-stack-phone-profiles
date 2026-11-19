@@ -2,9 +2,9 @@
 
 ## Unreleased
 
-- Clear the Snom 360 P1 key when Home Assistant removes its assigned function.
-  The profile emits the documented `none` command only for a previously managed
-  P1. Software tests cover the generated XML. Device application remains unverified.
+- Configure any of the twelve built-in keys and twelve SIP identities on the
+  Snom 360. Clearing a managed key or removing a managed line leaves the
+  other positions intact. One SIP line can serve all twelve keys.
 - Give Snom desk phones the exact settings file for manual setup, DHCP and SIP
   Plug and Play. The 360 stores the file URL and requests an hourly refresh.
   Its firmware 8.7.3.25.9 profile declares the documented SIP configuration

@@ -5042,10 +5042,153 @@
       "model": "360",
       "status": "software_validated",
       "capabilities": {
-        "max_lines": 1,
+        "max_lines": 12,
         "key_slots": [
           {
             "slot": "1",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "2",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "3",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "4",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "5",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "6",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "7",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "8",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "9",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "10",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "11",
+            "max_value_bytes": 64,
+            "max_label_bytes": 16,
+            "functions": [
+              "line",
+              "speed_dial",
+              "blf",
+              "queue_login",
+              "queue_pause",
+              "park"
+            ]
+          },
+          {
+            "slot": "12",
             "max_value_bytes": 64,
             "max_label_bytes": 16,
             "functions": [
@@ -5069,18 +5212,24 @@
           "park"
         ],
         "languages": {},
-        "capability_basis": "upstream_template_subset",
+        "capability_basis": "vendor_documentation_and_local_UI_limits",
         "limit_semantics": "maximum_generated_by_this_projection_not_hardware_maximum",
         "separate_subscription_target": false,
         "separate_pickup_target": false,
         "projection_qualification": "software_only",
         "partial_merge_qualification": "not_physically_verified",
         "clear_keys": true,
-        "disable_lines": false,
+        "disable_lines": true,
         "retirement_qualification": "vendor_documented",
         "retirement_evidence": [
           "https://service.snom.com/spaces/wiki/pages/234340338/Function+Key+Types",
-          "https://service.snom.com/download/attachments/234332150/UM_snom3xx_V2.2_en.pdf"
+          "https://service.snom.com/spaces/wiki/pages/234343563/user_active"
+        ],
+        "hardware_max_lines": 12,
+        "hardware_key_count": 12,
+        "evidence": [
+          "https://service.snom.com/download/attachments/234332150/UM_snom3xx_V2.2_en.pdf",
+          "Snom 360 firmware 8.7.3.25.9: identities 1-12 and built-in keys P1-P12 in the phone web interface."
         ],
         "delivery": {
           "manual": "{mac}.xml",
@@ -5117,8 +5266,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/snom/360.zip",
-        "sha256": "61c122197fcba7d3f54012892d528107f2f538204fc5c91b8afcf5448cf0d2b5",
-        "size": 50485
+        "sha256": "fede47b393ae810f7fa51d0426ec82091cc09640a880a2762633c82a470fc794",
+        "size": 52163
       }
     },
     {
@@ -9417,5 +9566,5 @@
       }
     }
   ],
-  "catalog_revision": "b280968c01967c97b98c3b3f135a319cf00f81e4ddad3c1cfd214c1e7739bfdd"
+  "catalog_revision": "850485b467bdf84bce46d1bd13b9c0a3217676bd1184003c10566d7eaafcbd01"
 }

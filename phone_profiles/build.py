@@ -35,7 +35,7 @@ RETIREMENT_EVIDENCE = {
         "https://www.fanvil.com/upload/files/20220518/134146j8vz.pdf",
         "https://github.com/fusionpbx/fusionpbx/blob/07f0d76acd044e8a07d2f87aeb50bf59f856393b/resources/templates/provision/fanvil/x3u-pro/%7B%24mac%7D.cfg",
     ],
-    **{f"snom/{model}": _SNOM_RETIREMENT_EVIDENCE for model in ("720", "7xx")},
+    **{f"snom/{model}": _SNOM_RETIREMENT_EVIDENCE for model in ("360", "720", "7xx")},
     **{
         f"yealink/{model}": _YEALINK_RETIREMENT_EVIDENCE
         for model in ("t42u", "t43u", "t46g", "t46s", "t46u")
@@ -177,8 +177,9 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
     else:
         raise UnsupportedSmarty("unknown vendor family")
     # Limits describe what this projection emits, not the physical hardware maximum.
-    max_lines = 6 if (vendor, model) == ("fanvil", "x3u-pro") else 1
-    max_keys = 3 if (vendor, model) == ("fanvil", "x3u-pro") else int(keys)
+    identity = (vendor, model)
+    capacities = {("fanvil", "x3u-pro"): (6, 3), ("snom", "360"): (12, 12)}
+    max_lines, max_keys = capacities.get(identity, (1, 1))
     caps = {
         "max_lines": max_lines,
         "key_slots": [
@@ -189,11 +190,12 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
                 "functions": [f for f in functions if f in [*FUNCTIONS, "park_call"]],
             }
             for i in range(1, max_keys + 1)
+            if keys
         ],
         "functions": functions,
         "languages": languages,
         "capability_basis": "vendor_documentation_and_local_UI_limits"
-        if max_lines == 6
+        if identity in capacities
         else "upstream_template_subset",
         "limit_semantics": "maximum_generated_by_this_projection_not_hardware_maximum",
         "separate_subscription_target": False,
@@ -211,20 +213,20 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
         ),
         "retirement_evidence": RETIREMENT_EVIDENCE.get(f"{vendor}/{model}", []),
     }
-    if (vendor, model) == ("snom", "360") and keys:
+    if identity == ("snom", "360"):
         caps.update(
-            clear_keys=True,
-            retirement_qualification="vendor_documented",
-            retirement_evidence=[
-                _SNOM_KEY_TYPES,
+            hardware_max_lines=12,
+            hardware_key_count=12,
+            evidence=[
                 "https://service.snom.com/download/attachments/234332150/UM_snom3xx_V2.2_en.pdf",
+                "Snom 360 firmware 8.7.3.25.9: identities 1-12 and built-in keys P1-P12 in the phone web interface.",
             ],
         )
     if "ldap" in functions:
         # Imported mappings contain plain LDAP fields only. A TLS listener
         # needs a separate, source-verified mode mapping before use.
         caps["ldap_modes"] = ["plain"]
-    if max_lines == 6:
+    if identity == ("fanvil", "x3u-pro"):
         caps.update(
             dnd_sync=True,
             apply={

@@ -37,7 +37,9 @@ projection where the source demonstrates the mapping. These are software
 projection limits, not a claim about hardware capacity. X3U Pro declares six
 lines and three physical keys from its official datasheet, with a 31-byte target
 limit from the observed firmware UI. It is the first intended physical test
-target, not the only model users may select.
+target, not the only model users may select. The Snom 360 profile covers the
+twelve built-in P1-P12 keys and the twelve SIP identities exposed by firmware
+8.7.3.25.9. Each key can use the same line or a different configured line.
 
 ## Build and verify
 
