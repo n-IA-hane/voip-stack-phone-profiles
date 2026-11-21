@@ -142,7 +142,9 @@ def validate_context(profile: dict[str, Any], context: dict[str, Any]) -> dict[s
         dialog_key = key["function"] in {"blf", "queue_login", "queue_pause", "park"}
         if key["event_package"] != "dialog" and (dialog_key or key["event_package"] != ""):
             raise ValueError("only dialog subscriptions are mapped; non-dialog keys may be empty")
-        if key["pickup_target"] and profile["vendor"] != "yealink":
+        if key["pickup_target"] and not (profile["vendor"] == "yealink"
+                or (profile["vendor"] == "fanvil" and caps.get("separate_pickup_target") is True
+                    and key["function"] == "blf")):
             raise ValueError("separate pickup target is not mapped for this subset")
     for kind, allowed, active, feature in (
         ("keys", set(key_caps), seen, "clear_keys"),

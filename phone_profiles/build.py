@@ -109,6 +109,12 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
                 "<__PHONE_PARENT__>",
                 "<__PHONE_PARENT__>" + (ROOT / "templates/fanvil-clock.xml.jinja2").read_text(),
             )
+            # Native X3U Pro 2.12.20 GUI/export encodes the separate Pickup
+            # Number immediately after the BLF subtype in Fkey/Value.
+            text = text.replace(
+                "{% endif %}</Value>\n<Title>{{ key.label }}</Title>",
+                "{% endif %}{{ key.pickup_target }}</Value>\n<Title>{{ key.label }}</Title>",
+            )
             text = text.replace(
                 "<EnableReg>1</EnableReg>",
                 "<EnableReg>1</EnableReg>{% if dnd_sync|default(false) %}<FeatureSync>1</FeatureSync>{% endif %}",
@@ -229,6 +235,11 @@ def projection(vendor: str, model: str, source: str, related: str = "") -> tuple
     if identity == ("fanvil", "x3u-pro"):
         caps.update(
             dnd_sync=True,
+            separate_pickup_target=True,
+            pickup_target_evidence=[
+                "https://www.fanvil.com/upload/files/20220518/13428ft422.pdf",
+                "X3U Pro 2.12.20 native GUI/export, 2026-11-21: Fkey/Value Casa@1/bc becomes Casa@1/bc*8Casa; exact export restored.",
+            ],
             apply={
                 "method": "fanvil_native_http",
                 "qualified": True,

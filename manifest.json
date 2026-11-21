@@ -1362,7 +1362,7 @@
         "capability_basis": "vendor_documentation_and_local_UI_limits",
         "limit_semantics": "maximum_generated_by_this_projection_not_hardware_maximum",
         "separate_subscription_target": false,
-        "separate_pickup_target": false,
+        "separate_pickup_target": true,
         "projection_qualification": "software_only",
         "partial_merge_qualification": "not_physically_verified",
         "clear_keys": true,
@@ -1376,6 +1376,10 @@
           "plain"
         ],
         "dnd_sync": true,
+        "pickup_target_evidence": [
+          "https://www.fanvil.com/upload/files/20220518/13428ft422.pdf",
+          "X3U Pro 2.12.20 native GUI/export, 2026-11-21: Fkey/Value Casa@1/bc becomes Casa@1/bc*8Casa; exact export restored."
+        ],
         "apply": {
           "method": "fanvil_native_http",
           "qualified": true,
@@ -1438,8 +1442,8 @@
       "merge_verification": "not_physically_verified",
       "bundle": {
         "path": "bundles/fanvil/x3u-pro.zip",
-        "sha256": "509123658b02d37328fac2c67f24fa5109fe5bc4229eb0a4f87126b927ffca9f",
-        "size": 261476
+        "sha256": "3734d316cea0323f28104cf6ad7346ee5e0f9c848b218cee070a2144c5c4feda",
+        "size": 261705
       }
     },
     {
@@ -9566,5 +9570,5 @@
       }
     }
   ],
-  "catalog_revision": "850485b467bdf84bce46d1bd13b9c0a3217676bd1184003c10566d7eaafcbd01"
+  "catalog_revision": "ca243441e5b656822b4c0002f9f5b68444f7d92f2528b714458af3ea4eaf160a"
 }

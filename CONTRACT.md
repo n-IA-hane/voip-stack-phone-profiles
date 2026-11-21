@@ -40,7 +40,9 @@ paths and expands to twelve lowercase hexadecimal digits.
   Functions are `line`, `speed_dial`, `blf`, `queue_login`, `queue_pause`, `park`,
   and, only where declared, `park_call`.
   This subset supports one common dial/subscription target; differing values
-  fail validation. Separate pickup target is mapped only for Yealink.
+  fail validation. Separate pickup target is mapped for Yealink and, for BLF
+  only, the qualified Fanvil X3U Pro projection. The latter appends the complete
+  pickup route after the BLF subtype in `Fkey/Value`, retaining `bc`.
 - `retired`: optional mapping containing `keys` and `lines`, each a list of
   canonical positive decimal slot strings. Missing lists default to empty,
   preserving version 1 callers. Slots must be declared by the profile, unique,

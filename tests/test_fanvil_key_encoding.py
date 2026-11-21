@@ -94,3 +94,24 @@ def test_only_qualified_x3u_pro_projection_enables_feature_sync_and_never_on_emp
         )
         is None
     )
+
+
+@pytest.mark.parametrize("pickup", ["", "*8Casa"])
+def test_x3u_pickup_matches_the_native_gui_export_without_changing_blf_subtype(pickup):
+    profile, templates = load_bundle("fanvil/x3u-pro")
+    assert profile["capabilities"]["separate_pickup_target"] is True
+    context = fixture_context()
+    context["keys"][0].update(function="blf", dial_target="Casa", subscription_target="Casa", pickup_target=pickup)
+    key = ET.fromstring(only_output(profile, templates, context)).find("./dsskey/dssSide/Fkey")
+    assert key.findtext("Type") == "1"
+    assert key.findtext("Value") == "Casa@1/bc" + pickup
+    assert key.find("PickupNum") is None
+
+
+def test_other_fanvil_models_cannot_claim_the_unverified_pickup_mapping():
+    profile, templates = load_bundle("fanvil/x4u")
+    assert profile["capabilities"]["separate_pickup_target"] is False
+    context = fixture_context()
+    context["keys"][0].update(function="blf", dial_target="Casa", subscription_target="Casa", pickup_target="*8Casa")
+    with pytest.raises(ValueError, match="separate pickup target"):
+        only_output(profile, templates, context)
